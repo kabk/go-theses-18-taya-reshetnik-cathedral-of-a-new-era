@@ -38,6 +38,7 @@ div { display:block;}
    	font-size: 20px;
    	padding: 15px;
    	margin: 2px;
+
    }
 
 .answer {
@@ -51,7 +52,6 @@ div { display:block;}
    	font-weight: normal; 
    	font-style: normal; 
    	font-size: 20px;
-   	padding: 25px;
    	margin: 2px;
 	
 }
@@ -63,13 +63,20 @@ div { display:block;}
 }
 
 #first, #second, #third, #fourth, #fifth, #sixth, #seventh {
-    width: 30%;
+    width: 50%;
     float: left;
 }
 
-#one, #two, #three, #four, #five, #six, #seven {
-	width: 50%;
+#two, #three, #four, #five, #six, #seven {
+	width: 80%;
     float: left;
+    padding: 25px;
+}
+
+#one {
+	width:30%;
+	float:left;
+	padding: 50px;
 }
 
 
