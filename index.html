@@ -8,24 +8,39 @@
 <script>
 $(document).ready(function(){
     	$("#first").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "white");
         }, function(){
         $(this).css("background-color", "blue");
     });
         $("#second").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "white");
         }, function(){
-        $(this).css("background-color", "black");
+        $(this).css("background-color", "blue");
     });
         $("#third").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "white");
         }, function(){
-        $(this).css("background-color", "black");
+        $(this).css("background-color", "blue");
     });
         $("#fourth").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "white");
         }, function(){
-        $(this).css("background-color", "black");
+        $(this).css("background-color", "blue");
+    });
+        $("#fifth").hover(function(){
+        $(this).css("background-color", "white");
+        }, function(){
+        $(this).css("background-color", "blue");
+    });
+        $("#sixth").hover(function(){
+        $(this).css("background-color", "white");
+        }, function(){
+        $(this).css("background-color", "blue");
+    });
+        $("#seventh").hover(function(){
+        $(this).css("background-color", "white");
+        }, function(){
+        $(this).css("background-color", "blue");
     });
 });
 
@@ -36,11 +51,18 @@ $(document).ready(function(){
             var x = e.pageX;
             $('#second').css({'top': y}); 
             $('#third').css({'left': x});
-            $('#fourth').css({'left': y});
+      });
+      $('#second').mousemove(function(e){
+            var y = e.pageY;
+            var x = e.pageX;
+            $('#third').css({'top': y}); 
+            $('#fourth').css({'left': x});
+      });
+      $('#third').mousemove(function(e){
+            var y = e.pageY;
+            var x = e.pageX;
+            $('#fourth').css({'top': y}); 
             $('#fifth').css({'left': x});
-            $('#sixth').css({'left': y});
-            $('#seventh').css({'left': x});
-
       });
     });
 </script>
