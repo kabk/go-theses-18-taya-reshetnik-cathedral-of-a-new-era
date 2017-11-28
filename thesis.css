@@ -18,7 +18,9 @@ div { display:block;}
    height:auto;
    font-size: 30px;
 }*/
-
+body {
+  background-color: blue;
+}
 
 
 * {
@@ -26,15 +28,16 @@ div { display:block;}
 }
 
 .text {
-	/*border-style:solid;
-	border-width:1px;
-	border-color: black;*/
+	border-style:solid;
+	border-width:2px;
+	border-color: white;
 /*	background-color: white;
-*/	position: absolute;
+*/	
+  position: relative;
 	font-family:'EB Garamond', serif;
   font-weight: normal; 
   font-style: normal; 
-  font-size: 30px;
+  font-size: 25px;
   padding: 15px;
    }
 
@@ -45,19 +48,22 @@ div { display:block;}
    font-size: 30px;
 }
 
-#first, #fifth, #sixth, #seventh {
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh {
     width: 50%;
     float: left;
     padding:20px;
 }
-#second {
+
+
+/*#second {
     width: 30%;
     float: left;
     padding:20px; 
     top:20%;
-    left:20%; }
+    left:20%; 
+  }*/
 
-
+/*
 #third {
     width: 30%;
     float: left;
@@ -65,6 +71,6 @@ div { display:block;}
     top:60%;
     left:40%; 
 
-}
+}*/
 
 

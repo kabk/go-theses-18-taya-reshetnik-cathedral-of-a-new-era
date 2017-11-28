@@ -7,19 +7,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-    $("#first").hover(function(){
+    	$("#first").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
-        $(this).css("background-color", "transparent");
+        $(this).css("background-color", "blue");
     });
         $("#second").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
-        $(this).css("background-color", "transparent");
+        $(this).css("background-color", "black");
+    });
+        $("#third").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "black");
+    });
+        $("#fourth").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "black");
     });
 });
-
-
 
 
 $(document).ready(function(){
@@ -28,13 +36,10 @@ $(document).ready(function(){
             var x = e.pageX;
             $('#second').css({'top': y}); 
             $('#third').css({'left': x});
-
-      });
-      $('#second').mousemove(function(e){
-            var y = e.pageY;
-            var x = e.pageX;
-            $('#first').css({'top': y}); 
-            $('#third').css({'left': x});
+            $('#fourth').css({'left': y});
+            $('#fifth').css({'left': x});
+            $('#sixth').css({'left': y});
+            $('#seventh').css({'left': x});
 
       });
     });
@@ -49,24 +54,24 @@ $(document).ready(function(){
 <div class='text'id='first'><strong>Subject of the research.</strong>
 		The subject of my research is the influence of media and Internet on physical space, architecture and urban planning. The starting point for the research was the building of Utrecht Central undergoing renovation, being in constant flux and getting extensions in the form of shopping mall and eventually turning into a so-called ‘Junkspace’.</div>
 
-<div class='text'id='second'><strong>2What do you want to find out about this subject? [research question]</strong>
+<div class='text'id='second'><strong>2What do you want to find out about 	this subject? [research question]</strong>
 	How does new media influence architecture? How does new media/electronic technology influence our perception, communication and physical space? What is the relation between media and architecture?
 	</div>
 
 <div class='text'id='third'><strong>3What is your preliminary position on this question? [hypothesis]</strong>
 	New media changes the perception of information, changes the way our brains are functioning and therefore affects our approach towards urban planning. Reality is merging with the abstract concepts of the orientation on the net.</div>
 
-<!-- <div class='text'id='fourth'><strong>4What are your central assumptions, your reasons for researching this subject? [starting points]</strong>
+<div class='text'id='fourth'><strong>4What are your central assumptions, your reasons for researching this subject? [starting points]</strong>
 	The aspect of human communication has always fascinated me. I want to find out how the ever-changing media influences something so monumental as architecture.</div>
 
 <div class='text'id='fifth'><strong>How do you go about your research? What type/s of sources are you using? [research method]</strong>
-	<div class='answer'id='five'>Observation, personal experience, asking other people about their experience, various material on urban planning and devilment of media and its influence on communication.</div>
+Observation, personal experience, asking other people about their experience, various material on urban planning and devilment of media and its influence on communication.</div>
 
 <div class='text'id='sixth'><strong>What did you find out so far? What was expected, what was unexpected?</strong>
 Observations at the numerous public spaces, material research on related topics.</div>
 
 <div class='text'id='seventh'><strong>What else do you expect to find out?</strong>
-	More direct connection and visible influence and interconnection.</div> -->
+	More direct connection and visible influence and interconnection.</div>
 
 </body>
 </html>
