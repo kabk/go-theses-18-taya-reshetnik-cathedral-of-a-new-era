@@ -4,8 +4,6 @@
   transition: 0.4s all;
 }
 
-/*div {display:block;}
-*/
 body {
   background-color: white;
 }
@@ -24,15 +22,15 @@ img { width: 250px; height:auto;}
 #deathtwo { top:60%; left:60%;}
 
 
-/*.header, h1 {  
+.header{  
    font-family: 'Arial';
-   font-weight: bold; 
-   font-style: bold; 
-   font-size: 30px;
+   font-weight: normal; 
+   font-size: 10px;
    color: black;
    position: absolute;
-   left:80%; 
- }*/
+   left:5%; 
+   position: fixed;
+ }
 
 #hello {
   background-color: red;
