@@ -1,1 +1,1 @@
-# go-theses-18-taya-reshetnik-shortcut
+# go-theses-18-taya-reshetnik-cathedral-of-a-new-era
