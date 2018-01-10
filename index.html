@@ -14,7 +14,7 @@
 <script>
 
 
-//reveal text on click
+//reveal text and images on click
 $(document).ready(function(){
     $(".abstract, .intro, .conclusion").click(function(){
         $(this).css("color", "black"); 
@@ -28,8 +28,17 @@ $(document).ready(function(){
         $(this).css("color", "black"); 
     });
 
+    $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour").click(function(){
+        $(this).css("color", "black"); 
+    });
 
+    $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten").click(function(){
+        $(this).css("color", "black"); 
+    });
 
+    $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix").click(function(){
+        $(this).css("color", "black"); 
+    });
 });
 
 
@@ -51,32 +60,25 @@ $(document).ready(function(){
                 ).mouseleave(function(){
           $(this).css("color", "white");
           $(".images").css("display", "none");
-      });            
-
-
-
+      }); 
 
       $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
-              ).hover(function(){
-        $(this).css("color", "black");
-        }, function(){
-        $(this).css("color", "white");
-    });
-
+                ).mouseleave(function(){
+          $(this).css("color", "white");
+          $(".images").css("display", "none");
+      }); 
 
       $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
-              ).hover(function(){
-        $(this).css("color", "black");
-        }, function(){
-        $(this).css("color", "white");
-    });
+                ).mouseleave(function(){
+          $(this).css("color", "white");
+          $(".images").css("display", "none");
+      }); 
 
       $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
-              ).hover(function(){
-        $(this).css("color", "black");
-        }, function(){
-        $(this).css("color", "white");
-    });
+                ).mouseleave(function(){
+          $(this).css("color", "white");
+          $(".images").css("display", "none");
+      });                 
 
       
 function copyDiv() {
