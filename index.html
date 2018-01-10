@@ -14,7 +14,7 @@
 <script>
 
 
-//reveal text and images on click
+//reveal text on click
 $(document).ready(function(){
     $(".abstract, .intro, .conclusion").click(function(){
         $(this).css("color", "black"); 
@@ -106,13 +106,9 @@ copyDiv();
         $(".containerofcontainer").hover(function(){
             $("#container").css("overflow","hidden");
             // $(this).css("background-color","yellow");
-            // $(this).css("width",440);
-            // $(this).css("height",240);
         },function(){
             $("#container").css("overflow","scroll");
             // $(this).css("background-color","black");
-            // $(this).css("width",440);
-            // $(this).css("height",25);
         });
     }
     nopointer();
@@ -609,10 +605,16 @@ $(function () {
 
 <div id='sizeblock'></div>
 
+<div class='order'>
+    <div class='images' id='intro1'>
+        <img src='images/intro/intro_1.jpg'>
+    </div>
 
-<div class='images' id='intro1'><img src='images/intro/intro_1.jpg'></div>
-<div class='images' id='intro2'><img src='images/intro/intro_2.jpg'></div>
-<div class='images' id='intro3'><img src='images/intro/intro_3.jpg'></div>
+    <div class='images' id='intro2'>
+        <img src='images/intro/intro_2.jpg'>
+    </div>
+</div>
+<!-- <div class='images' id='intro3'><img id="privet3"src='images/intro/intro_3.jpg'></div>
 
 
 <div class='images' id='death1'><img src='images/death1.jpg'></div>
@@ -622,7 +624,7 @@ $(function () {
 
 <div class='images' id='brain1'><img src='images/brain/brain_1.jpg'></div>
 <div class='images' id='brain2'><img src='images/brain/brain_2.gif'></div>
-<div class='images' id='brain3'><img src='images/brain/brain_3.jpg'></div>
+<div class='images' id='brain3'><img src='images/brain/brain_3.jpg'></div> -->
 
 
 

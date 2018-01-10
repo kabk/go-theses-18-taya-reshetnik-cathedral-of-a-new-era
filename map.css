@@ -15,28 +15,38 @@ body:hover {
 
 #index { display: none;}
 
-img { width: 30%; }
+/*img { width: 300px; }
+*/
 
+.order {
+  position: fixed;
+  z-index:5000; 
+  right: 5%;
+  top:7%;
+}
 
 .images { 
-  /*border: 2px red solid*/;
-  z-index:5000; 
-  position: fixed; 
+  position: relative; 
   display: none; 
-  padding: 0;
-  left: 900px;
-  /*box-shadow: 5px 10px 18px #000000;*/
+  padding: 10px;
+}
+
+img {
+/*    padding: 10px;
+*/    width:300px;
+    border: 1px black solid;
+    box-shadow: 5px 10px 18px #000000;
+
+
 }
 
 
-/*.commonclass {overflow: hidden;}
-*/
-#intro1, #intro2, #intro3,
+/*#intro1, #intro2, #intro3,
 #death1, #death2,
 #intimacy1,
 #brain1, #brain2, #brain3 {
   position: relative;
-}
+}*/
 
 
 
