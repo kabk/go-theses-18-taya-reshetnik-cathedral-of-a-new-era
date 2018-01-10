@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{
+  transition: 0.4s all;
+}
+
+body {
+  background-color: white;
+}
+
+#sizeblock {
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 1200px;
+  height: 2000px;
+}
+
+img { width: 250px; height:auto;}
+
+
+/*.index {
+  position: relative;
+  border: solid black 1px;
+  padding: 30px;
+  background: white;
+  font-family: 'Arial';
+  font-weight: normal; 
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  display: block;
+}*/
+
+p {
+  text-indent: 30px;
+  margin: 0;
+}
+
+/*.page {
+  font-family: Arial;
+  font-size: 30px;
+  left:1100px;
+  position: absolute;
+  display: block;
+}
+#p1 {top:1200px;}*/
+
+.images { 
+  border: 1px black solid;
+  z-index:5000; 
+  position: absolute; 
+  display: none; 
+  box-shadow: 5px 10px 18px #000000;
+}
+
+#deathone { top:7%;  left:70%;}
+#deathtwo { top:60%; left:70%;}
+
+
+.header{  
+   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 40px;
+   color: black;
+   position: relative;
+   left:5px; 
+ }
+
+ .footnote {
+   background-color: white;
+   font-family: 'Arial';
+   font-weight: normal;
+   font-size: 20px;
+   font-style: italic;
+   color: blue;
+
+ }
+/*.footnote:hover {
+  font-style:italic;
+  cursor: pointer;
+}*/
+
+.ref {
+   background-color: white;
+   font-family: 'Arial';
+   font-weight: normal;
+   font-size: 13px;
+   color: blue;
+   position: absolute;
+   display: block;
+   font-style: italic;
+   border: solid black 1px;
+   width: 250px;
+   left:800px;
+
+ }
+
+#r1 {top: 2610px;}
+#r2 {top: 3200px;}
+#r3 {top: 3320px;}
+/*#r4 {left: 605px;}*/
+
+
+#hello {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 50000000;
+}
+
+/*main containers*/
+.first, .second, .third, .fourth, .fifth, .sixth, .seventh {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  float:left; 
+  margin: 20px;
+}
+
+.first {margin-top:25px;}
+/*.second, .third, .fourth, .fifth, .sixth, .seventh {
+  margin: 20px;
+}*/
+
+
+/*containers for scroll*/
+.abstract, .intro, .society, .influence, .digital, .gdas, .conclusion {
+  padding: 20px;
+  background: white;
+  font-family: 'Arial';
+  font-weight: normal; 
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  display: block;
+}
+
+.abstract   { width: 600px;}
+.intro      { width: 600px;}
+.society    { width: 600px;}
+.influence  { width: 600px;}
+.digital    { width: 600px;}
+.gdas       { width: 600px;}
+.conclusion { width: 600px;}
+
+
+
+/*titles_1*/
+.title {  
+   position: relative;
+   /*margin: 20px;*/
+   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 30px;
+   color: black;
+   display: block;
+   z-index: 3000;
+   padding: 5px;
+
+/*  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;*/
+}
+/*titles_2*/
+.title2 {
+   position: relative;
+   margin: 20px;
+   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 25px;
+   color: black;
+   display: block;
+   z-index: 3000;
+}
+/*titles_3*/
+.subtitle {  
+   position: relative;
+   margin: 20px;
+   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 25px;
+   color: black;
+   display: block;
+   z-index: 3000;
+}
+
+
+/*boxes*/
+.societyone, .influenceone, .influencetwo, .digitalone, .digitaltwo, .gdasone {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+/*  height: 350px;
+*/  
+/*  width: 1200px;
+*/  padding: 30px;
+/*  overflow: auto;
+*/  background: white;
+  font-family: 'Arial';
+  font-size: 20px;
+  font-weight: normal; 
+  color: black;
+  display:block;
+  text-align: left;
+}
+
+/*.societyone:hover, .influenceone:hover, .influencetwo:hover, 
+.digitalone:hover, .digitaltwo:hover, .gdasone:hover { box-shadow: 5px 10px 18px #000000;}*/
+
+
+#societyoneone, 
+#societyonetwo, 
+#societyonethree, 
+#societyonefour,
+#societyonefive { position: relative; width: 680px;}    
+
+#influenceoneone,
+#influenceonetwo { position: relative; width: 680px;}    
+
+#influencetwoone,
+#influencetwotwo,  
+#influencetwothree,
+#influencetwofour,
+#influencetwofive,
+#influencetwosix { position: relative; width: 720px;}  
+
+
+#digitaloneone,
+#digitalonetwo,    
+#digitalonethree,  
+#digitalonefour,  
+#digitalonefive { position: relative; width: 680px;}
+
+#digitaltwoone,    
+#digitaltwotwo,    
+#digitaltwothree,  
+#digitaltwofour,   
+#digitaltwofive,   
+#digitaltwosix,    
+#digitaltwoseven,  
+#digitaltwoeight,  
+#digitaltwonine,   
+#digitaltwoten, { position: relative; width: 720px;}   
+
+#digitaltwoone {background-color: blue;}
+
+#gdasoneone,
+#gdasonetwo,    
+#gdasonethree,  
+#gdasonefour,  
+#gdasonefive,
+#gdasonesix { position: relative; width: 720px;} 
+
+#hellomap {
+  display: none;
+  color: blue;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*index*/
+
+/*main containers*/
+.index {display: block;}
+
+.headeri{  
+   font-family: 'Arial';
+   font-weight: bold; 
+   font-size: 20px;
+   color: black;
+   position: relative;
+   left:5px; 
+   /*top:1000px;
+   z-index: 5000;*/
+
+/*-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+/*transform: rotate(-90deg);
+*/
+
+
+}
+
+.index1, .index2, .index3, .index4, .index5, .index6, .index7 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  float:left; 
+  box-shadow: 5px 10px 18px #000000;
+  width:610px;
+
+}
+
+
+/*containers for scroll*/
+.abstracti, .introi, .societyi, .influencei, .digitali, .gdasi, .conclusioni {
+  padding: 5px;
+  background: white;
+  font-family: 'Arial';
+  font-weight: normal; 
+  color: black;
+/*  font-size: 20px;*/  
+  text-align: left;
+  display: block;
+}
+
+.abstracti   { width: 600px;}
+.introi      { width: 600px;}
+.societyi    { width: 600px;}
+.influencei  { width: 600px;}
+.digitali    { width: 600px;}
+.gdasi       { width: 600px;}
+.conclusioni { width: 600px;}
+
+
+.titlei {  
+   position: relative;
+/*   margin: 10px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 25px;
+   color: black;
+   display: block;
+   z-index: 3000;
+   padding: 8.5px;
+
+}
+.title2i {
+   position: relative;
+/*   margin: 20px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 12px;
+   color: black;
+   display: block;
+   z-index: 3000;
+   padding: 5px;
+}
+.subtitlei {  
+   position: relative;
+/*   margin: 10px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 10px;
+   color: black;
+   display: block;
+   z-index: 3000;
+}
+
+
+/*boxes*/
+.societyonei, .influenceonei, .influencetwoi, .digitalonei, .digitaltwoi, .gdasonei {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  padding: 5px;
+  background: white;
+  font-family: 'Arial';
+  font-size: 15px;
+  font-weight: normal; 
+  color: black;
+  display:block;
+  text-align: left;
+  box-shadow: 5px 10px 18px #000000;
+}
+
+#societyoneonei, 
+#societyonetwoi, 
+#societyonethreei, 
+#societyonefouri,
+#societyonefivei { position: relative; width: 650px;}    
+
+#influenceoneonei,
+#influenceonetwoi { position: relative; width: 650px;}    
+
+#influencetwoonei,
+#influencetwotwoi,  
+#influencetwothreei,
+#influencetwofouri,
+#influencetwofivei,
+#influencetwosixi { position: relative; width: 700px;}  
+
+
+#digitaloneonei,
+#digitalonetwoi,    
+#digitalonethreei,  
+#digitalonefouri,  
+#digitalonefivei { position: relative; width: 650px;}
+
+#digitaltwoonei,    
+#digitaltwotwoi,    
+#digitaltwothreei,  
+#digitaltwofouri,   
+#digitaltwofivei,   
+#digitaltwosixi,    
+#digitaltwoseveni,  
+#digitaltwoeighti,  
+#digitaltwoninei,   
+#digitaltwoteni { position: relative; width: 700px;}   
+
+#gdasoneonei,
+#gdasonetwoi,    
+#gdasonethreei,  
+#gdasonefouri,  
+#gdasonefivei,
+#gdasonesixi { position: relative; width: 700px;} 
+
+/*
+#sizeblock2 {
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 1200px;
+  height: 100px;
+}*/

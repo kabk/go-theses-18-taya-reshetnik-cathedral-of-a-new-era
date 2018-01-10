@@ -8,19 +8,31 @@ body {
   background-color: white;
 }
 
-img { width: 250px; height:auto;}
+
+#sizeblock {display: none;}
+
+#index { display: none;}
+
+img { width: 240px; }
+
 
 .images { 
-  border: 1px black solid;
+  border: 2px red solid;
   z-index:5000; 
-  position: absolute; 
+  position: fixed; 
   display: none; 
-  box-shadow: 5px 10px 18px #000000;
+  padding: 0;
+  left: 900px;
+  /*box-shadow: 5px 10px 18px #000000;*/
 }
 
-#deathone { top:7%; left:60%;}
-#deathtwo { top:60%; left:60%;}
+#deathone { top:10px; }
+#deathtwo { top:200px; }
 
+/*#utrecht1,
+#utrecht2,
+#utrecht3,
+#utrecht4 { }*/
 
 .header{  
    font-family: 'Arial';
@@ -28,9 +40,41 @@ img { width: 250px; height:auto;}
    font-size: 10px;
    color: black;
    position: absolute;
-   left:5%; 
+   left:5px; 
    position: fixed;
  }
+
+ .footnote {
+   background-color: white;
+   font-family: 'Arial';
+   font-weight: normal;
+   font-size: 20px;
+   color: white;
+ }
+.footnote:hover {
+  font-style:italic;
+  cursor: pointer;
+}
+
+.ref {
+   background-color: white;
+   font-family: 'Arial';
+   font-weight: normal;
+   font-size: 13px;
+   color: blue;
+   position: fixed;
+   display: block;
+   font-style: italic;
+   top: 2500px;
+   border: solid black 1px;
+   width:250px;
+ }
+
+#r1 {left: 5px;}
+#r2 {left: 205px;}
+#r3 {left: 405px;}
+#r4 {left: 605px;}
+
 
 #hello {
   background-color: red;
@@ -55,19 +99,17 @@ img { width: 250px; height:auto;}
   box-shadow: 5px 10px 18px #000000;
 }
 .first   { top:50px;  left: 5px;    height:500px; width:700px; }
-.second  { top:650px; left: 5px;    height:500px; width:700px; }
-.third   { top:50px;  left: 805px;  height:1400px; width:1550px; }
-.fourth  { top:50px;  left: 2455px; height:1970px; width:1700px; }
-.fifth   { top:50px;  left: 4805px; height:2000px; width:1600px; }
-.sixth   { top:1250px; left: 5px;    height:1150px; width:750px; }
-.seventh { top:1250px; left: 805px;  height:1200px; width:2400px; }
-.eighth  { top:1250px; left: 3205px; height:1200px; width:3200px; }
-
-
+.second  { top:600px; left: 5px;    height:500px; width:700px; }
+.third   { top:50px;  left: 900px;  height:1600px; width:1550px; }
+.fourth  { top:50px;  left: 2650px; height:2400px; width:1700px; }
+.fifth   { top:50px;  left: 4550px; height:3530px; width:1650px; }
+.sixth   { top:1750px; left: 900px; height:1500px; width:1550px; }
+.seventh { top:1200px; left: 5px;  height:1200px;  width:700px;}
 
 /*containers for scroll*/
 .abstract, .intro, .society, .influence, .digital, .gdas, .conclusion {
-  height: 270px;
+/*  position: absolute;
+*/  height: 270px;
   padding: 15px;
   overflow: auto;
   background: white;
@@ -78,19 +120,45 @@ img { width: 250px; height:auto;}
   text-align: left;
   display: block;
 /*  text-indent: 3mm;
-*/}
-.abstract   { height: 470px;}
-.intro      { height: 520px;}
-.society    { height: 1400px;}
-.influence  { height: 1400px;}
-.digital    { height: 520px;}
+*/
+}
+
+.abstract   { height: 470px; z-index: 10000000000}
+.intro      { height: 470px;}
+.society    { height: 1570px;}
+.influence  { height: 2370px;}
+.digital    { height: 3500px;}
 .gdas       { height: 520px;}
-.conclusion { height: 520px;}
+.conclusion { height: 1170px;}
 
 
 
 /*titles_1*/
 .title {  
+   position: absolute;
+/*   margin: 20px;
+*/   
+   padding: 10px;
+   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 90px;
+   color: black;
+   display: block;
+   z-index: 3000;
+/*  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;*/
+}
+/*titles_2*/
+.title2 {
    position: absolute;
    margin: 20px;
    font-family: 'Arial';
@@ -99,42 +167,31 @@ img { width: 250px; height:auto;}
    color: black;
    display: block;
    z-index: 3000;
-
-   /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-/*titles_2*/
-.title2 {
-   position: absolute;
-   margin: 20px;
-   font-family: 'Arial';
-   font-weight: normal; 
-   font-size: 35px;
-   color: black;
-   display: block;
 }
 /*titles_3*/
 .subtitle {  
    position: absolute;
+   top:0%;
+   left:0%;
+   max-height: 100px;
    margin: 20px;
    font-family: 'Arial';
    font-weight: normal; 
-   font-size: 25px;
+   font-size: 40px;
    color: black;
    display: block;
+   z-index: 3000;
+   /*overflow: hidden;*/
+}
+
+#right{
+  background-color: yellow;
+  /*pointer-events:none;*/
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top:0px;
+  left:0px;
 }
 
 
@@ -154,19 +211,23 @@ img { width: 250px; height:auto;}
   font-weight: normal; 
   color: white;
   display:block;
+  text-align: left;
 }
+
 .societyone:hover, .influenceone:hover, .influencetwo:hover, 
 .digitalone:hover, .digitaltwo:hover, .gdasone:hover { box-shadow: 5px 10px 18px #000000;}
 
 
-#societyoneone    {top:100px;}
-#societyonetwo    {top:500px;}
-#societyonethree  {top:1000px;}
-#societyonefour   {top:100px; left:790px;}
-#societyonefive   {top:500px; left:790px;}
+#societyoneone    {top:300px;}
+#societyonetwo    {top:750px;}
+#societyonethree  {top:1200px;}
+#societyonefour   {top:300px; left:790px;}
+#societyonefive   {top:750px; left:790px;}
+#societyonefive:hover {cursor:pointer;}
 
-#influenceoneone    {top:100px; height: 1810px; width: 750px;}
-#influenceonetwo    {top:100px; height: 920px; width: 750px; left:880px;}
+
+#influenceoneone    {top:500px; height: 1840px; width: 750px;}
+#influenceonetwo    {top:500px; height: 920px; width: 750px; left:880px;}
 
 #influencetwoone    {top:100px;}
 #influencetwotwo    {top:550px;}
@@ -176,28 +237,37 @@ img { width: 250px; height:auto;}
 #influencetwosix    {top:550px;}
 
 
-#digitaloneone    {top:100px;}
-#digitalonetwo    {top:550px;}
-#digitalonethree  {top:100px; left:790px;}
-#digitalonefour   {top:550px; left:790px;}
-#digitalonefive   {top:1000px; height: 3000px; width: 1480px;}
+#digitaloneone    {top:300px;}
+#digitalonetwo    {top:750px;}
+#digitalonethree  {top:300px; left:880px;}
+#digitalonefour   {top:750px; left:880px;}
+
+#digitalonefive   {top:1200px; height: 2270px; width: 1570px;}
 
 #digitaltwoone    {top:100px;}
 #digitaltwotwo    {top:550px;}
 #digitaltwothree  {top:1000px;}
 #digitaltwofour   {top:1450px;}
 #digitaltwofive   {top:1900px;}
-#digitaltwosix    {top:100px;  left:760px;}
-#digitaltwoseven  {top:550px;  left:760px;}
-#digitaltwoeight  {top:1000px; left:760px;}
-#digitaltwonine   {top:1450px; left:760px;}
-#digitaltwoten    {top:1900px; left:760px;}
+#digitaltwosix    {top:100px;  left:840px;}
+#digitaltwoseven  {top:550px;  left:840px;}
+#digitaltwoeight  {top:1000px; left:840px;}
+#digitaltwonine   {top:1450px; left:840px;}
+#digitaltwoten    {top:1900px; left:840px;}
+
+#gdasoneone    {top:300px;}
+#gdasonetwo    {top:750px;}
+#gdasonethree  {top:1200px;}
+#gdasonefour   {top:300px; left:790px;}
+#gdasonefive   {top:750px; left:790px;}
+#gdasonesix    {top:1200px; left:790px;}
+
 
 
 #container2{
-  transform:scale(0.05);
+  transform:scale(0.07);
   background-color: red;
-  margin-left: -300px;
+  margin-left: -380px;
 }
 #container{
   position: fixed;
@@ -208,15 +278,35 @@ img { width: 250px; height:auto;}
   overflow: scroll;
 }
 #containerofcontainer{
-  width:400px;
-  height: 270px;
+/*  width:440px;
+  height: 240px;*/
+  width:440px;
+  height: 25px;
   overflow: scroll; 
   position: absolute;
-  left: 68%;
+  left: 65%;
   top: 1%;
   z-index: 1000;
-  background-color: white;
+  background-color: black;
   border: 1px solid black;
   box-shadow: 5px 10px 18px #000000;
 
 }
+
+#hellomap {
+  display: block;
+  color: blue;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 30px;
+  margin: 0;
+}
+
+/*.subtitleindent{
+  text-indent: 75px;
+  margin: 0;
+}*/

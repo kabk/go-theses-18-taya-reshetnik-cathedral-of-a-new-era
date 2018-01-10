@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{
+  transition: 0.4s all;
+}
+
+body {
+  background-color: yellow;
+}
+
+/*#sizeblock {
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 1200px;
+  height: 2000px;
+}*/
+
+
+
+
+/*index*/
+
+/*main containers*/
+.index {display: block;}
+
+.headeri{  
+   font-family: 'Arial';
+   font-weight: bold; 
+   font-size: 20px;
+   color: black;
+   position: relative;
+   left:5px; 
+   /*top:1000px;
+   z-index: 5000;*/
+
+/*-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+/*transform: rotate(-90deg);
+*/
+
+
+}
+
+.index1, .index2, .index3, .index4, .index5, .index6, .index7 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  float:left; 
+  box-shadow: 5px 10px 18px #000000;
+  width:610px;
+
+}
+
+
+/*containers for scroll*/
+.abstracti, .introi, .societyi, .influencei, .digitali, .gdasi, .conclusioni {
+  padding: 5px;
+  background: yellow;
+  font-family: 'Arial';
+  font-weight: normal; 
+  color: black;
+/*  font-size: 20px;*/  
+  text-align: left;
+  display: block;
+}
+
+.abstracti   { width: 600px;}
+.introi      { width: 600px;}
+.societyi    { width: 600px;}
+.influencei  { width: 600px;}
+.digitali    { width: 600px;}
+.gdasi       { width: 600px;}
+.conclusioni { width: 600px;}
+
+
+.titlei {  
+   position: relative;
+/*   margin: 10px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 25px;
+   color: black;
+   display: block;
+   z-index: 3000;
+   padding: 8.5px;
+
+}
+.title2i {
+   position: relative;
+/*   margin: 20px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 12px;
+   color: black;
+   display: block;
+   z-index: 3000;
+   padding: 5px;
+}
+.subtitlei {  
+   position: relative;
+/*   margin: 10px;
+*/   font-family: 'Arial';
+   font-weight: normal; 
+   font-size: 10px;
+   color: black;
+   display: block;
+   z-index: 3000;
+}
+
+
+/*boxes*/
+.societyonei, .influenceonei, .influencetwoi, .digitalonei, .digitaltwoi, .gdasonei {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  position: relative;
+  padding: 5px;
+  background: yellow;
+  font-family: 'Arial';
+  font-size: 15px;
+  font-weight: normal; 
+  color: black;
+  display:block;
+  text-align: left;
+  box-shadow: 5px 10px 18px #000000;
+}
+
+#societyoneonei, 
+#societyonetwoi, 
+#societyonethreei, 
+#societyonefouri,
+#societyonefivei { position: relative; width: 650px;}    
+
+#influenceoneonei,
+#influenceonetwoi { position: relative; width: 650px;}    
+
+#influencetwoonei,
+#influencetwotwoi,  
+#influencetwothreei,
+#influencetwofouri,
+#influencetwofivei,
+#influencetwosixi { position: relative; width: 700px;}  
+
+
+#digitaloneonei,
+#digitalonetwoi,    
+#digitalonethreei,  
+#digitalonefouri,  
+#digitalonefivei { position: relative; width: 650px;}
+
+#digitaltwoonei,    
+#digitaltwotwoi,    
+#digitaltwothreei,  
+#digitaltwofouri,   
+#digitaltwofivei,   
+#digitaltwosixi,    
+#digitaltwoseveni,  
+#digitaltwoeighti,  
+#digitaltwoninei,   
+#digitaltwoteni { position: relative; width: 700px;}   
+
+#gdasoneonei,
+#gdasonetwoi,    
+#gdasonethreei,  
+#gdasonefouri,  
+#gdasonefivei,
+#gdasonesixi { position: relative; width: 700px;} 
+
+/*
+#sizeblock2 {
+  position: absolute;
+  background-color: white;
+  display: block;
+  width: 1200px;
+  height: 100px;
+}*/
