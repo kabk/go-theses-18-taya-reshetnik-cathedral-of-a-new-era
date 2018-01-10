@@ -123,7 +123,7 @@ img { width: 240px; }
 */
 }
 
-.abstract   { height: 470px; z-index: 10000000000}
+.abstract   { height: 470px; /*z-index: 10000000000*/}
 .intro      { height: 470px;}
 .society    { height: 1570px;}
 .influence  { height: 2370px;}
