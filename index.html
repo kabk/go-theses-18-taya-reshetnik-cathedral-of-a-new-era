@@ -17,9 +17,9 @@
 $(document).ready(function(){
     	$(".abstract, .intro, .conclusion"
               ).hover(function(){
-        $(this).css("background-color", "black");
+        $(this).css("color", "black");
         }, function(){
-        $(this).css("background-color", "white");
+        $(this).css("color", "white");
     });
 
 
@@ -61,11 +61,7 @@ $(document).ready(function(){
     });
 
       
-
-
-
-
-    function copyDiv() {
+function copyDiv() {
         var firstDivContent = document.getElementById('container');
         var secondDivContent = document.getElementById('container2');
         secondDivContent.innerHTML = firstDivContent.innerHTML;
@@ -130,57 +126,30 @@ $(function () {
         });
 
 
-
-
-
-
-
+//THING THAT WORKS, CREATE HOVER CLASS
+$(document).ready(function(){
+          $('.commonclass').each(function(){
+            $(this).hover(function(){
+              $("#container").css('overflow','hidden');
+            },function(){
+               $("#container").css('overflow','scroll');
+            });
+          });
 
 // hide the title and show images on hover
-$(document).ready(function(){
-      $('.abstract').hover(function(){
-            $('#ABSTRACT').css({'display': 'none'});
-            // $("#container").children().not(".first").css("pointer-events","none");
-            // $('.abstract').css("pointer-events","all");
-            // $('#deathone').css({'display': 'block', 'z-index': 3000});
-            // $('#deathtwo').css({'display': 'block', 'z-index': 3000});
+$('.abstract').hover(function(){
+      $('#ABSTRACT').css({'display': 'none'}); 
+        });
+      $('.abstract').mouseleave(function(){
+              $('#ABSTRACT').css({'display': 'block'}); 
+        });
+
+      $('.intro').hover(function(){
+            $('#INTRO').css({'display': 'none'}); 
       });
-      // $('.first').hover(function(){
-      //       $('#ABSTRACT').css({'display': 'none'});
-      //       $("#container").css('overflow','hidden');
-      //       // $('.abstract').css("pointer-events","all");
-      //       // $('#deathone').css({'display': 'block', 'z-index': 3000});
-      //       // $('#deathtwo').css({'display': 'block', 'z-index': 3000});
-      // },function(){
-      //   $("#container").css('overflow','scroll');
-      // });
-
-
-//THING THAT WORKS, CREATE HOVER CLASS
-$('.commonclass').each(function(){
-  $(this).hover(function(){
-    $("#container").css('overflow','hidden');
-  },function(){
-     $("#container").css('overflow','scroll');
-  });
-});
-
-
-
-
-
-      // $('.abstract').mouseleave(function(){
-      //       $('#ABSTRACT').css({'display': 'block'}); 
-      //       // $('#deathone').css({'display': 'none', 'z-index': 0});
-      //       // $('#deathtwo').css({'display': 'none', 'z-index': 0}); 
-      // });
-
-      // $('.intro').hover(function(){
-      //       $('#INTRO').css({'display': 'none'}); 
-      // });
-      // $('.intro').mouseleave(function(){
-      //       $('#INTRO').css({'display': 'block'}); 
-      // });
+      $('.intro').mouseleave(function(){
+            $('#INTRO').css({'display': 'block'}); 
+      });
 
       $('.conclusion').hover(function(){
             $('#CONCLUSION').css({'display': 'none'}); 
@@ -590,6 +559,12 @@ $('.commonclass').each(function(){
 
 
 
+//OPEN/CLOSE IMAGES ON CLICK
+$(document).ready(function(){
+    $(".intro").click(function(){
+        $("#intro1, #intro2, #intro3").css("display", "block");   
+    });
+});
 
 
 
@@ -710,13 +685,19 @@ $(function () {
 </script>
 </head>
 
-<body>
+<body class="body">
 
 
 <!--   <div class='index'>index</div>
  -->
 
 <div id='sizeblock'></div>
+
+
+<div class='images' id='intro1'><img src='images/intro/intro_1.jpg'></div>
+<div class='images' id='intro2'><img src='images/intro/intro_2.jpg'></div>
+<div class='images' id='intro3'><img src='images/intro/intro_3.jpg'></div>
+
 
 <div class='images' id='deathone'><img src='images/death1.jpg'></div>
 <div class='images' id='deathtwo'><img src='images/death2.jpg'></div>
@@ -957,7 +938,7 @@ $(function () {
 
 <div class='third'>
     <div class='society'>
-        <div class='title'id='SOCIETY'>3.0_SOCIETY IS SHAPED BY METHODS OF COMMUNICATION</div>
+        <div class='title'id='SOCIETY'>3.0_SOCIETY IS SHAPED BY <br>METHODS OF COMMUNICATION</div>
     <div class="commonclass">
     <div class='societyone' id='societyoneone'>
          <div class='title2'id='desire'>3.1_DESIRE FOR COMMUNICATION</div>
@@ -999,7 +980,7 @@ $(function () {
 <div class='fourth'>
     <div class='influence'>
           <div class='title'id='INFLUENCE'>
-              4.0.0_INFLUENCE OF ELECTRONIC MEDIA ON PERCEPTION<br>AND THINKING</div>
+              4.0.0_INFLUENCE OF <br>ELECTRONIC MEDIA</div>
 
     <div class='influenceone' id='influenceoneone'>
           <div class='title2'id='perception'>4.1.0_ON PERCEPTION AND THINKING</div>
@@ -1071,7 +1052,7 @@ $(function () {
 
 <div class='fifth'>
     <div class='digital'>
-         <div class='title'id='DIGITAL'>5.0.0_DIGITAL AND PHYSICAL SPACES</div>
+         <div class='title'id='DIGITAL'>5.0.0_DIGITAL AND <br>PHYSICAL SPACES</div>
             
             <div class="commonclass">
             <div class='digitalone' id='digitaloneone'>
@@ -1251,7 +1232,7 @@ $(function () {
     <div class='conclusion'>
         <div class='title'id='CONCLUSION'>7.0_CONCLUSION</div>
     The lack of communication between practices on the regular basic motivates designers to combine design and other practices on their own. For instance, a well-known graphic design studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. 
-    
+
     Currently the work is being put in the context of museum, and being projected on the walls of already existing piece of architecture. But what if similar approach could be used within a public space? How could the ‘cathedral of a new era’ look like? It could create a totally different experience for the viewer. If this approach would be considered from the stage of concept and map-making of a public space like train station, this could change the architecture of the building entirely. What if motion tracking would be used to adjust the size of a schedule projected on the wall. If this wall would merge with the ceiling and form a curve, holding a projection, so that it is visible from every corner of the station. If the floor plan of the station is not going to be based on strict geometry, and architectural traditions but on the observations of anthropologists and sociologists and the knowledge of graphic designers on visual communication. If there will more space for encounters and less for noise, distraction and manipulation. There are so many technologies allowing all of the mentioned above, but unfortunately most of them are either being used for commercial purposes or they stay within the frames of an artwork.
 
     Human ability for inventing something new is very limited. Our imagination is tighten to the knowledge of what we have already seen before. Everything is always derived from something that already exist. A plain has to fly, so it takes a shape of a bird. And an alien in a fiction movie is always going to be reminding of a hybrid of a human and a lizard. The more we focus on one particular topic, the more we know about it, but our vision is blurred on all the other knowledge around our area of expertise. If our communication is constrained, and our knowledge and imagination are bounded, instead of closing up and trying to set borders, we should try to link all the possibilities that we already have. Perhaps if we succeed with that, we can create architecture which will have to do nothing with how we know it now. And maybe, this new approach will open up a next level of understanding between us. ‘One thing that distinguishes human beings from animals is that we are evaluative creatures.’ and that gives us power to take decisions and draw conclusions and build our own environment. 
