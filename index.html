@@ -103,7 +103,7 @@ copyDiv();
         }, 1);
     // copyDiv();
     function nopointer(){
-        $("#containerofcontainer").hover(function(){
+        $(".containerofcontainer").hover(function(){
             $("#container").css("overflow","hidden");
             // $(this).css("background-color","yellow");
             // $(this).css("width",440);
@@ -122,28 +122,12 @@ copyDiv();
 });
 
 
-
-
-
-$(function () {
-
-            $("#containerofcontainer").click(function () {
-                $(this).css({
-                    'width': "440",
-                    'height': "240",
-                    'background-color':'yellow'
-                }, 2000);
-                return false;
-            });
-
-
-            $("#f1").click(function () {
-                $("r1").animate({
-                    'left': "+=440px",
-                    'top': "-=1000px"
-                }, 2000);
-                return false;
-            });
+//open/close map on click
+$(document).ready(function(){
+    $(".containerofcontainer").click(function(){
+        $(this).toggleClass("open");
+    });
+});
 
 
             // $("#footnote").click(function () {
@@ -155,7 +139,7 @@ $(function () {
             //     return false;
             // });
 
-        });
+        // });
 
 
 //THING THAT WORKS, CREATE HOVER CLASS
@@ -1263,9 +1247,9 @@ Published Penguin Design Series 2008
 
 </div>
 
-<div id="containerofcontainer">
-  <center><div id='hellomap'>hello here is the map</div></center>
-<div id="container2"></div>
+<div class="containerofcontainer">
+        <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>
+    <div id="container2"></div>
 </div>
 
 </body>
