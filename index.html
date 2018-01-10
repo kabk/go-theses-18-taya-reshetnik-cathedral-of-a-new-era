@@ -13,9 +13,50 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 
-//reveal text on hover
+
+//reveal text on click
 $(document).ready(function(){
-    	$(".abstract, .intro, .conclusion"
+    $(".abstract, .intro, .conclusion").click(function(){
+        $(this).css("color", "black"); 
+    });
+
+    $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive").click(function(){
+        $(this).css("color", "black"); 
+    });
+
+    $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix").click(function(){
+        $(this).css("color", "black"); 
+    });
+
+
+
+});
+
+
+//hide text and images on mouseleave
+$(document).ready(function(){
+      $(".abstract, .intro, .conclusion"
+                  ).mouseleave(function(){
+            $(this).css("color", "white");
+            $(".images").css("display", "none");
+        });
+
+      $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
+                  ).mouseleave(function(){
+            $(this).css("color", "white");
+            $(".images").css("display", "none");
+        });  
+
+      $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
+                ).mouseleave(function(){
+          $(this).css("color", "white");
+          $(".images").css("display", "none");
+      });            
+
+
+
+
+      $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
               ).hover(function(){
         $(this).css("color", "black");
         }, function(){
@@ -23,41 +64,18 @@ $(document).ready(function(){
     });
 
 
-      $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
-              ).hover(function(){
-        $(this).css("background-color", "black");
-        }, function(){
-        $(this).css("background-color","white");
-    });
-
-
-      $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
-              ).hover(function(){
-        $(this).css("background-color", "black");
-        }, function(){
-        $(this).css("background-color", "white");
-    });
-
-      $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
-              ).hover(function(){
-        $(this).css("background-color", "black");
-        }, function(){
-        $(this).css("background-color", "white");
-    });
-
-
       $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
               ).hover(function(){
-        $(this).css("background-color", "black");
+        $(this).css("color", "black");
         }, function(){
-        $(this).css("background-color", "white");
+        $(this).css("color", "white");
     });
 
       $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
               ).hover(function(){
-        $(this).css("background-color", "black");
+        $(this).css("color", "black");
         }, function(){
-        $(this).css("background-color", "white");
+        $(this).css("color", "white");
     });
 
       
@@ -127,16 +145,33 @@ $(function () {
 
 
 //THING THAT WORKS, CREATE HOVER CLASS
+// $(document).ready(function(){
+//           $('.commonclass').each(function(){
+//             $(this).hover(function(){
+//               $("#container").css('overflow','hidden');
+//             },function(){
+//                $("#container").css('overflow','scroll');
+//             });
+//           });
+
+//THING THAT WORKS, CREATE CLICK CLASS
 $(document).ready(function(){
           $('.commonclass').each(function(){
-            $(this).hover(function(){
-              $("#container").css('overflow','hidden');
-            },function(){
-               $("#container").css('overflow','scroll');
+            $(this).click(function(){
+              $('#container').css('overflow','hidden');
+            // },function(){
+            //    $("#container").css('overflow','scroll');
             });
           });
 
-// hide the title and show images on hover
+$(document).ready(function(){
+      $(".commonclass").mouseleave(function(){
+            $("#container").css("overflow", "scroll");
+        });
+});
+
+
+// hide the title on hover
 $('.abstract').hover(function(){
       $('#ABSTRACT').css({'display': 'none'}); 
         });
@@ -564,6 +599,12 @@ $(document).ready(function(){
     $(".intro").click(function(){
         $("#intro1, #intro2, #intro3").css("display", "block");   
     });
+    $("#influencetwotwo").click(function(){
+        $("#intimacy1").css("display", "block");   
+    });
+    $("#influencetwofour").click(function(){
+        $("#brain2, #brain3").css("display", "block");   
+    });
 });
 
 
@@ -606,7 +647,6 @@ $(function () {
 // });
 
 
-// reveal images on click
 
 
 
@@ -649,32 +689,7 @@ $(function () {
                         //     });
                         // });
 
-// $(document).ready(function(){
-// 	$('.first').mouseover(function () {
-//     $(this).css("z-index", "+200")
-// 	});
-//     $('.second').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.third').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.fourth').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.fifth').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.sixth').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.seventh').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-//     $('.eighth').mouseover(function () {
-//     $(this).css("z-index", "+200")
-//     });
-// });
+
 
 
  // $(".abstract").hover(function () {
@@ -699,8 +714,17 @@ $(function () {
 <div class='images' id='intro3'><img src='images/intro/intro_3.jpg'></div>
 
 
-<div class='images' id='deathone'><img src='images/death1.jpg'></div>
-<div class='images' id='deathtwo'><img src='images/death2.jpg'></div>
+<div class='images' id='death1'><img src='images/death1.jpg'></div>
+<div class='images' id='death2'><img src='images/death2.jpg'></div>
+
+<div class='images' id='intimacy1'><img src='images/intimacy/intimacy_1.jpg'></div>
+
+<div class='images' id='brain1'><img src='images/brain/brain_1.jpg'></div>
+<div class='images' id='brain2'><img src='images/brain/brain_2.gif'></div>
+<div class='images' id='brain3'><img src='images/brain/brain_3.jpg'></div>
+
+
+
 
 <!-- <div class='images' id='utrecht1'><img src='images/utrecht1.jpg'></div>
 <div class='images' id='utrecht2'><img src='images/utrecht2.jpg'></div>
@@ -915,6 +939,19 @@ $(function () {
 <div class='second commonclass'>
     <div class='intro'>
          <div class='title'id='INTRO'>2.0_INTRO</div>
+
+    <p>‘First we shape cities, then–cities shape us’.<br>
+    –Jan Gehl
+    </p>
+    <p>
+    ‘If design is merely an inducement to consume, then we must reject design; if architecture is merely the codifying of the bourgeois model of ownership and society, then we must reject architecture; if architecture and town planning is merely the formalisation of present unjust social divisions, then we must reject town planning and its cities […] until all design activities are aimed towards meeting primary needs. Until then, design must disappear. We can live without architecture […].’<br>
+    –Adolfo Natalini (Superstudio), 1971
+    </p>
+    <p>
+    ‘The future of architecture lies in the brain’.<br>
+    –Pascal Schöning, Architrav Group
+    </p>
+     
     Straight lines. Sharp corners. You go up and you go down. <br>
     Slowly scrolling–step by step. <br>
     Step back, but then going forward again. <br>
@@ -942,35 +979,38 @@ $(function () {
     <div class="commonclass">
     <div class='societyone' id='societyoneone'>
          <div class='title2'id='desire'>3.1_DESIRE FOR COMMUNICATION</div>
-    I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is in a way a desperate attempt to establish a connection between each other. Communication is demanding for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is the more it seems to demand from both sides. And yet, no matter how much of an effort you push into sustaining the fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a closed system of communication : <span class='footnote' id='f1'>'Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.'</span>
+    I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is in a way a desperate attempt to establish a connection between each other. Communication is demanding for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is the more it seems to demand from both sides. And yet, no matter how much of an effort you push into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: <span class='footnote' id='f1'>‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’</span>
     </div>
     </div>
 
     <div class="commonclass">
     <div class='societyone' id='societyonetwo'>
          <div class='title2'id='forms'>3.2_FORMS OF COMMUNICATION</div>
-    Forms of communication that we have in our use are quite limited. One of the major ones is of course verbal communication. However, even when speaking the same language, the established connection is not absolutely reliable. We have to put it in the context of gestures and mimics and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when we make a new acquaintance we ask each other about our lives–we are trying to construct an image of the person, to make it easier for ourselves to 'read' them. 
+    However, forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning. 
     </div>
     </div>
     
     <div class="commonclass">
     <div class='societyone' id='societyonethree'>
          <div class='title2'id='absolute'>3.3_ABSOLUTE UNDERSTANDING</div>
-    Since there is no method for reaching an absolute understanding <span class='footnote' id='f2'>‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’</span> 1 And therefore, I see a strong connection between the media and our perception of the world around us. <span class='footnote' id='f3'>‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs. […] Perception seems mostly effortless because this processing happens outside conscious awareness.’</span> 
+
+    Since there is no method for reaching an absolute understanding <span class='footnote' id='f2'>‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’ </span>Therefore, I see a strong connection between the media and our perception of the world around us. <span class='footnote' id='f3'>‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’ And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.</span> 
     </div>
     </div>
 
     <div class="commonclass">
     <div class='societyone' id='societyonefour'>
          <div class='title2'id='juvenoia'>3.4_JUVENOIA AND ANXIETY</div>
-    In my opinion the concept of ‘juvenoia' is a good example of how media is changing our perception. ‘Juvenoia’ is a term for phenomena of exaggerated anxiety that older generation often has about the influence of social change on children and youth. New generation, adapts to the new technology, and grows up with a different perception of the world. For instance, Socrates had his concerns about the invention of alphabet and writing: <span class='footnote' id='f4'>“Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves…”.</span> 
+
+    In point of view the concept of ‘juvenoia' is a good example of how media is changing our perception. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generation often has concerning the influence of social change on children and youth. Young generation adapts to new technology, and grows up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying to those, who grew up at a earlier stage of development of technology. The difference in perception often results into a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor in 2011. But the evidence and grounds for it might have been seen earlier.
+    <p>For instance, Socrates had his concerns about the invention of alphabet and writing: <span class='footnote' id='f4'>‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’</span></p>
     </div>
     </div>
 
     <div class="commonclass">
     <div class='societyone' id='societyonefive'>
          <div class='title2'id='portable'>3.5_PORTABLE BOOK</div>
-    Same tendencies were seen in the period of the invention of print. Print made it possible to created a portable book, movable piece of information, available for reading alone–a totally different kind of experience. It also brought the notion of commodity and individualism in the sphere of information. The fear and anxiety towards the print was also expressed in numerous late-medieval engravings with the theme ‘The Dance of Death’. 
+    Same tendencies were seen in the period of the invention of print. Print made it possible to create a portable book, movable reproducible piece of information, available for reading alone–a totally different kind of an intimate experience. It also brought the notion of commodity and individualism in the sphere of information. The fear and anxiety towards print media was also expressed in numerous late-medieval engravings with the theme ‘The Dance of Death’. So every time the invention of new communicational media or technology would raise an argument revealing the change in perception.
   </div>
   </div>
 
@@ -988,36 +1028,33 @@ $(function () {
             <div class="commonclass">
             <div class='influencetwo' id='influencetwoone'>
                  <div class='subtitle' id='glimpse'>4.1.1_PROMISING GLIMPSE</div>
-            Obviously technologies and communication methods continue developing further. The story repeats itself with the invention of electronic technology. <span class='footnote' id='f5'>'The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted.'</span>Despite all the concerns about these changes, we can not prevent technology from going further. Neither can we decline the promising glimpse of a new way of communicating, which eventually be invented, and perhaps will give a bigger sense of connection between us.
+
+            Obviously communicational technologies and methods continue developing further and the story repeats itself with the invention of electronic technology. <span class='footnote' id='f5'>‘The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted.’</span>Despite all the concerns about these changes, we can not prevent technology from going further. Neither can we decline the promising glimpse of a new way of communicating, which perhaps can bring a more satisfying sense of connection between us.
             </div>
             </div>
 
             <div class="commonclass">        
             <div class='influencetwo' id='influencetwotwo'>
                  <div class='subtitle' id='newkind'>4.1.2_NEW KIND OF INTIMACY</div>
-            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author is elaborating on the concerns of older generation on how internet brings isolation and changes in understanding of intimate relationships between people. However, she is also offering a new fresh perspective on the topic. Gill Valentine is claiming that relationships not necessarily become more distant, but simply turn into a different kind of relationships–intimacy at a different level. <span class='footnote' id='f6'>‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’</span> Intimacy by default implies physical proximity, <span class='footnote' id='f7'>‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.'</span> Availability of electronic forms of communication in complex with globalisation encourages the development of this kind of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ 9 ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense online exchanges and daily Internet use are adding a new dimension, rearticulating practices of everyday life and lived spaces (Franklin 2001)’.10 ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies.'
+
+            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author is elaborating on concerns of older generation on how internet brings isolation and changes in understanding of intimate relationships between people. (Another case of juvenoia in the context of communication). However, she is offering a new fresh perspective on the topic. Gill Valentine claims that relationships not necessarily become more distant, but simply turn into a different kind of relationships–intimacy at a different level, which underlines my idea on the change in perception. ‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’ Somehow intimacy by default implies physical proximity. Anthropologist Edward T. Hall coined the term ‘proxemics’ to denote the different kinds of distance that occur between people and connected them to socially acceptable forms of communication: the furtherest distance to other person (1.5 to 1.1m) would stand for ‘social’, decreased to 45–152cm distance would mean ‘personal’ and the closest proximity of 0–45cm would mean ‘intimate’. ‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.’ Availability of digital forms of communication in complex with globalisation encourages the development of this kind of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense online exchanges and daily Internet use are adding a new dimension, rearticulating practices of everyday life and lived spaces (Franklin 2001)’. ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies’.
+                 
+            <!-- In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author is elaborating on the concerns of older generation on how internet brings isolation and changes in understanding of intimate relationships between people. However, she is also offering a new fresh perspective on the topic. Gill Valentine is claiming that relationships not necessarily become more distant, but simply turn into a different kind of relationships–intimacy at a different level. <span class='footnote' id='f6'>‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’</span> Intimacy by default implies physical proximity, <span class='footnote' id='f7'>‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.'</span> Availability of electronic forms of communication in complex with globalisation encourages the development of this kind of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ 9 ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense online exchanges and daily Internet use are adding a new dimension, rearticulating practices of everyday life and lived spaces (Franklin 2001)’.10 ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies.' -->
             </div>
             </div> 
 
             <div class="commonclass">
             <div class='influencetwo' id='influencetwothree'>
                  <div class='subtitle' id='media'>4.1.3_MEDIA SHAPES THE PROCESS OF THOUGHT</div>
-            In the well-known article by Nicholas Carr ‘Is Google making us stupid?’ the author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more quantity-wise, but it becomes a completely different kind of reading, and different way of perception of information. ‘Media are not just passive channels of information. They shape the process of thought’, ‘our writing equipment takes part in the forming of our thoughts’.
+            In the well-known article by Nicholas Carr ‘Is Google making us stupid?’ the author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more quantity-wise, but it becomes a completely different kind of reading, and different way of perception of information. ‘Media are not just passive channels of information. They shape the process of thought’, and ‘our writing equipment takes part in the forming of our thoughts.’
             </div>
             </div>
             
             <div class="commonclass">
             <div class='influencetwo' id='influencetwofour'>
                  <div class='subtitle' id='right'>4.1.4_RIGHT HEMISPHERE</div>
-            In fact influence of media on perception is not just an abstract concept but has a very direct visible physical impact. Marshall McLuhan in his ‘Global Village’ is going in depth with analysing these processes. 
-            ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality. Modern scientific theories abstract the figure from the ground. For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’. 19
-            <p>'The alphabet created a lineal and visual environment of services and experiences (everything from architecture to highways to representational art ) which contributed to the ascendancy or dominance of the left, or lineal hemisphere’ 21 of the brain. 
-            ‘This conjecture is consistent with the findings of the Russian neyrophysiologist A.R. Luria, who found that the area of the brain which controls linear sequencing, and hence mathematics and scientific thinking, is located in the pre-frontal region of the left hemisphere. […] Luria’s results show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain’. ‘The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics.' </p>
-            <p>‘The dominance of the left hemisphere (analytic and quantitative)–and by dominant we mean the ability of the left brain to lead the right brain in the context of Western culture–entails the submission or suppression of the right hemisphere; and so, for example, our intelligence tests exist only for measuring  left-hemisphere achievement and take no cognisance of the existence of the (qualitative) right hemisphere. The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere.’ 22 </p>
-            <p>‘In general, it needs to be noted that left-hemisphere man has very little power to observe or control environments, or to see the patterns change’. 22
-            ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. Man cannot trust himself with his own artifacts’. 23
-            ‘Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective.’ 24
-            ‘For use in electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation.’ </p>
+            In fact influence of media on perception is not just an abstract concept but has a very direct visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear logical sequential thinking. It centralize our  abilities for speech, hearing, writing and thus mediate our expression of comprehension and language. Where the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemispheres pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’ “comprehensive awareness” is the result.’ 
+            <p>Physiology of the eye may have predisposed linear and sequential manner of thinking. And the alphabet created a linear and visual environment which contributed to the dominance of the left hemisphere. ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality.’ However, ‘For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’. ‘The findings of the Russian neyrophysiologist A.R. Luria […] show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain. […] The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics. […] The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere. […] In general, it needs to be noted that left-hemisphere man has very little power to observe or control environments, or to see the patterns change.’ ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. […] Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective’.  ‘For use in electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation.’</p>
             </div>
             </div>
 </div>

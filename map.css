@@ -15,11 +15,11 @@ body:hover {
 
 #index { display: none;}
 
-img { width: 240px; }
+img { width: 30%; }
 
 
 .images { 
-  border: 2px red solid;
+  /*border: 2px red solid*/;
   z-index:5000; 
   position: fixed; 
   display: none; 
@@ -28,8 +28,14 @@ img { width: 240px; }
   /*box-shadow: 5px 10px 18px #000000;*/
 }
 
-#deathone { top:10px; }
-#deathtwo { top:200px; }
+#intro1, #intro2, #intro3,
+#death1, #death2,
+#intimacy1,
+#brain1, #brain2, #brain3 {
+  position: relative;
+}
+
+
 
 /*#utrecht1,
 #utrecht2,
@@ -53,6 +59,7 @@ img { width: 240px; }
    font-size: 20px;
    color: white;
  }
+
 .footnote:hover {
   font-style:italic;
   cursor: pointer;
@@ -99,6 +106,8 @@ img { width: 240px; }
 
 .first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover, .sixth:hover, .seventh:hover {
   box-shadow: 5px 10px 18px #000000;
+  cursor: pointer;
+
 }
 .first   { top:50px;   left: 5px;    height:500px;   width:700px; }
 .second  { top:600px;  left: 5px;    height:500px;   width:700px; }
@@ -108,9 +117,6 @@ img { width: 240px; }
 .sixth   { top:1750px; left: 900px;  height:1500px;  width:1550px; }
 .seventh { top:1200px; left: 5px;    height:500px;   width:700px;}
 
-.second:hover {
-  cursor: pointer;
-}
 
 /*containers for scroll*/
 .abstract, .intro, .society, .influence, .digital, .gdas, .conclusion { 
@@ -176,9 +182,8 @@ img { width: 240px; }
 }
 
 #right{
-  background-color: yellow;
-  /*pointer-events:none;*/
-  position: absolute;
+/*  background-color: yellow;
+*/  position: absolute;
   width: 100%;
   height: auto;
   top:0px;
@@ -222,8 +227,10 @@ img { width: 240px; }
 
 #influencetwoone    {top:100px;}
 #influencetwotwo    {top:550px;}
+#influencetwotwo:hover {cursor:pointer;}
 #influencetwothree  {top:1000px;}
 #influencetwofour   {top:1450px;}
+#influencetwofour:hover {cursor:pointer;}
 #influencetwofive   {top:100px;}
 #influencetwosix    {top:550px;}
 
