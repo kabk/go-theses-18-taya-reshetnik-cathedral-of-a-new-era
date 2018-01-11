@@ -17,34 +17,34 @@
 //reveal text on click
 $(document).ready(function(){
     $(".abstract, .intro, .conclusion").click(function(){
-        $(this).css("background-color", "black"); 
+        $(this).css("color", "black"); 
         $(this).css("overflow", "scroll"); 
     });
 
     $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive").click(function(){
-        $(this).css("background-color", "black");
+        $(this).css("color", "black");
         $(this).css("overflow", "scroll"); 
-        $(this).css("z-index", "1000000");
+        // $(this).css("z-index", "1000000");
         // $(".societytwo, .influencetwo, .digitaltwo").css("z-index", "10000");
     });
 
     $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix").click(function(){
-        $(this).css("background-color", "black"); 
+        $(this).css("color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour").click(function(){
-        $(this).css("background-color", "black"); 
+        $(this).css("color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten").click(function(){
-        $(this).css("background-color", "black"); 
+        $(this).css("color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix").click(function(){
-        $(this).css("background-color", "black"); 
+        $(this).css("color", "black"); 
         $(this).css("overflow", "scroll");
     });
 });
@@ -54,7 +54,7 @@ $(document).ready(function(){
 $(document).ready(function(){
       $(".abstract, .intro, .conclusion"
                   ).mouseleave(function(){
-            $(this).css("background-color", "white");
+            $(this).css("color", "white");
             $(".images").css("display", "none");
             $(this).css("overflow", "hidden");
 
@@ -62,35 +62,35 @@ $(document).ready(function(){
 
       $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
                   ).mouseleave(function(){
-            $(this).css("background-color", "white");
+            $(this).css("color", "white");
             $(".images").css("display", "none");
             $(this).css("overflow", "hidden");
         });  
 
       $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
                 ).mouseleave(function(){
-          $(this).css("background-color", "white");
+          $(this).css("color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
                 ).mouseleave(function(){
-          $(this).css("background-color", "white");
+          $(this).css("color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
                 ).mouseleave(function(){
-          $(this).css("background-color", "white");
+          $(this).css("color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
                 ).mouseleave(function(){
-          $(this).css("background-color", "white");
+          $(this).css("color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       });                 
@@ -615,9 +615,9 @@ $(document).ready(function(){
         else {
           console.log(pos.x, pos.y );
             // Use pos.x and pos.y
-            $('#track').css("left",pos.x + $("#container").scrollLeft());
+            $('.track').css("left",pos.x + $("#container").scrollLeft() + 50);
 
-            $('#track').css("top",pos.y + $("#container").scrollTop());
+            $('.track').css("top",pos.y + $("#container").scrollTop() - 200);
         }
     }
 })();
@@ -948,8 +948,8 @@ $(document).ready(function(){
  -->
  <!-- <div id="c" style="width:100%;height:100%"> -->
 
-<div class="dohuyandra"></div>
-
+<!-- <div class="dohuyandra"></div>
+ -->
 <div id="container">
 
 <div class='first commonclass'>
@@ -1384,7 +1384,7 @@ Jerome Ages <br>
 Published Penguin Design Series 2008
 </div>
 
-<div id='track'>tracking</div>
+<div class='track'><img src='images/here.png'></div>
 
 
 <!--  <div class="viewport"></div>
