@@ -24,6 +24,7 @@ $(document).ready(function(){
     $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive").click(function(){
         $(this).css("background-color", "black");
         $(this).css("overflow", "scroll"); 
+        $(this).css("z-index", "1000000");
         // $(".societytwo, .influencetwo, .digitaltwo").css("z-index", "10000");
     });
 
@@ -56,6 +57,7 @@ $(document).ready(function(){
             $(this).css("background-color", "white");
             $(".images").css("display", "none");
             $(this).css("overflow", "hidden");
+
         });
 
       $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
@@ -487,6 +489,10 @@ $('.abstract').click(function(){
       });
 
 });
+$(window).scroll(function(){
+  $(".dohuyandra").css("left",$(window).offset().left);
+    $(".dohuyandra").css("top",$(window).offset().top);
+});
 
 // $('.title').hover(function(){
 //       $('#ABSTRACT').css({'display': 'none'}); 
@@ -538,6 +544,27 @@ $(document).ready(function(){
 });
 
 
+// $(document).ready(function(){
+//   resizeDiv();
+// });
+
+// window.onresize = function(event) {
+//   resizeDiv();
+// }
+
+// function resizeDiv() {
+//   vpw = $(window).width();
+//   vph = $(window).height();
+//   $(‘.viewport’).css({‘height’: vph + ‘px’});
+// }
+
+// **$(window).resize(function() {
+
+// $(‘.viewport’).css(‘height’, window.innerHeight+’px’);
+
+// });**
+
+
 
 // follow mouse with div
 // $(document).bind('mousemove', function(e){
@@ -547,10 +574,56 @@ $(document).ready(function(){
 //     });
 // });
 
-// $(document).mousemove(function(e){
-//     $("#track").css({left:e.pageX+30, top:e.pageY+30});
-// });
+(function() {
+    var mousePos;
 
+    document.onmousemove = handleMouseMove;
+    setInterval(getMousePosition, 100); // setInterval repeats every X ms
+
+    function handleMouseMove(event) {
+        var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null && event.clientX != null) {
+            eventDoc = (event.target && event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
+
+            event.pageX = event.clientX +
+              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+              (doc && doc.clientLeft || body && body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+              (doc && doc.clientTop  || body && body.clientTop  || 0 );
+        }
+
+        mousePos = {
+            x: event.pageX,
+            y: event.pageY
+        };
+    }
+    function getMousePosition() {
+        var pos = mousePos;
+        if (!pos) {
+          console.log('nomovement');
+            // We haven't seen any movement yet
+        }
+        else {
+          console.log(pos.x, pos.y );
+            // Use pos.x and pos.y
+            $('#track').css("left",pos.x + $("#container").scrollLeft());
+
+            $('#track').css("top",pos.y + $("#container").scrollTop());
+        }
+    }
+})();
+// $(window).hover(function(){
+//   console.log($("#container").scrollTop());
+// });
 
 
 
@@ -873,9 +946,11 @@ $(document).ready(function(){
 
 <!-- <div class='mainheader'>CATHEDRAL OF A NEW ERA</div>
  -->
+ <!-- <div id="c" style="width:100%;height:100%"> -->
+
+<div class="dohuyandra"></div>
 
 <div id="container">
-
 
 <div class='first commonclass'>
     <div class='abstract'>
@@ -1309,11 +1384,14 @@ Jerome Ages <br>
 Published Penguin Design Series 2008
 </div>
 
-<!-- <div id='track'>tracking</div>
+<div id='track'>tracking</div>
+
+
+<!--  <div class="viewport"></div>
  -->
 
-
 </div>
+<!-- </div> -->
 
 <div class="containerofcontainer">
         <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>

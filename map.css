@@ -6,6 +6,8 @@
 
 body {
   background-color: white;
+  /*cursor: url(images/brain/brain_1.jpg), pointer;*/
+
 }
 body:hover {
   cursor: all-scroll;
@@ -20,7 +22,8 @@ body:hover {
   z-index:5000; 
   right: 5%;
   top:7%;
-
+/*  z-index: -10000
+*/
 }
 
 .images { 
@@ -85,7 +88,7 @@ img {
    font-size: 13px;
    color: blue;
    position: fixed;
-   display: block;
+   display: none;
    font-style: italic;
    top: 2500px;
    border: solid black 1px;
@@ -123,7 +126,7 @@ img {
 
 .first:hover, .second:hover, .seventh:hover {cursor: pointer}
 
-.first   { top:50px;   left: 5px;    height:500px;   width:700px; }
+.first   { top:50px;   left: 5px;    height:500px;   width:700px;  }
 .second  { top:600px;  left: 5px;    height:500px;   width:700px; }
 .third   { top:50px;   left: 920px;  height:1600px;  width:1650px; }
 .fourth  { top:50px;   left: 2800px; height:2400px;  width:1700px; }
@@ -296,6 +299,7 @@ img {
   height: 100%;
   overflow: scroll;
 }
+
 .containerofcontainer{
 /*  width:440px;
   height: 240px;*/
@@ -346,10 +350,21 @@ p {
   margin: 0;
 }
 
+
+.dohuyandra {
+  position: absolute;
+  border: solid 2px red;
+  background-color: red;
+  width:200px;
+  height:200px;
+  z-index: 300000000;
+}
+
+
 /*.subtitleindent{
   text-indent: 75px;
   margin: 0;
 }*/
 
-
-
+/*.viewport { background-color: blue; width: 300px; height: 200px; position: absolute;}
+*/
