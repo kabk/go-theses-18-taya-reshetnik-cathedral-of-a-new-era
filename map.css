@@ -15,29 +15,26 @@ body:hover {
 
 #index { display: none;}
 
-/*img { width: 300px; }
-*/
-
 .order {
   position: fixed;
   z-index:5000; 
   right: 5%;
   top:7%;
+
 }
 
 .images { 
   position: relative; 
   display: none; 
-  padding: 10px;
+  padding: 5px;
 }
 
 img {
 /*    padding: 10px;
-*/    width:300px;
+*/    
+    width:300px;
     border: 1px black solid;
     box-shadow: 5px 10px 18px #000000;
-
-
 }
 
 
@@ -70,10 +67,13 @@ img {
    font-family: 'Arial';
    font-weight: normal;
    font-size: 20px;
-   color: white;
+   color: black;
+   display: none;
+
  }
 
 .footnote:hover {
+  background-color: yellow;
   font-style:italic;
   cursor: pointer;
 }
@@ -118,17 +118,17 @@ img {
 }
 
 .first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover, .sixth:hover, .seventh:hover {
-  box-shadow: 5px 10px 18px #000000;
+  box-shadow: 5px 10px 50px #000000;
 }
 
 .first:hover, .second:hover, .seventh:hover {cursor: pointer}
 
 .first   { top:50px;   left: 5px;    height:500px;   width:700px; }
 .second  { top:600px;  left: 5px;    height:500px;   width:700px; }
-.third   { top:50px;   left: 900px;  height:1600px;  width:1550px; }
-.fourth  { top:50px;   left: 2650px; height:2400px;  width:1700px; }
-.fifth   { top:50px;   left: 4550px; height:3530px;  width:1650px; }
-.sixth   { top:1750px; left: 900px;  height:1500px;  width:1550px; }
+.third   { top:50px;   left: 920px;  height:1600px;  width:1650px; }
+.fourth  { top:50px;   left: 2800px; height:2400px;  width:1700px; }
+.fifth   { top:50px;   left: 4700px; height:3530px;  width:1650px; }
+.sixth   { top:1750px; left: 900px;  height:1600px;  width:1550px; }
 .seventh { top:1200px; left: 5px;    height:500px;   width:700px;}
 
 
@@ -152,7 +152,7 @@ img {
 .society    { height: 1570px;}
 .influence  { height: 2370px;}
 .digital    { height: 3500px;}
-.gdas       { height: 520px;}
+.gdas       { height: 1600px;}
 .conclusion { height: 470px;}
 
 
@@ -223,7 +223,7 @@ img {
   font-size: 20px;
   font-weight: normal; 
   color: white;
-  display:block;
+  display: block;
   text-align: left;
   overflow: hidden;
 }
@@ -240,8 +240,8 @@ img {
 #societyonefour   {top:300px; left:900px;}
 #societyonefive   {top:750px; left:900px;}
 
-#influenceoneone    {top:500px; height: 1840px; width: 750px;}
-#influenceonetwo    {top:500px; height: 920px; width: 750px; left:880px;}
+#influenceoneone    {top:300px; height: 1840px; width: 750px;}
+#influenceonetwo    {top:300px; height: 920px; width: 750px; left:880px;}
 
 #influencetwoone    {top:100px;}
 #influencetwotwo    {top:550px;}
@@ -282,8 +282,11 @@ img {
 
 #container2{
   transform:scale(0.07);
-  background-color: red;
-  margin-left: -380px;
+/*  background-color: red;
+*/  margin-left: -380px;
+  display:block;
+    pointer-events:none;
+
 }
 #container{
   position: fixed;
@@ -296,29 +299,44 @@ img {
 .containerofcontainer{
 /*  width:440px;
   height: 240px;*/
-  width:440px;
+  width:455px;
   height: 25px;
   overflow: scroll; 
   position: absolute;
-  left: 65%;
+  right: 1%;
   top: 1%;
   z-index: 1000;
   background-color: yellow;
   border: 1px solid black;
   box-shadow: 5px 10px 18px #000000;
-
 }
 
+#track {
+  background-color: blue;
+  width:200px;
+  height: 200px;
+  position: absolute;
+  z-index:200;
+}
+
+/*canvas {
+      position: absolute;
+      border: #333 10px solid;
+      z-index: 1000;
+    }*/
+
 .open {
-  height: 240px;
+  height: 275px;
 }
 
 #hellomap {
   display: block;
-  color: black;
+  color: yellow;
   font-family: Arial;
   font-size: 20px;
   font-weight: normal;
+  -webkit-text-stroke: 1px black;
+
 }
 
 #hellomap:hover {cursor: pointer}
@@ -332,3 +350,6 @@ p {
   text-indent: 75px;
   margin: 0;
 }*/
+
+
+

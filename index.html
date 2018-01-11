@@ -17,32 +17,33 @@
 //reveal text on click
 $(document).ready(function(){
     $(".abstract, .intro, .conclusion").click(function(){
-        $(this).css("color", "black"); 
+        $(this).css("background-color", "black"); 
         $(this).css("overflow", "scroll"); 
     });
 
     $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive").click(function(){
-        $(this).css("color", "black");
+        $(this).css("background-color", "black");
         $(this).css("overflow", "scroll"); 
+        // $(".societytwo, .influencetwo, .digitaltwo").css("z-index", "10000");
     });
 
     $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix").click(function(){
-        $(this).css("color", "black"); 
+        $(this).css("background-color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour").click(function(){
-        $(this).css("color", "black"); 
+        $(this).css("background-color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten").click(function(){
-        $(this).css("color", "black"); 
+        $(this).css("background-color", "black"); 
         $(this).css("overflow", "scroll");
     });
 
     $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix").click(function(){
-        $(this).css("color", "black"); 
+        $(this).css("background-color", "black"); 
         $(this).css("overflow", "scroll");
     });
 });
@@ -52,42 +53,42 @@ $(document).ready(function(){
 $(document).ready(function(){
       $(".abstract, .intro, .conclusion"
                   ).mouseleave(function(){
-            $(this).css("color", "white");
+            $(this).css("background-color", "white");
             $(".images").css("display", "none");
             $(this).css("overflow", "hidden");
         });
 
       $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
                   ).mouseleave(function(){
-            $(this).css("color", "white");
+            $(this).css("background-color", "white");
             $(".images").css("display", "none");
             $(this).css("overflow", "hidden");
         });  
 
       $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
                 ).mouseleave(function(){
-          $(this).css("color", "white");
+          $(this).css("background-color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
                 ).mouseleave(function(){
-          $(this).css("color", "white");
+          $(this).css("background-color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
                 ).mouseleave(function(){
-          $(this).css("color", "white");
+          $(this).css("background-color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       }); 
 
       $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
                 ).mouseleave(function(){
-          $(this).css("color", "white");
+          $(this).css("background-color", "white");
           $(".images").css("display", "none");
           $(this).css("overflow", "hidden");
       });                 
@@ -116,6 +117,7 @@ copyDiv();
     //   $("#right").
     // }
 });
+
 
 
 //open/close map on click
@@ -486,6 +488,14 @@ $('.abstract').click(function(){
 
 });
 
+// $('.title').hover(function(){
+//       $('#ABSTRACT').css({'display': 'none'}); 
+//         });
+//       $('.abstract').mouseleave(function(){
+//           $(this).scrollTop(0);
+//               $('#ABSTRACT').css({'display': 'block'}); 
+//         });
+//       });
 
 
 
@@ -496,37 +506,64 @@ $(document).ready(function(){
     $(".intro").click(function(){
         $("#intro1, #intro2, #intro3").css("display", "block");   
     });
+
+    $("#societyonefive").click(function(){
+        $("#death1, #death2").css("display", "block");
+    });
+
     $("#influencetwotwo").click(function(){
         $("#intimacy1").css("display", "block");   
     });
+    
     $("#influencetwofour").click(function(){
-        $("#brain2, #brain3").css("display", "block");   
+        $("#brain2, #brain4").css("display", "block");   
     });
+
+    $("#digitaltwoone").click(function(){
+        $("#utrecht1, #utrecht2, #utrecht3").css("display", "block");   
+    });
+
+    $("#gdasonethree").click(function(){
+        $("#polygon1, #polygon3").css("display", "block");   
+    });
+
+    $(".seventh").click(function(){
+        $("#typedynamics1, #typedynamics2").css("display", "block");   
+    });
+
+    $("#digitaltwonine").click(function(){
+        $("#shop1, #shop2").css("display", "block");   
+    });
+
 });
+
+
+
+// follow mouse with div
+// $(document).bind('mousemove', function(e){
+//     $('.track').css({
+//        left:  e.pageX,
+//        top:   e.pageY
+//     });
+// });
+
+// $(document).mousemove(function(e){
+//     $("#track").css({left:e.pageX+30, top:e.pageY+30});
+// });
 
 
 
 
 // move related article
 
-// $('#societyonefive').hover(function(){
-//             $('#digitaloneone').css({'left': -2600, 'top': +1000})
-//       },function(){
-//             $('#digitaloneone').css({'left': 5, 'top': 300}); 
-//       });
-
-// });
-
-$(function () {
-
-            $("#societyonefive").click(function () {
-                $("#digitaloneone").animate({
-                    top: "+=850px",
-                    left: "-=2875px"
-                }, 2000);
-                return false;
-            });
-        });
+// $(function () {
+//     $("#societyonefive").click(function () {
+//         $("#digitaltwothree").animate({
+//             top: "+=850px",
+//             left: "-=2875px"
+//         }, 2000);
+//     });
+//   });
 
 
 
@@ -595,6 +632,8 @@ $(function () {
 
 
 </script>
+
+
 </head>
 
 <body class="body">
@@ -603,28 +642,43 @@ $(function () {
 <!--   <div class='index'>index</div>
  -->
 
-<div id='sizeblock'></div>
-
+<!-- <div id='sizeblock'></div>
+ -->
 <div class='order'>
-    <div class='images' id='intro1'>
-        <img src='images/intro/intro_1.jpg'>
-    </div>
+    <div class='images' id='intro1'><img id='photo1'src='images/intro/intro_1.jpg'></div>
+    <div class='images' id='intro2'><img id='photo2'src='images/intro/intro_2.jpg'></div>
+    <div class='images' id='intro3'><img id='photo3'src='images/intro/intro_3.jpg'></div>
 
-    <div class='images' id='intro2'>
-        <img src='images/intro/intro_2.jpg'>
-    </div>
+    <div class='images' id='death1'><img id='photo4'src='images/death/death_1.jpg'></div>
+    <div class='images' id='death2'><img id='photo5'src='images/death/death_2.jpg'></div>
+
+    <div class='images' id='intimacy1'><img id='photo6'src='images/intimacy/intimacy_1.jpg'></div>
+
+    <div class='images' id='brain1'><img id='photo7'src='images/brain/brain_1.jpg'></div>
+    <div class='images' id='brain2'><img id='photo8'src='images/brain/brain_2.gif'></div>
+    <div class='images' id='brain3'><img id='photo9'src='images/brain/brain_3.jpg'></div>
+    <div class='images' id='brain4'><img id='photo10'src='images/brain/brain_4.png'></div>
+
+    <div class='images' id='utrecht1'><img id='photo11'src='images/utrecht/utrecht_1.jpg'></div>
+    <div class='images' id='utrecht2'><img id='photo12'src='images/utrecht/utrecht_2.jpg'></div>
+    <div class='images' id='utrecht3'><img id='photo13'src='images/utrecht/utrecht_3.jpg'></div>
+    <div class='images' id='utrecht4'><img id='photo14'src='images/utrecht/utrecht_4.jpg'></div>
+
+    <div class='images' id='polygon1'><img id='photo15'src='images/polygon/polygon_1.jpg'></div>
+    <div class='images' id='polygon2'><img id='photo16'src='images/polygon/polygon_4.jpg'></div>
+    <div class='images' id='polygon3'><img id='photo17'src='images/polygon/polygon_2.jpg'></div>
+
+    <div class='images' id='typedynamics1'><img id='photo18'src='images/typedynamics/typedynamics_1.jpg'></div>
+    <div class='images' id='typedynamics2'><img id='photo19'src='images/typedynamics/typedynamics_2.jpg'></div>
+
+    <div class='images' id='shop1'><img id='photo20'src='images/shopping/shopping_1.jpg'></div>
+    <div class='images' id='shop2'><img id='photo21'src='images/shopping/shopping_2.png'></div>
+
 </div>
-<!-- <div class='images' id='intro3'><img id="privet3"src='images/intro/intro_3.jpg'></div>
 
 
-<div class='images' id='death1'><img src='images/death1.jpg'></div>
-<div class='images' id='death2'><img src='images/death2.jpg'></div>
 
-<div class='images' id='intimacy1'><img src='images/intimacy/intimacy_1.jpg'></div>
 
-<div class='images' id='brain1'><img src='images/brain/brain_1.jpg'></div>
-<div class='images' id='brain2'><img src='images/brain/brain_2.gif'></div>
-<div class='images' id='brain3'><img src='images/brain/brain_3.jpg'></div> -->
 
 
 
@@ -822,6 +876,7 @@ $(function () {
 
 <div id="container">
 
+
 <div class='first commonclass'>
     <div class='abstract'>
          <div class='title'id='ABSTRACT'>1.0_ABSTRACT</div>
@@ -829,31 +884,30 @@ $(function () {
     <p>I would like to discern the role of graphic design in architecture and to point out the spheres where it is playing a key role. Graphic design is commonly being considered as a 2-dimensional practice, resulting in print or a digital product. However I see a strong connection in how its influence spreading further, on a larger scale of architecture and urban planning. For example, screens become a part of the architecture of the public space, and the content of the visuals influence the dynamics and social behaviour within these spaces. At the train stations and shopping malls the message coming from these screens is predominantly commercial and serve as a distraction and stimulator for consumerism. If graphic designers together with architects would create the content of these screens themselves and use it in the benefit of navigation and in favour of overall atmosphere, the station or a shopping mall could look entirely different–not only the content of the screen would change, but the use of it, and assumably the way the building is organised in the first place.</p>
     <p>The architecture of Utrecht Central, as well as many other public spaces, has distinct features of mallification (a process of turning into a mall) and a so-called ‘junkspace’. These tendencies do not just happen, and among the consumer-orientated design with planned obsolescence, new media and graphic design are shaping these tendencies as well.</p>
     <p>My central assumption within this thesis is that media is forming the perception and ways of thinking which leads to changes in how we approach urban planning and architecture. And since graphic design is responsible for communication and translation of information into a visual message, it stands behind that influence as well. I want to point out that the influence of graphic design goes out of the 2D canvas and has a wider, tangible affect.</p>
-    <p>Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research. When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces.</p>
-    <p>Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life. </p>
+    <p>Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research.When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces. Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life. 
     <p>First of all, I am looking at the development of communication methods and how it influenced society in the past. I use examples of how invention of alphabet, writing and print influenced communication and social behaviour and compare it to the situation happening nowadays.</p>
     <p>Graphic designers play a big role in the sphere of communication and distribution of information, and translating it to the audience, architects as well. Graphic design has the power of shaping the way how the media is going to influence our mins and how eventually the world around us is going to look and function.</p>
+
     Media shapes perception.<br>
     Perception influences physical space.<br>
     Is graphic designer an architect?<br>
     </div>
 </div>
 
+<div id='pagebreak'></div>
+
 <div class='second commonclass'>
     <div class='intro'>
          <div class='title'id='INTRO'>2.0_INTRO</div>
 
-    <p>‘First we shape cities, then–cities shape us’.<br>
-    –Jan Gehl
-    </p>
-    <p>
+    ‘First we shape cities, then–cities shape us’.<br>
+    –Jan Gehl<br>
+
     ‘If design is merely an inducement to consume, then we must reject design; if architecture is merely the codifying of the bourgeois model of ownership and society, then we must reject architecture; if architecture and town planning is merely the formalisation of present unjust social divisions, then we must reject town planning and its cities […] until all design activities are aimed towards meeting primary needs. Until then, design must disappear. We can live without architecture […].’<br>
-    –Adolfo Natalini (Superstudio), 1971
-    </p>
-    <p>
+    –Adolfo Natalini (Superstudio), 1971<br>
+
     ‘The future of architecture lies in the brain’.<br>
-    –Pascal Schöning, Architrav Group
-    </p>
+    –Pascal Schöning, Architrav Group<br>
      
     Straight lines. Sharp corners. You go up and you go down. <br>
     Slowly scrolling–step by step. <br>
@@ -875,6 +929,8 @@ $(function () {
     Searching for the separate place on the train. <br>
     </div>
 </div>
+
+<div id='pagebreak'></div>
 
 <div class='third'>
     <div class='society'>
@@ -917,8 +973,13 @@ $(function () {
   </div>
   </div>
 
+
+
   </div>
 </div>
+
+<div id='pagebreak'></div>
+
 
 <div class='fourth'>
     <div class='influence'>
@@ -926,7 +987,7 @@ $(function () {
               4.0.0_INFLUENCE OF <br>ELECTRONIC MEDIA</div>
 
     <div class='influenceone' id='influenceoneone'>
-          <div class='title2'id='perception'>4.1.0_ON PERCEPTION AND THINKING</div>
+          <div class='title2'id='perception'>4.1.0_ON PERCEPTION</div>
             
             <div class="commonclass">
             <div class='influencetwo' id='influencetwoone'>
@@ -980,7 +1041,7 @@ $(function () {
 
             <div class="commonclass">
             <div class='influencetwo' id='influencetwosix'>
-                 <div class='subtitle' id='browsing'>4.2.2_BROWSING THROUGH THE BOOK</div>
+                 <div class='subtitle' id='browsing'>4.2.2_BROWSING THROUGH<br>THE BOOK</div>
             Reading a book used to imply following a linear narrative. However this doesn’t seem to be necessarily the case anymore. Since print stopped being a ‘universal media’, it obtained very particular qualities. Moreover, due to the changes in our perception the approach towards book-making in design has changed, as well as the value and meaning of the book. Looking at the student jury selection of 32 books for Best Dutch Design Book awards for 2016, a certain pattern appears. For instance, most of the books in the selection are image-based, and don’t contain a lot of textual material. The layout of many books had a certain correlation with the layout of a website: one of the jury members called his experience of looking at one of the books ‘Browsing through the book’. At the same time a lot of book designs were really making an emphasis on the material aspect of the book: the texture and transparency of the paper, quality of print, engravings and various binding methods, combination of different formats–everything that is not possible to do within digital design. Parallel Encyclopaedia, Ornithology, Land, Form/No Form Black Series and other books from the selection are not meant for reading in the traditional sense of this word. They are made for looking at, for holding them, touching them, owning them. These books are not only containers of primarily visual information, but they become an object. One of the designers who really understands new tendencies in book design and making a use of them is Irma Boom, who elaborates on the issue in one of her interviews: ‘I think the Internet has changed books as a phenomenon. Making a book has in fact become a status symbol. It’s a very slow and still medium. The types of books I make tend to have an object-like quality. […] A really good book has a permanent quality, I think. I hope.'
             </div>
             </div>  
@@ -990,34 +1051,37 @@ $(function () {
     </div>
 </div>
 
+<div id='pagebreak'></div>
+
+
 <div class='fifth'>
     <div class='digital'>
          <div class='title'id='DIGITAL'>5.0.0_DIGITAL AND <br>PHYSICAL SPACES</div>
             
             <div class="commonclass">
             <div class='digitalone' id='digitaloneone'>
-                 <div class='title2'id='info'>5.1.1_INFORMATION IS NOT SLOW<br>AND NOT STILL</div>
+                 <div class='title2'id='info'>5.1.1_INFORMATION IS <br>NOT SLOW AND NOT STILL</div>
             In my opinion a similar sequence of changes is happening in the sphere of architecture and urban planning. Information is not set in stone, it is not still and it’s not slow either. It is a network, expanding beyond the frames of a 2D linear canvas.
             </div>
             </div>
 
             <div class="commonclass">
             <div class='digitalone' id='digitalonetwo'>
-                 <div class='title2'id='orientation'>5.1.2_ORIENTATION IN DIGITAL<br>AND PHYSICAL SPACES</div>
+                 <div class='title2'id='orientation'>5.1.2_ORIENTATION IN <br>DIGITAL AND PHYSICAL SPACES</div>
             As was mentioned before, I find that there is a strong connection between our orientation in physical space and on the web. We associate searching through the internet with being physically present at some particular location.
             </div>
             </div>
 
             <div class="commonclass">
             <div class='digitalone' id='digitalonethree'>
-                 <div class='title2'id='conscious'>5.1.3_CONSCIOUSNESS OF<br>A DATA-BASED USER</div>
+                 <div class='title2'id='conscious'>5.1.3_CONSCIOUSNESS <br>OF A DATA-BASED USER</div>
             ‘… the consciousness of the data-base user is in two places at once: at the terminal and in the centre of the system’.19 The event of December of 1968 when Apollo astronauts installed a camera on the moon and pointed it on Earth became important not only in technological sense. ‘We were on earth and the moon simultaneously’. 25 And the realisation of this possibility became a starting point for further evolvement of the shift in our brains. 
             </div>
             </div>
 
             <div class="commonclass">
             <div class='digitalone' id='digitalonefour'>
-                <div class='title2'id='infl'>5.1.4_INFLUENCE OF ELECTRONIC TECHNOLOGY ON PUBLIC SPACES</div>
+                <div class='title2'id='infl'>5.1.4_INFLUENCE OF ELECTRONIC TECHNOLOGY <br>ON PUBLIC SPACES</div>
             The same way as our ‘intimate’ relationships become different, physical and digital spaces become much more in connection rather than in contrast with each other. Especially since we rely so much on the GPS navigation, and use digital data to orientate in the physical space.
             Of course, electronic technologies have their physical manifestations in form of data-storage facilities, internet cables laid underwater etc.  But I want to draw attention to how the use of these technologies affects public spaces, which are in the direct connection to social and public activities.
             </div>
@@ -1083,7 +1147,7 @@ $(function () {
                     
                     <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwoeight'>
-                         <div class='subtitle' id='building'>5.2.8_BUILDING IN CONSTANT FLUX</div>
+                         <div class='subtitle' id='building'>5.2.8_BUILDING IN <br>CONSTANT FLUX</div>
 
                     </div>
                     </div>
@@ -1167,6 +1231,8 @@ $(function () {
     </div>
 </div>
 
+<div id='pagebreak'></div>
+
 
 <div class='seventh commonclass'>
     <div class='conclusion'>
@@ -1243,16 +1309,71 @@ Jerome Ages <br>
 Published Penguin Design Series 2008
 </div>
 
-
-
+<!-- <div id='track'>tracking</div>
+ -->
 
 
 </div>
 
 <div class="containerofcontainer">
         <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>
-    <div id="container2"></div>
+
+<!--         <div class='track'>tracking</div>
+ -->    <div id="container2"></div>
 </div>
 
+
+
+
+
+
+
+
+<!-- <canvas id="myCanvas" width="1000px" height="1000px"></canvas>
+<script>
+    var canvas = document.querySelector("#myCanvas");
+    var context = canvas.getContext("2d");
+
+    var canvasPos = getPosition(canvas);
+    var mouseX = 0;
+    var mouseY = 0;
+     
+    canvas.addEventListener("mousemove", setMousePosition, false);
+     
+    function setMousePosition(e) {
+      mouseX = e.clientX - canvasPos.x;
+      mouseY = e.clientY - canvasPos.y;
+    }       
+
+    function update() {
+
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      
+      context.beginPath();
+      context.arc(mouseX, mouseY, 50, 0, 2 * Math.PI, true);
+      context.fillStyle = "#FF6A6A";
+      context.fill();
+
+      requestAnimationFrame(update);
+    }
+    update();
+
+  function getPosition(el) {
+  var xPosition = 0;
+  var yPosition = 0;
+ 
+  while (el) {
+    xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+    yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
+    el = el.offsetParent;
+  }
+  return {
+    x: xPosition,
+    y: yPosition
+  };
+}       
+     
+</script>
+ -->
 </body>
 </html>
