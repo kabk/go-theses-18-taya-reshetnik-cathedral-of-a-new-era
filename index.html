@@ -200,10 +200,12 @@ $('.abstract').click(function(){
 
       $('#societyoneone').click(function(){
             $('#desire').css({'display': 'none'}); 
+            // $('#r1').css({'display': 'block'}); 
       });
       $('#societyoneone').mouseleave(function(){
           $(this).scrollTop(0);
             $('#desire').css({'display': 'block'}); 
+            // $('#r1').css({'display': 'none'});
       });
 
 
@@ -621,6 +623,7 @@ $(document).ready(function(){
         }
     }
 })();
+
 // $(window).hover(function(){
 //   console.log($("#container").scrollTop());
 // });
@@ -969,8 +972,6 @@ $(document).ready(function(){
     </div>
 </div>
 
-<div id='pagebreak'></div>
-
 <div class='second commonclass'>
     <div class='intro'>
          <div class='title'id='INTRO'>2.0_INTRO</div>
@@ -1005,15 +1006,23 @@ $(document).ready(function(){
     </div>
 </div>
 
-<div id='pagebreak'></div>
-
 <div class='third'>
     <div class='society'>
         <div class='title'id='SOCIETY'>3.0_SOCIETY IS SHAPED BY <br>METHODS OF COMMUNICATION</div>
     <div class="commonclass">
     <div class='societyone' id='societyoneone'>
-         <div class='title2'id='desire'>3.1_DESIRE FOR COMMUNICATION</div>
-    I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is in a way a desperate attempt to establish a connection between each other. Communication is demanding for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is the more it seems to demand from both sides. And yet, no matter how much of an effort you push into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: <span class='footnote' id='f1'>‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’</span>
+         <div class='title2' id='desire'>3.1_DESIRE FOR COMMUNICATION</div>
+  <div class='text'>
+    I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is in a way a desperate attempt to establish a connection between each other. Communication is demanding for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is the more it seems to demand from both sides. And yet, no matter how much of an effort you push into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication:‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’<sup>1</sup> <br><br><br><br><br>
+  </div>
+
+              <sup>1</sup><span class='ref' id='r1'>
+                p.42 “In a Manner of Reading Design”. Edited by Katja Gretzinger. 
+                Casco–Office for Art, Design and Theory
+                Jan van Eyck Academie
+                Sternberg Press
+                2012
+              </span>
     </div>
     </div>
 
@@ -1028,7 +1037,7 @@ $(document).ready(function(){
     <div class='societyone' id='societyonethree'>
          <div class='title2'id='absolute'>3.3_ABSOLUTE UNDERSTANDING</div>
 
-    Since there is no method for reaching an absolute understanding <span class='footnote' id='f2'>‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’ </span>Therefore, I see a strong connection between the media and our perception of the world around us. <span class='footnote' id='f3'>‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’ And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.</span> 
+    Since there is no method for reaching an absolute understanding ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’<sup>2</sup> Therefore, I see a strong connection between the media and our perception of the world around us.‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’<sup>3</sup> And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.
     </div>
     </div>
 
@@ -1037,7 +1046,7 @@ $(document).ready(function(){
          <div class='title2'id='juvenoia'>3.4_JUVENOIA AND ANXIETY</div>
 
     In point of view the concept of ‘juvenoia' is a good example of how media is changing our perception. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generation often has concerning the influence of social change on children and youth. Young generation adapts to new technology, and grows up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying to those, who grew up at a earlier stage of development of technology. The difference in perception often results into a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor in 2011. But the evidence and grounds for it might have been seen earlier.
-    <p>For instance, Socrates had his concerns about the invention of alphabet and writing: <span class='footnote' id='f4'>‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’</span></p>
+    <p>For instance, Socrates had his concerns about the invention of alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’<sup>5</sup></p>
     </div>
     </div>
 
@@ -1346,13 +1355,12 @@ $(document).ready(function(){
 
 
 <!-- footnotes-->
-<div class='ref' id='r1'>
-p.42 <br>
-“In a Manner of Reading Design” <br>
-Casco–Office for Art, Design and Theory <br>
-Jan van Eyck Academie <br>
-Sternberg Press <br>
-2012 <br>
+<!-- <div class='ref' id='r1'>
+p.42 “In a Manner of Reading Design”. Edited by Katja Gretzinger. 
+Casco–Office for Art, Design and Theory
+Jan van Eyck Academie
+Sternberg Press
+2012
 </div>
 
 <div class='ref' id='r2'>
@@ -1382,22 +1390,18 @@ Casco–Office for Art, Design and Theory <br>
 Jerome Ages <br>
 1967 <br>
 Published Penguin Design Series 2008
-</div>
+</div> -->
 
-<div class='track'><img src='images/here.png'></div>
-
-
-<!--  <div class="viewport"></div>
+<!-- <div class='track'><img src='images/here.png'></div>
  -->
+
 
 </div>
 <!-- </div> -->
 
 <div class="containerofcontainer">
         <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>
-
-<!--         <div class='track'>tracking</div>
- -->    <div id="container2"></div>
+   <div id="container2"></div>
 </div>
 
 

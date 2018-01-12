@@ -66,40 +66,45 @@ img {
  }
 
  .footnote {
-   background-color: white;
-   font-family: 'Arial';
+/*   background-color: white;
+*/   
+   /*font-family: 'Arial';
    font-weight: normal;
    font-size: 20px;
    color: black;
-   display: none;
+   display: block;*/
 
  }
 
 .footnote:hover {
-  background-color: yellow;
+/*  background-color: yellow;
+*/  
   font-style:italic;
   cursor: pointer;
 }
 
 .ref {
-   background-color: white;
+/*   background-color: white;
    font-family: 'Arial';
-   font-weight: normal;
-   font-size: 13px;
+   font-weight: normal;*/
+   font-size: 10px;
    color: blue;
-   position: fixed;
-   display: none;
+/*   position: absolute;
+   display: block;*/
    font-style: italic;
-   top: 2500px;
+/*   top: 200px;
    border: solid black 1px;
    width:250px;
+   z-index: 100000;*/
+
  }
 
-#r1 {left: 5px;}
+
+/*#r1 {left: 5px;}
 #r2 {left: 205px;}
 #r3 {left: 405px;}
 #r4 {left: 605px;}
-
+*/
 
 #hello {
   background-color: red;
@@ -144,7 +149,7 @@ img {
   font-family: 'Arial';
   font-weight: normal; 
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   display: block;
   overflow: hidden;
@@ -230,6 +235,8 @@ img {
   text-align: left;
   overflow: hidden;
 }
+
+.text {width:570px; padding: 25px; line-height: 130%;}
 
 .societyone:hover, .influenceone:hover, .influencetwo:hover, 
 .digitalone:hover, .digitaltwo:hover, .gdasone:hover { 
@@ -351,6 +358,7 @@ p {
   margin: 0;
 }
 
+sup {font-size: 10px;}
 
 /*.dohuyandra {
   position: absolute;
