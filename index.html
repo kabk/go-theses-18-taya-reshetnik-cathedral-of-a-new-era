@@ -620,9 +620,14 @@ $(document).ready(function(){
             $('.track').css("left",pos.x + $("#container").scrollLeft() + 50);
 
             $('.track').css("top",pos.y + $("#container").scrollTop() - 200);
+
+            $('div.containerofcontainer *').addClass('showtrack');
+
         }
     }
 })();
+
+
 
 // $(window).hover(function(){
 //   console.log($("#container").scrollTop());
@@ -1392,8 +1397,8 @@ Jerome Ages <br>
 Published Penguin Design Series 2008
 </div> -->
 
-<!-- <div class='track'><img src='images/here.png'></div>
- -->
+<div class='track'><img src='images/here.png'></div>
+
 
 
 </div>

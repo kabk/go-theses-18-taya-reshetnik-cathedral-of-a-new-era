@@ -327,8 +327,12 @@ img {
   width:200px;
   height: 200px;
   position: absolute;
-  display:block;
+  display: none;
   z-index:200;
+}
+
+.showtrack {
+  display: block;
 }
 
 /*canvas {
