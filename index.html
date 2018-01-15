@@ -16,84 +16,425 @@
 
 //reveal text on click
 $(document).ready(function(){
-    $(".abstract, .intro, .conclusion").click(function(){
-        $(this).css("color", "black"); 
-        $(this).css("overflow", "scroll"); 
+    $(".first").click(function(){
+        $(".abstract").addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(".first").addClass("bringFront");
+        $("#ABSTRACT").addClass("hideTitle");
+        $("#urban1, #urban2, #urban3").addClass("showImage");  
     });
 
-    $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive").click(function(){
-        $(this).css("color", "black");
-        $(this).css("overflow", "scroll"); 
-        // $(this).css("z-index", "1000000");
-        // $(".societytwo, .influencetwo, .digitaltwo").css("z-index", "10000");
+    $(".blurry_thingy").click(function(){
+        $(".abstract").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $(".first").removeClass("bringFront");
+        $("#ABSTRACT").removeClass("hideTitle");
+        $(".abstract").scrollTop(0);
+        $("#urban1, #urban2, #urban3").removeClass("showImage");  
     });
 
-    $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix").click(function(){
-        $(this).css("color", "black"); 
-        $(this).css("overflow", "scroll");
+
+
+    $(".second").click(function(){
+        $(".intro").addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(".second").addClass("bringFront");
+        $("#INTRO").addClass("hideTitle");
+        $("#intro1, #intro2, #intro3").addClass("showImage");  
     });
 
-    $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour").click(function(){
-        $(this).css("color", "black"); 
-        $(this).css("overflow", "scroll");
+    $(".blurry_thingy").click(function(){
+        $(".intro").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $(".second").removeClass("bringFront");
+        $("#INTRO").removeClass("hideTitle");
+        $(".intro").scrollTop(0);
+        $("#intro1, #intro2, #intro3").removeClass("showImage");
     });
 
-    $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten").click(function(){
-        $(this).css("color", "black"); 
-        $(this).css("overflow", "scroll");
+
+    $("#conclusiononeone").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $("#conclusiononeone").addClass("bringFront");
+        $("#INTERL").addClass("hideTitle");
+        $("#typedynamics1, #typedynamics2, #typedynamics3").addClass("showImage");
     });
 
-    $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix").click(function(){
-        $(this).css("color", "black"); 
-        $(this).css("overflow", "scroll");
+    $(".blurry_thingy").click(function(){
+        $("#conclusiononeone").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#conclusiononeone").removeClass("bringFront");
+        $("#INTERL").removeClass("hideTitle");
+        $("#conclusiononeone").scrollTop(0);
+        $("#typedynamics1, #typedynamics2, #typedynamics3").removeClass("showImage");
     });
+
+    $("#conclusiononetwo").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $("#conclusiononetwo").addClass("bringFront");
+        $("#OWNE").addClass("hideTitle");
+        $("#another1, #another2, #another3").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#conclusiononetwo").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#conclusiononetwo").removeClass("bringFront");
+        $("#OWNE").removeClass("hideTitle");
+        $("#conclusiononetwo").scrollTop(0);
+        $("#another1, #another2, #another3").removeClass("showImage");
+    });
+
+    $("#conclusiononethree").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $("#conclusiononethree").addClass("bringFront");
+        $("#STRAIGHT").addClass("hideTitle");
+        // $("#another1, #another2, #another3").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#conclusiononethree").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#conclusiononethree").removeClass("bringFront");
+        $("#STRAIGHT").removeClass("hideTitle");
+        $("#conclusiononethree").scrollTop(0);
+        // $("#another1, #another2, #another3").removeClass("showImage");
+    });
+
+
+
+
+    $("#societyoneone").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#desire").addClass("hideTitle");
+        $("#bubble").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#societyoneone").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#societyoneone").removeClass("bringFront");
+        $("#desire").removeClass("hideTitle");
+        $("#societyoneone").scrollTop(0);
+        $("#bubble").removeClass("showImage");
+    });
+
+
+    $("#societyonetwo").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#forms").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#societyonetwo").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#societyonetwo").removeClass("bringFront");
+        $("#forms").removeClass("hideTitle");
+        $("#societyonetwo").scrollTop(0);
+    });
+
+
+    $("#societyonethree").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#absolute").addClass("hideTitle");
+        $("#sense1, #sense2").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#societyonethree").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#societyonethree").removeClass("bringFront");
+        $("#absolute").removeClass("hideTitle");
+        $("#societyonethree").scrollTop(0);
+        $("#sense1, #sense2").removeClass("showImage");
+    });
+
+
+    $("#societyonefour").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#juvenoia").addClass("hideTitle");
+        $("#juv1, #juv2").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#societyonefour").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#societyonefour").removeClass("bringFront");
+        $("#juvenoia").removeClass("hideTitle");
+        $("#societyonefour").scrollTop(0);
+        $("#juv1, #juv2").removeClass("showImage");
+    });
+
+    $("#societyonefive").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#portable").addClass("hideTitle");
+        $("#death1, #death2").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#societyonefive").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#societyonefive").removeClass("bringFront");
+        $("#portable").removeClass("hideTitle");
+        $("#societyonefive").scrollTop(0);
+        $("#death1, #death2").removeClass("showImage");
+    });
+
+
+
+
+    $("#influencetwoone").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#glimpse").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwoone").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwoone").removeClass("bringFront");
+        $("#glimpse").removeClass("hideTitle");
+        $("#influencetwoone").scrollTop(0);
+    });
+
+    $("#influencetwotwo").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#newkind").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwotwo").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwotwo").removeClass("bringFront");
+        $("#newkind").removeClass("hideTitle");
+        $("#influencetwotwo").scrollTop(0);
+    });
+
+    $("#influencetwothree").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#media").addClass("hideTitle");
+        $("#kraftwerk").addClass("showImage");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwothree").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwothree").removeClass("bringFront");
+        $("#media").removeClass("hideTitle");
+        $("#influencetwothree").scrollTop(0);
+        $("#kraftwerk").removeClass("showImage");
+    });
+
+    $("#influencetwofour").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#right").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwofour").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwofour").removeClass("bringFront");
+        $("#right").removeClass("hideTitle");
+        $("#influencetwofour").scrollTop(0);
+    });
+
+    $("#influencetwofive").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#ondesign").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwofive").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwofive").removeClass("bringFront");
+        $("#ondesign").removeClass("hideTitle");
+        $("#influencetwofive").scrollTop(0);
+    });
+
+    $("#influencetwosix").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#browsing").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#influencetwosix").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#influencetwosix").removeClass("bringFront");
+        $("#browsing").removeClass("hideTitle");
+        $("#influencetwosix").scrollTop(0);
+    });
+
+    $("#digitaloneone").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#info").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#digitaloneone").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#digitaloneone").removeClass("bringFront");
+        $("#info").removeClass("hideTitle");
+        $("#digitaloneone").scrollTop(0);
+    });
+
+
+
+
+
+
+
 });
+
+// $(document).ready(function(){
+//     $(".intro").click(function(){
+//         $(this).addClass("showText");
+//         $(".blurry_thingy").addClass("showBlur");
+//         $(".second").addClass("bringFront");
+//         $("#INTRO").addClass("hideTitle");
+//     });
+
+//     $(".blurry_thingy").click(function(){
+//         $(".intro").removeClass("showText");
+//         $(".blurry_thingy").removeClass("showBlur");
+//         $(".second").removeClass("bringFront");
+//         $("#INTRO").removeClass("hideTitle");
+//         $(".intro").scrollTop(0);
+//     });
+// });
+
+
+
+
+
+
+
+
+$(document).ready(function() {   
+    $('.commonclass').each(function(){
+              $(this).click(function(){
+                $('body').css('overflow','hidden');
+              // },function(){
+              //    $("#container").css('overflow','scroll');
+            });
+        });
+
+        $(document).ready(function(){
+            $(".blurry_thingy").click(function(){
+                  $("body").css("overflow", "scroll");
+            });
+        });
+
+});
+
+
+
+// $(document).ready(function(){
+//     $(".clickText").each(function(){
+//       $(".clickText").click(function(){
+//         $(this).addClass("showText");
+
+//     });
+// });
+
+// $(document).ready(function(){
+//     $(".clickText").mouseleave(function(){
+//           $(this).removeClass("showText");
+//     });
+// });
+// });
+
+
+// // THING THAT WORKS, CREATE CLICK CLASS
+// $(document).ready(function(){
+//     $('.commonclass').each(function(){
+//       $(this).click(function(){
+//         $('body').css('overflow','hidden');
+//       // },function(){
+//       //    $("#container").css('overflow','scroll');
+//     });
+// });
+
+// $(document).ready(function(){
+//     $(".commonclass").mouseleave(function(){
+//           $("body").css("overflow", "scroll");
+//     });
+// });
+
+
+
 
 
 //hide text and images on mouseleave
 $(document).ready(function(){
-      $(".abstract, .intro, .conclusion"
-                  ).mouseleave(function(){
-            $(this).css("color", "white");
-            $(".images").css("display", "none");
-            $(this).css("overflow", "hidden");
+      // $(".abstract, .intro, .conclusion"
+      //             ).mouseleave(function(){
+      //       $(this).css("color", "white");
+      //       $(".images").css("display", "none");
+      //       $(this).css("overflow", "hidden");
 
-        });
+      //   });
 
-      $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
-                  ).mouseleave(function(){
-            $(this).css("color", "white");
-            $(".images").css("display", "none");
-            $(this).css("overflow", "hidden");
-        });  
+      // $("#societyoneone, #societyonetwo, #societyonethree, #societyonefour, #societyonefive"
+      //             ).mouseleave(function(){
+      //       $(this).css("color", "white");
+      //       $(".images").css("display", "none");
+      //       $(this).css("overflow", "hidden");
+      //   });  
 
-      $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
-                ).mouseleave(function(){
-          $(this).css("color", "white");
-          $(".images").css("display", "none");
-          $(this).css("overflow", "hidden");
-      }); 
+      // $("#influencetwoone, #influencetwotwo, #influencetwothree, #influencetwofour, #influencetwofive, #influencetwosix"
+      //           ).mouseleave(function(){
+      //     $(this).css("color", "white");
+      //     $(".images").css("display", "none");
+      //     $(this).css("overflow", "hidden");
+      // }); 
 
-      $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
-                ).mouseleave(function(){
-          $(this).css("color", "white");
-          $(".images").css("display", "none");
-          $(this).css("overflow", "hidden");
-      }); 
+      // $("#digitaloneone, #digitalonetwo, #digitalonethree, #digitalonefour"
+      //           ).mouseleave(function(){
+      //     $(this).css("color", "white");
+      //     $(".images").css("display", "none");
+      //     $(this).css("overflow", "hidden");
+      // }); 
 
-      $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
-                ).mouseleave(function(){
-          $(this).css("color", "white");
-          $(".images").css("display", "none");
-          $(this).css("overflow", "hidden");
-      }); 
+      // $("#digitaltwoone, #digitaltwotwo, #digitaltwothree, #digitaltwofour, #digitaltwofive, #digitaltwosix, #digitaltwoseven, #digitaltwoeight, #digitaltwonine, #digitaltwoten"
+      //           ).mouseleave(function(){
+      //     $(this).css("color", "white");
+      //     $(".images").css("display", "none");
+      //     $(this).css("overflow", "hidden");
+      // }); 
 
-      $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
-                ).mouseleave(function(){
-          $(this).css("color", "white");
-          $(".images").css("display", "none");
-          $(this).css("overflow", "hidden");
-      });                 
+      // $("#gdasoneone, #gdasonetwo, #gdasonethree, #gdasonefour, #gdasonefive, #gdasonesix"
+      //           ).mouseleave(function(){
+      //     $(this).css("color", "white");
+      //     $(".images").css("display", "none");
+      //     $(this).css("overflow", "hidden");
+      // });  
+
 
       
 function copyDiv() {
@@ -122,379 +463,388 @@ copyDiv();
 
 
 
+
+
+
+
+
 //open/close map on click
 $(document).ready(function(){
     $(".containerofcontainer").click(function(){
         $(this).toggleClass("open");
+        // $("#container2").css("opacity":1);
     });
 });
 
 
-            // $("#footnote").click(function () {
-            //     $(this).animate({
-            //         'left': "+=440px",
-            //         'top': "-=1000px",
-            //         'background-color':'yellow'
-            //     }, 2000);
-            //     return false;
-            // });
-
-        // });
 
 
-//THING THAT WORKS, CREATE HOVER CLASS
+
+
+
 // $(document).ready(function(){
-//           $('.commonclass').each(function(){
-//             $(this).hover(function(){
-//               $("#container").css('overflow','hidden');
-//             },function(){
-//                $("#container").css('overflow','scroll');
-//             });
-//           });
+//     $('.clickText').each(function(){
+//       $(this).click(function(){
+//         $(this).css('color','black');
+//         console.log("proishodit")
+//       // },function(){
+//       //    $("#container").css('overflow','scroll');
+//     });
+// });
 
-//THING THAT WORKS, CREATE CLICK CLASS
-$(document).ready(function(){
-    $('.commonclass').each(function(){
-      $(this).click(function(){
-        $('#container').css('overflow','hidden');
-      // },function(){
-      //    $("#container").css('overflow','scroll');
-    });
-});
+// $(document).ready(function(){
+//     $(".clickText").mouseleave(function(){
+//           $("body").css("overflow", "scroll");
+//     });
+// });
 
-$(document).ready(function(){
-    $(".commonclass").mouseleave(function(){
-          $("#container").css("overflow", "scroll");
-    });
-});
+
+
+
+
+
+
+
+
 
 
 // hide the title on click/ reveal back on mouseleave
-$('.abstract').click(function(){
-      $('#ABSTRACT').css({'display': 'none'}); 
-        });
-      $('.abstract').mouseleave(function(){
-          $(this).scrollTop(0);
-              $('#ABSTRACT').css({'display': 'block'}); 
-        });
+
+// $('.abstract').click(function(){
+//       $('#ABSTRACT').css({'display': 'none'}); 
+//         });
+
+//       $('.abstract').mouseleave(function(){
+//           $(this).scrollTop(0);
+//               $('#ABSTRACT').css({'display': 'block'});   
+//         });
 
 
-      $('.intro').click(function(){
-            $('#INTRO').css({'display': 'none'}); 
-      });
-      $('.intro').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#INTRO').css({'display': 'block'}); 
-      });
+//       $('.intro').click(function(){
+//             $('#INTRO').css({'display': 'none'}); 
+//       });
+//       $('.intro').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#INTRO').css({'display': 'block'}); 
+//       });
 
 
-      $('.conclusion').click(function(){
-            $('#CONCLUSION').css({'display': 'none'}); 
-      });
-      $('.conclusion').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#CONCLUSION').css({'display': 'block'}); 
-      });
+//       $('.conclusion').click(function(){
+//             $('#CONCLUSION').css({'display': 'none'}); 
+//       });
+//       $('.conclusion').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#CONCLUSION').css({'display': 'block'}); 
+//       });
 
     
 
-      $('#societyoneone').click(function(){
-            $('#desire').css({'display': 'none'}); 
-            // $('#r1').css({'display': 'block'}); 
-      });
-      $('#societyoneone').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#desire').css({'display': 'block'}); 
-            // $('#r1').css({'display': 'none'});
-      });
-
-
-
-      $('#societyonetwo').click(function(){
-            $('#forms').css({'display': 'none'}); 
-      });
-      $('#societyonetwo').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#forms').css({'display': 'block'}); 
-      });
-
-
-      $('#societyonethree').click(function(){
-            $('#absolute').css({'display': 'none'}); 
-      });
-      $('#societyonethree').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#absolute').css({'display': 'block'});
-      });
-
-
-      $('#societyonefour').click(function(){
-            $('#juvenoia').css({'display': 'none'});
-      });
-      $('#societyonefour').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#juvenoia').css({'display': 'block'});
-      });
-
-
-      $('#societyonefive').click(function(){
-            $('#portable').css({'display': 'none'});
-      });
-      $('#societyonefive').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#portable').css({'display': 'block'});
-      });
-
-
-      $('#digitaloneone').click(function(){
-            $('#info').css({'display': 'none'}); 
-      });
-      $('#digitaloneone').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#info').css({'display': 'block'}); 
-      });
-
-
-      $('#digitalonetwo').click(function(){
-            $('#orientation').css({'display': 'none'}); 
-      });
-      $('#digitalonetwo').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#orientation').css({'display': 'block'}); 
-      });
-
-
-      $('#digitalonethree').click(function(){
-            $('#conscious').css({'display': 'none'}); 
-      });
-      $('#digitalonethree').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#conscious').css({'display': 'block'}); 
-      });
-
-
-      $('#digitalonefour').click(function(){
-            $('#infl').css({'display': 'none'}); 
-      });
-      $('#digitalonefour').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#infl').css({'display': 'block'}); 
-      });
-
-
-
-      $('#digitaltwoone').click(function(){
-            $('#utrecht').css({'display': 'none'}); 
-      });
-      $('#digitaltwoone').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#utrecht').css({'display': 'block'}); 
-      });  
-
-
-      $('#digitaltwotwo').click(function(){
-            $('#all').css({'display': 'none'}); 
-      });
-      $('#digitaltwotwo').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#all').css({'display': 'block'}); 
-      }); 
+//       $('#societyoneone').click(function(){
+//             $('#desire').css({'display': 'none'}); 
+//             // $('#r1').css({'display': 'block'}); 
+//       });
+//       $('#societyoneone').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#desire').css({'display': 'block'}); 
+//             // $('#r1').css({'display': 'none'});
+//       });
+
+
+
+//       $('#societyonetwo').click(function(){
+//             $('#forms').css({'display': 'none'}); 
+//       });
+//       $('#societyonetwo').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#forms').css({'display': 'block'}); 
+//       });
+
+
+//       $('#societyonethree').click(function(){
+//             $('#absolute').css({'display': 'none'}); 
+//       });
+//       $('#societyonethree').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#absolute').css({'display': 'block'});
+//       });
+
+
+//       $('#societyonefour').click(function(){
+//             $('#juvenoia').css({'display': 'none'});
+//       });
+//       $('#societyonefour').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#juvenoia').css({'display': 'block'});
+//       });
+
+
+//       $('#societyonefive').click(function(){
+//             $('#portable').css({'display': 'none'});
+//       });
+//       $('#societyonefive').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#portable').css({'display': 'block'});
+//       });
+
+
+//       $('#digitaloneone').click(function(){
+//             $('#info').css({'display': 'none'}); 
+//       });
+//       $('#digitaloneone').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#info').css({'display': 'block'}); 
+//       });
+
+
+//       $('#digitalonetwo').click(function(){
+//             $('#orientation').css({'display': 'none'}); 
+//       });
+//       $('#digitalonetwo').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#orientation').css({'display': 'block'}); 
+//       });
+
+
+//       $('#digitalonethree').click(function(){
+//             $('#conscious').css({'display': 'none'}); 
+//       });
+//       $('#digitalonethree').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#conscious').css({'display': 'block'}); 
+//       });
+
+
+//       $('#digitalonefour').click(function(){
+//             $('#infl').css({'display': 'none'}); 
+//       });
+//       $('#digitalonefour').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#infl').css({'display': 'block'}); 
+//       });
+
+
+
+//       $('#digitaltwoone').click(function(){
+//             $('#utrecht').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwoone').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#utrecht').css({'display': 'block'}); 
+//       });  
+
+
+//       $('#digitaltwotwo').click(function(){
+//             $('#all').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwotwo').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#all').css({'display': 'block'}); 
+//       }); 
 
 
 
-      $('#digitaltwothree').click(function(){
-            $('#small').css({'display': 'none'}); 
-      });
-      $('#digitaltwothree').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#small').css({'display': 'block'}); 
-      }); 
+//       $('#digitaltwothree').click(function(){
+//             $('#small').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwothree').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#small').css({'display': 'block'}); 
+//       }); 
 
 
-      $('#digitaltwofour').click(function(){
-            $('#zoned').css({'display': 'none'}); 
-      });
-      $('#digitaltwofour').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#zoned').css({'display': 'block'}); 
-      });  
+//       $('#digitaltwofour').click(function(){
+//             $('#zoned').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwofour').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#zoned').css({'display': 'block'}); 
+//       });  
 
 
-      $('#digitaltwofive').click(function(){
-            $('#alpha').css({'display': 'none'}); 
-      });
-      $('#digitaltwofive').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#alpha').css({'display': 'block'}); 
-      });  
+//       $('#digitaltwofive').click(function(){
+//             $('#alpha').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwofive').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#alpha').css({'display': 'block'}); 
+//       });  
 
 
-      $('#digitaltwosix').click(function(){
-            $('#archigram').css({'display': 'none'}); 
-      });
-      $('#digitaltwosix').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#archigram').css({'display': 'block'}); 
-      });     
+//       $('#digitaltwosix').click(function(){
+//             $('#archigram').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwosix').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#archigram').css({'display': 'block'}); 
+//       });     
 
 
 
-      $('#digitaltwoseven').click(function(){
-            $('#planned').css({'display': 'none'}); 
-      });
-      $('#digitaltwoseven').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#planned').css({'display': 'block'}); 
-      });    
+//       $('#digitaltwoseven').click(function(){
+//             $('#planned').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwoseven').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#planned').css({'display': 'block'}); 
+//       });    
 
 
-      $('#digitaltwoeight').click(function(){
-            $('#building').css({'display': 'none'}); 
-      });
-      $('#digitaltwoeight').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#building').css({'display': 'block'}); 
-      });   
+//       $('#digitaltwoeight').click(function(){
+//             $('#building').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwoeight').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#building').css({'display': 'block'}); 
+//       });   
 
 
-      $('#digitaltwonine').click(function(){
-            $('#worlds').css({'display': 'none'}); 
-      });
-      $('#digitaltwonine').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#worlds').css({'display': 'block'}); 
-      });   
+//       $('#digitaltwonine').click(function(){
+//             $('#worlds').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwonine').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#worlds').css({'display': 'block'}); 
+//       });   
 
 
-      $('#digitaltwoten').click(function(){
-            $('#junk').css({'display': 'none'}); 
-      });
-      $('#digitaltwoten').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#junk').css({'display': 'block'}); 
-      });   
+//       $('#digitaltwoten').click(function(){
+//             $('#junk').css({'display': 'none'}); 
+//       });
+//       $('#digitaltwoten').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#junk').css({'display': 'block'}); 
+//       });   
 
 
 
 
-      $('#influencetwoone').click(function(){
-            $('#glimpse').css({'display': 'none'}); 
-      });
-      $('#influencetwoone').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#glimpse').css({'display': 'block'}); 
-      });
+//       $('#influencetwoone').click(function(){
+//             $('#glimpse').css({'display': 'none'}); 
+//       });
+//       $('#influencetwoone').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#glimpse').css({'display': 'block'}); 
+//       });
 
 
-      $('#influencetwotwo').click(function(){
-            $('#newkind').css({'display': 'none'}); 
-      });
-      $('#influencetwotwo').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#newkind').css({'display': 'block'}); 
-      });
+//       $('#influencetwotwo').click(function(){
+//             $('#newkind').css({'display': 'none'}); 
+//       });
+//       $('#influencetwotwo').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#newkind').css({'display': 'block'}); 
+//       });
 
 
 
-      $('#influencetwothree').click(function(){
-            $('#media').css({'display': 'none'}); 
-      });
-      $('#influencetwothree').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#media').css({'display': 'block'}); 
-      });
+//       $('#influencetwothree').click(function(){
+//             $('#media').css({'display': 'none'}); 
+//       });
+//       $('#influencetwothree').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#media').css({'display': 'block'}); 
+//       });
 
 
-      $('#influencetwofour').click(function(){
-           $('#right').css({'display': 'none'}); 
-      });
-      $('#influencetwofour').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#right').css({'display': 'block'}); 
-      });
+//       $('#influencetwofour').click(function(){
+//            $('#right').css({'display': 'none'}); 
+//       });
+//       $('#influencetwofour').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#right').css({'display': 'block'}); 
+//       });
 
 
-      $('#influencetwofive').click(function(){
-           $('#ondesign').css({'display': 'none'}); 
-      });
-      $('#influencetwofive').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#ondesign').css({'display': 'block'}); 
-      });
+//       $('#influencetwofive').click(function(){
+//            $('#ondesign').css({'display': 'none'}); 
+//       });
+//       $('#influencetwofive').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#ondesign').css({'display': 'block'}); 
+//       });
 
 
 
-      $('#influencetwosix').click(function(){
-           $('#browsing').css({'display': 'none'}); 
-      });
-      $('#influencetwosix').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#browsing').css({'display': 'block'}); 
-      });
+//       $('#influencetwosix').click(function(){
+//            $('#browsing').css({'display': 'none'}); 
+//       });
+//       $('#influencetwosix').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#browsing').css({'display': 'block'}); 
+//       });
 
 
 
 
 
-      $('#gdasoneone').click(function(){
-           $('#another').css({'display': 'none'}); 
-      });
-      $('#gdasoneone').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#another').css({'display': 'block'}); 
-      });
+//       $('#gdasoneone').click(function(){
+//            $('#another').css({'display': 'none'}); 
+//       });
+//       $('#gdasoneone').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#another').css({'display': 'block'}); 
+//       });
 
 
-      $('#gdasonetwo').click(function(){
-           $('#cartography').css({'display': 'none'}); 
-      });
-      $('#gdasonetwo').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#cartography').css({'display': 'block'}); 
-      });
+//       $('#gdasonetwo').click(function(){
+//            $('#cartography').css({'display': 'none'}); 
+//       });
+//       $('#gdasonetwo').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#cartography').css({'display': 'block'}); 
+//       });
 
 
-      $('#gdasonethree').click(function(){
-           $('#signage').css({'display': 'none'}); 
-      });
-      $('#gdasonethree').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#signage').css({'display': 'block'}); 
-      });
+//       $('#gdasonethree').click(function(){
+//            $('#signage').css({'display': 'none'}); 
+//       });
+//       $('#gdasonethree').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#signage').css({'display': 'block'}); 
+//       });
 
 
 
-      $('#gdasonefour').click(function(){
-           $('#lack').css({'display': 'none'}); 
-      });
-      $('#gdasonefour').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#lack').css({'display': 'block'}); 
-      });
+//       $('#gdasonefour').click(function(){
+//            $('#lack').css({'display': 'none'}); 
+//       });
+//       $('#gdasonefour').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#lack').css({'display': 'block'}); 
+//       });
 
 
-      $('#gdasonefive').click(function(){
-           $('#interlinked').css({'display': 'none'}); 
-      });
-      $('#gdasonefive').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#interlinked').css({'display': 'block'}); 
-      });
+//       $('#gdasonefive').click(function(){
+//            $('#interlinked').css({'display': 'none'}); 
+//       });
+//       $('#gdasonefive').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#interlinked').css({'display': 'block'}); 
+//       });
 
 
-      $('#gdasonesix').click(function(){
-           $('#type').css({'display': 'none'}); 
-      });
-      $('#gdasonesix').mouseleave(function(){
-          $(this).scrollTop(0);
-            $('#type').css({'display': 'block'}); 
-      });
+//       $('#gdasonesix').click(function(){
+//            $('#type').css({'display': 'none'}); 
+//       });
+//       $('#gdasonesix').mouseleave(function(){
+//           $(this).scrollTop(0);
+//             $('#type').css({'display': 'block'}); 
+//       });
 
-});
-$(window).scroll(function(){
-  $(".dohuyandra").css("left",$(window).offset().left);
-    $(".dohuyandra").css("top",$(window).offset().top);
-});
+// });
+
+
+
+
+
+
+
+
+
+// $(window).scroll(function(){
+//   $(".dohuyandra").css("left",$(window).offset().left);
+//     $(".dohuyandra").css("top",$(window).offset().top);
+// });
 
 // $('.title').hover(function(){
 //       $('#ABSTRACT').css({'display': 'none'}); 
@@ -509,41 +859,55 @@ $(window).scroll(function(){
 
 
 
-//OPEN/CLOSE IMAGES ON CLICK
-$(document).ready(function(){
-    $(".intro").click(function(){
-        $("#intro1, #intro2, #intro3").css("display", "block");   
-    });
+// OPEN/CLOSE IMAGES ON CLICK
+// $(document).ready(function(){
 
-    $("#societyonefive").click(function(){
-        $("#death1, #death2").css("display", "block");
-    });
+//     $(".first").click(function(){
+//         $("#urban1, #urban2, #urban3").css("display", "block");  
+//     });
 
-    $("#influencetwotwo").click(function(){
-        $("#intimacy1").css("display", "block");   
-    });
+//     $(".second").click(function(){
+//         $("#intro1, #intro2, #intro3").css("display", "block"); 
+//         console.log("proishodit2")  
+//     });
+
+//     $("#societyonefive").click(function(){
+//         $("#death1, #death2").css("display", "block");
+//     });
+
+//     $("#influencetwotwo").click(function(){
+//         $("#intimacy1").css("display", "block");   
+//     });
     
-    $("#influencetwofour").click(function(){
-        $("#brain2, #brain4").css("display", "block");   
-    });
+//     $("#influencetwofour").click(function(){
+//         $("#brain2, #brain4").css("display", "block");   
+//     });
 
-    $("#digitaltwoone").click(function(){
-        $("#utrecht1, #utrecht2, #utrecht3").css("display", "block");   
-    });
+//     $("#digitaltwoone").click(function(){
+//         $("#utrecht1, #utrecht2, #utrecht3").css("display", "block");   
+//     });
 
-    $("#gdasonethree").click(function(){
-        $("#polygon1, #polygon3").css("display", "block");   
-    });
+//     $("#gdasonethree").click(function(){
+//         $("#polygon1, #polygon3").css("display", "block");   
+//     });
 
-    $(".seventh").click(function(){
-        $("#typedynamics1, #typedynamics2").css("display", "block");   
-    });
+//     $(".seventh").click(function(){
+//         $("#typedynamics1, #typedynamics2").css("display", "block");   
+//     });
 
-    $("#digitaltwonine").click(function(){
-        $("#shop1, #shop2").css("display", "block");   
-    });
+//     $("#digitaltwonine").click(function(){
+//         $("#shop1, #shop2").css("display", "block");   
+//     });
 
-});
+
+//     $(".blurry_thingy").click(function(){
+//         $("img").css("display", "none");   
+//     });
+
+// });
+
+
+
 
 
 // $(document).ready(function(){
@@ -569,13 +933,6 @@ $(document).ready(function(){
 
 
 // follow mouse with div
-// $(document).bind('mousemove', function(e){
-//     $('.track').css({
-//        left:  e.pageX,
-//        top:   e.pageY
-//     });
-// });
-
 (function() {
     var mousePos;
 
@@ -611,17 +968,24 @@ $(document).ready(function(){
     function getMousePosition() {
         var pos = mousePos;
         if (!pos) {
-          console.log('nomovement');
+          // console.log('nomovement');
             // We haven't seen any movement yet
         }
         else {
-          console.log(pos.x, pos.y );
+          // console.log(pos.x, pos.y );
             // Use pos.x and pos.y
             $('.track').css("left",pos.x + $("#container").scrollLeft() + 50);
 
             $('.track').css("top",pos.y + $("#container").scrollTop() - 200);
 
-            $('div.containerofcontainer *').addClass('showtrack');
+            // $('div.containerofcontainer *').addClass('showtrack');
+
+            $('div.containerofcontainer').find('.track').addClass('showtrack');
+
+            $('div.containerofcontainer').find('.blurry_thingy').addClass('hideThingy');
+
+
+            // $('div.containerofcontainer').find('.title').addClass('bigTitle');
 
         }
     }
@@ -629,87 +993,105 @@ $(document).ready(function(){
 
 
 
-// $(window).hover(function(){
-//   console.log($("#container").scrollTop());
-// });
 
 
 
-// move related article
 
-// $(function () {
-//     $("#societyonefive").click(function () {
-//         $("#digitaltwothree").animate({
-//             top: "+=850px",
-//             left: "-=2875px"
-//         }, 2000);
-//     });
+
+// windowscroll on click
+$(document).ready(function(){
+
+  $(".first").on("click", function() {
+        window.scroll(0,0);
+  });
+
+    $(".second").on("click", function() {
+        window.scroll(0,450);
+    });
+
+        $("#societyoneone").on("click", function() {
+            window.scroll(900,200);
+        });
+
+        $("#societyonetwo").on("click", function() {
+            window.scroll(900,650);
+        });
+
+        $("#societyonethree").on("click", function() {
+            window.scroll(900,1150);
+        });
+
+        $("#societyonefour").on("click", function() {
+            window.scroll(1800,200);
+        });
+
+        $("#societyonefive").on("click", function() {
+            window.scroll(1800,600);
+        });
+
+            $("#influencetwoone").on("click", function() {
+                window.scroll(2800, 300);
+            });
+
+            $("#influencetwotwo").on("click", function() {
+                window.scroll(2800, 750);
+            });
+
+            $("#influencetwothree").on("click", function() {
+                window.scroll(2800, 1200);
+            });
+
+            $("#influencetwofour").on("click", function() {
+                window.scroll(2800, 1750);
+            });
+
+            $("#influencetwofive").on("click", function() {
+                window.scroll(3650, 300);
+            });
+
+            $("#influencetwosix").on("click", function() {
+                window.scroll(3650, 750);
+            });
+
+    $("#conclusiononeone").on("click", function() {
+        window.scroll(0,1300);
+  });
+    $("#conclusiononetwo").on("click", function() {
+        window.scroll(0,1700);
+  });
+     $("#conclusiononethree").on("click", function() {
+          window.scroll(0,2100);
+  }); 
+
+});
+
+
+
+
+
+// $(document).ready(function(){
+
+//   $(".route").on("click", function() {
+//         window.scroll(0,450);
+//   });
+//   $(".buttonNext").on("click", function() {
+//         $(this).css("display":"block");
 //   });
 
+// $(".route").click(function(){
+//         $(".buttonNext").css("display":"block");
+//     });
 
-
-
-
-
-
-// $(document).ready(function(){
-//       $('#hello').hover(function(){
-//             $('#deathone').css({'display': 'none'});
-//       });
-//       $('#hello').mouseleave(function(){
-//             $('#deathone').css({'display': 'block'}); 
-//       });
-// });
-
-
-
-
-
-
-// move related article
-// $(document).ready(function(){
-//       $('#societyonefive').hover(function(){
-//             $('#digitaloneone').css({'left': -2500, 'top': +1000}); 
-//       });
-//       $('#societyonefive').mouseleave(function(){
-//             $('#digitaloneone').css({'left': 0, 'top':1200}); 
-//       });
-// });
-
-
-
-
-
-// $(document).ready(function(){
-//       $('.abstract').hover(function(){
-//             $('.second').css({'top': 50,'left': 700, 'z-index': +100}); 
-//       });
 
 // });
 
-
-                        // $(document).ready(function(){
-                        //       $('#container').mousemove(function(e){
-                        //             var y = e.pageY;
-                        //             var x = e.pageX;
-                        //             $('#navigation').css({ 'top': y+5}); 
-                        //             $('#navigation').css({ 'left': x+5}); 
-                        //       });
-                        //     });
-
-                        // $(document).on('mousemove', function(e){
-                        //     $('#hello').css({
-                        //        left:  e.pageX-10,
-                        //        top:   e.pageY-10
-                        //     });
-                        // });
+// $(document).ready(function(){
+//     $(".route").click(function(){
+//         $(".buttonNext").css("display":"block");
+//     });
+// });
 
 
-
-
- // $(".abstract").hover(function () {
- //        $(".second, .third").css({"color":"white", "background-color":"red"});
- //    });
 
 
 </script>
@@ -718,6 +1100,7 @@ $(document).ready(function(){
 </head>
 
 <body class="body">
+
 
 
 <!--   <div class='index'>index</div>
@@ -752,11 +1135,37 @@ $(document).ready(function(){
     <div class='images' id='typedynamics1'><img id='photo18'src='images/typedynamics/typedynamics_1.jpg'></div>
     <div class='images' id='typedynamics2'><img id='photo19'src='images/typedynamics/typedynamics_2.jpg'></div>
 
+    <div class='images' id='typedynamics3'><img src='images/typedynamics/typedynamics_3.jpg'></div>
+
     <div class='images' id='shop1'><img id='photo20'src='images/shopping/shopping_1.jpg'></div>
     <div class='images' id='shop2'><img id='photo21'src='images/shopping/shopping_2.png'></div>
 
-</div>
 
+    <div class='images' id='urban1'><img id='photo22'src='images/urban_spaces/urban_1.png'></div>
+    <div class='images' id='urban2'><img id='photo23'src='images/urban_spaces/urban_2.png'></div>
+    <div class='images' id='urban3'><img id='photo24'src='images/urban_spaces/urban_3.png'></div>
+
+    <div class='images' id='another1'><img src='images/another/another_1.jpg'></div>
+    <div class='images' id='another2'><img src='images/another/another_4.jpg'></div>
+    <div class='images' id='another3'><img src='images/another/another_3.jpg'></div>
+
+    <div class='images' id='bubble'><img src='images/bubble.jpg'></div>
+
+    <div class='images' id='sense1'><img src='images/sense_1.jpg'></div>
+    <div class='images' id='sense2'><img src='images/sense_2.jpg'></div>
+
+    <div class='images' id='juv1'><img src='images/juv_1.jpg'></div>
+    <div class='images' id='juv2'><img src='images/socrates.png'></div>
+
+    <div class='images' id='kraftwerk'><img src='images/kraftwerk.jpg'></div>
+
+
+
+
+  
+
+
+</div>
 
 
 
@@ -950,45 +1359,48 @@ $(document).ready(function(){
 
 </div>
 
-</div>
 
-<!-- <div class='mainheader'>CATHEDRAL OF A NEW ERA</div>
+<!-- </div>
  -->
- <!-- <div id="c" style="width:100%;height:100%"> -->
-
-<!-- <div class="dohuyandra"></div>
- -->
+<!--  <div class="wrapper">
+  <div class="blur"> -->
 <div id="container">
 
+<div class="track"><img src="images/here.png"></div>
+
 <div class='first commonclass'>
-    <div class='abstract'>
-         <div class='title'id='ABSTRACT'>1.0_ABSTRACT</div>
+  <p class="header">Abstract</p>
+    <div class='abstract clickText'>
+         <div class='title'id='ABSTRACT'>ABSTRACT</div>
+<!--     <div class='text'>     
+     -->    
     The subject of my research is the influence of electronic media on physical space. Societies have always been shaped more by the nature of the media by which men communicate rather then by the content of the communication. Moreover electronic media has a direct physical impact on the way our brain is functioning. The way we think and perceive information is being changed. And my thesis is focusing on how these changes are influencing architecture and urban landscape in particular.
     <p>I would like to discern the role of graphic design in architecture and to point out the spheres where it is playing a key role. Graphic design is commonly being considered as a 2-dimensional practice, resulting in print or a digital product. However I see a strong connection in how its influence spreading further, on a larger scale of architecture and urban planning. For example, screens become a part of the architecture of the public space, and the content of the visuals influence the dynamics and social behaviour within these spaces. At the train stations and shopping malls the message coming from these screens is predominantly commercial and serve as a distraction and stimulator for consumerism. If graphic designers together with architects would create the content of these screens themselves and use it in the benefit of navigation and in favour of overall atmosphere, the station or a shopping mall could look entirely different–not only the content of the screen would change, but the use of it, and assumably the way the building is organised in the first place.</p>
     <p>The architecture of Utrecht Central, as well as many other public spaces, has distinct features of mallification (a process of turning into a mall) and a so-called ‘junkspace’. These tendencies do not just happen, and among the consumer-orientated design with planned obsolescence, new media and graphic design are shaping these tendencies as well.</p>
     <p>My central assumption within this thesis is that media is forming the perception and ways of thinking which leads to changes in how we approach urban planning and architecture. And since graphic design is responsible for communication and translation of information into a visual message, it stands behind that influence as well. I want to point out that the influence of graphic design goes out of the 2D canvas and has a wider, tangible affect.</p>
-    <p>Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research.When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces. Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life. 
-    <p>First of all, I am looking at the development of communication methods and how it influenced society in the past. I use examples of how invention of alphabet, writing and print influenced communication and social behaviour and compare it to the situation happening nowadays.</p>
-    <p>Graphic designers play a big role in the sphere of communication and distribution of information, and translating it to the audience, architects as well. Graphic design has the power of shaping the way how the media is going to influence our mins and how eventually the world around us is going to look and function.</p>
+    <p>Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research.When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces. Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life.</p>
+    <p>First of all, I am looking at the development of communication methods and how it influenced society in the past. I use examples of how invention of alphabet, writing and print influenced communication and social behaviour and compare it to the situation happening nowadays.
+    Graphic designers play a big role in the sphere of communication and distribution of information, and translating it to the audience, architects as well. Graphic design has the power of shaping the way how the media is going to influence our mins and how eventually the world around us is going to look and function.</p><br>
 
     Media shapes perception.<br>
     Perception influences physical space.<br>
     Is graphic designer an architect?<br>
-    </div>
+<!--   </div>
+ -->    </div>
 </div>
 
 <div class='second commonclass'>
-    <div class='intro'>
-         <div class='title'id='INTRO'>2.0_INTRO</div>
+    <div class='intro clickText'>
+         <div class='title'id='INTRO'>INTRO</div>
 
     ‘First we shape cities, then–cities shape us’.<br>
-    –Jan Gehl<br>
+    <p align="right">–Jan Gehl</p><br><br>
 
     ‘If design is merely an inducement to consume, then we must reject design; if architecture is merely the codifying of the bourgeois model of ownership and society, then we must reject architecture; if architecture and town planning is merely the formalisation of present unjust social divisions, then we must reject town planning and its cities […] until all design activities are aimed towards meeting primary needs. Until then, design must disappear. We can live without architecture […].’<br>
-    –Adolfo Natalini (Superstudio), 1971<br>
+    <p align="right">–Adolfo Natalini (Superstudio), 1971</p><br><br>
 
     ‘The future of architecture lies in the brain’.<br>
-    –Pascal Schöning, Architrav Group<br>
+    <p align="right">–Pascal Schöning, Architrav Group</p><br><br>
      
     Straight lines. Sharp corners. You go up and you go down. <br>
     Slowly scrolling–step by step. <br>
@@ -1011,113 +1423,100 @@ $(document).ready(function(){
     </div>
 </div>
 
-<div class='third'>
+
+
+<div class='third commonclass'>
     <div class='society'>
-        <div class='title'id='SOCIETY'>3.0_SOCIETY IS SHAPED BY <br>METHODS OF COMMUNICATION</div>
-    <div class="commonclass">
+
+        <div class='title'id='SOCIETY'>SOCIETY IS SHAPED BY <br>METHODS OF COMMUNICATION</div>
+    
     <div class='societyone' id='societyoneone'>
-         <div class='title2' id='desire'>3.1_DESIRE FOR COMMUNICATION</div>
-  <div class='text'>
-    I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is in a way a desperate attempt to establish a connection between each other. Communication is demanding for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is the more it seems to demand from both sides. And yet, no matter how much of an effort you push into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication:‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’<sup>1</sup> <br><br><br><br><br>
-  </div>
+         <div class="clickText">
+         <div class='title2' id='desire'>DESIRE FOR COMMUNICATION</div>
+     I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is, in a way, a desperate attempt to establish connections between each other. Communication is the demand for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is, the more it seems to demand from both sides. Yet, no matter how much of an effort you put into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: ‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’<sup>1</sup> <br><br><br>
 
-              <sup>1</sup><span class='ref' id='r1'>
-                p.42 “In a Manner of Reading Design”. Edited by Katja Gretzinger. 
-                Casco–Office for Art, Design and Theory
-                Jan van Eyck Academie
-                Sternberg Press
-                2012
-              </span>
     </div>
     </div>
 
-    <div class="commonclass">
     <div class='societyone' id='societyonetwo'>
-         <div class='title2'id='forms'>3.2_FORMS OF COMMUNICATION</div>
-    However, forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning. 
+      <div class="clickText">
+         <div class='title2'id='forms'>FORMS OF COMMUNICATION</div>
+    However, the forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance, we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning. 
     </div>
     </div>
     
-    <div class="commonclass">
     <div class='societyone' id='societyonethree'>
-         <div class='title2'id='absolute'>3.3_ABSOLUTE UNDERSTANDING</div>
-
-    Since there is no method for reaching an absolute understanding ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’<sup>2</sup> Therefore, I see a strong connection between the media and our perception of the world around us.‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’<sup>3</sup> And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.
+      <div class="clickText">
+         <div class='title2'id='absolute'>ABSOLUTE UNDERSTANDING</div>
+    Since there is no method for reaching an absolute understanding ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’<sup>2</sup> Therefore, I see a strong connection between the media and our perception of the world around us. ‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’<sup>3</sup> And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.
     </div>
     </div>
 
-    <div class="commonclass">
     <div class='societyone' id='societyonefour'>
-         <div class='title2'id='juvenoia'>3.4_JUVENOIA AND ANXIETY</div>
-
-    In point of view the concept of ‘juvenoia' is a good example of how media is changing our perception. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generation often has concerning the influence of social change on children and youth. Young generation adapts to new technology, and grows up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying to those, who grew up at a earlier stage of development of technology. The difference in perception often results into a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor in 2011. But the evidence and grounds for it might have been seen earlier.
-    <p>For instance, Socrates had his concerns about the invention of alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’<sup>5</sup></p>
+      <div class="clickText">
+         <div class='title2'id='juvenoia'>JUVENOIA AND ANXIETY</div>
+    From my point of view, the concept of ‘juvenoia' is a good example of how media changes our perceptions. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generations often have concerning the influence of social change on the youth of today.Younger generations adapt easily to new technology, and have grown up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying, to those who grew up during earlier stages in the development of technology. This difference in perception often results in a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor<sup>4</sup> in 2011. But the evidence and grounds for it could have been seen much earlier. For instance, when we go as far back as Socrates we can see that even he had his concerns about the invention of the alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’<sup>5</sup>
     </div>
     </div>
 
-    <div class="commonclass">
     <div class='societyone' id='societyonefive'>
-         <div class='title2'id='portable'>3.5_PORTABLE BOOK</div>
-    Same tendencies were seen in the period of the invention of print. Print made it possible to create a portable book, movable reproducible piece of information, available for reading alone–a totally different kind of an intimate experience. It also brought the notion of commodity and individualism in the sphere of information. The fear and anxiety towards print media was also expressed in numerous late-medieval engravings with the theme ‘The Dance of Death’. So every time the invention of new communicational media or technology would raise an argument revealing the change in perception.
+      <div class="clickText">
+         <div class='title2'id='portable'>PORTABLE BOOK</div>
+    These same tendencies were seen during the invention of the printing press. Print made it possible to create a portable book, movable, reproducible pieces of information, available for reading alone–a totally different kind of an intimate experience. It also brought the notion of commodity and individualism into the sphere of information. The fear and anxieties expressed towards print media were also expressed in numerous late-medieval engravings with the theme ‘The Dance of Death’. It is clear that every invention of new communicational media or technology brings up a conflict revealing the changes in perception.
   </div>
   </div>
-
-
 
   </div>
 </div>
 
-<div id='pagebreak'></div>
 
-
-<div class='fourth'>
+<div class='fourth commonclass'>
     <div class='influence'>
-          <div class='title'id='INFLUENCE'>
-              4.0.0_INFLUENCE OF <br>ELECTRONIC MEDIA</div>
+          <div class='title'id='INFLUENCE'>INFLUENCE OF ELECTRONIC MEDIA</div>
 
     <div class='influenceone' id='influenceoneone'>
-          <div class='title2'id='perception'>4.1.0_ON PERCEPTION</div>
+          <div class='title2'id='perception'>ON PERCEPTION</div>
             
-            <div class="commonclass">
             <div class='influencetwo' id='influencetwoone'>
-                 <div class='subtitle' id='glimpse'>4.1.1_PROMISING GLIMPSE</div>
+              <div class="clickText">
+                 <div class='subtitle' id='glimpse'>PROMISING GLIMPSE</div>
 
-            Obviously communicational technologies and methods continue developing further and the story repeats itself with the invention of electronic technology. <span class='footnote' id='f5'>‘The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted.’</span>Despite all the concerns about these changes, we can not prevent technology from going further. Neither can we decline the promising glimpse of a new way of communicating, which perhaps can bring a more satisfying sense of connection between us.
+            Obviously communicational technologies and methods continue developing further and the story repeats itself with the invention of electronic technology. ‘The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted.’ Despite all the concerns about these changes, we can not prevent technology from going further. Neither can we decline the promising glimpse of a new way of communicating, which perhaps can bring a more satisfying sense of connection between us.
             </div>
-            </div>
-
-            <div class="commonclass">        
+          </div>
+        
             <div class='influencetwo' id='influencetwotwo'>
-                 <div class='subtitle' id='newkind'>4.1.2_NEW KIND OF INTIMACY</div>
+              <div class="clickText">
+                 <div class='subtitle' id='newkind'>NEW KIND OF INTIMACY</div>
 
-            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author is elaborating on concerns of older generation on how internet brings isolation and changes in understanding of intimate relationships between people. (Another case of juvenoia in the context of communication). However, she is offering a new fresh perspective on the topic. Gill Valentine claims that relationships not necessarily become more distant, but simply turn into a different kind of relationships–intimacy at a different level, which underlines my idea on the change in perception. ‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’ Somehow intimacy by default implies physical proximity. Anthropologist Edward T. Hall coined the term ‘proxemics’ to denote the different kinds of distance that occur between people and connected them to socially acceptable forms of communication: the furtherest distance to other person (1.5 to 1.1m) would stand for ‘social’, decreased to 45–152cm distance would mean ‘personal’ and the closest proximity of 0–45cm would mean ‘intimate’. ‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.’ Availability of digital forms of communication in complex with globalisation encourages the development of this kind of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense online exchanges and daily Internet use are adding a new dimension, rearticulating practices of everyday life and lived spaces (Franklin 2001)’. ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies’.
-                 
-            <!-- In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author is elaborating on the concerns of older generation on how internet brings isolation and changes in understanding of intimate relationships between people. However, she is also offering a new fresh perspective on the topic. Gill Valentine is claiming that relationships not necessarily become more distant, but simply turn into a different kind of relationships–intimacy at a different level. <span class='footnote' id='f6'>‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’</span> Intimacy by default implies physical proximity, <span class='footnote' id='f7'>‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.'</span> Availability of electronic forms of communication in complex with globalisation encourages the development of this kind of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ 9 ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense online exchanges and daily Internet use are adding a new dimension, rearticulating practices of everyday life and lived spaces (Franklin 2001)’.10 ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies.' -->
+            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author elaborates on the concerns of the older generation on how internet brings isolation and changes in understanding of intimate relationships between people. (Another case of juvenoia in the context of communication). However, she offers a fresh, new perspective on the topic. Gill Valentine claims that relationships do not necessarily become more distant, but simply turn into a different kind of relationships–intimacy on a different level, which underlines my idea on the change in perception. ‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from an industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’ Somehow, intimacy by default implies physical proximity. Anthropologist Edward T. Hall coined the term ‘proxemics’ to denote the different kinds of distance that occur between people and connected them to socially acceptable forms of communication: the furtherest distance to other person (1.5 to 1.1m) would stand for ‘social’, decreased to 45–152cm distance would mean ‘personal’ and the closest proximity of 0–45cm would mean ‘intimate’. ‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.’ Availability of digital forms of communication in a wider context of globalisation encourages the development of these kinds of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense, online exchanges and daily Internet use are adding a new dimension, rearticulating the practices of everyday life and lived spaces (Franklin 2001)’. ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies’.
             </div>
-            </div> 
+          </div>
 
-            <div class="commonclass">
             <div class='influencetwo' id='influencetwothree'>
-                 <div class='subtitle' id='media'>4.1.3_MEDIA SHAPES THE PROCESS OF THOUGHT</div>
-            In the well-known article by Nicholas Carr ‘Is Google making us stupid?’ the author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more quantity-wise, but it becomes a completely different kind of reading, and different way of perception of information. ‘Media are not just passive channels of information. They shape the process of thought’, and ‘our writing equipment takes part in the forming of our thoughts.’
+              <div class="clickText">
+                 <div class='subtitle' id='media'>MEDIA SHAPES THE PROCESS OF THOUGHT</div>
+            In ‘Is Google making us stupid?’ the well-known article by Nicholas Carr. The author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more ,quantity-wise, but it becomes a completely different kind of reading, and different way of perceiving information. ‘Media are not just passive channels of information. They shape the process of thought’, and ‘our writing equipment takes part in the forming of our thoughts’.
+
+
             </div>
-            </div>
+          </div>
             
-            <div class="commonclass">
             <div class='influencetwo' id='influencetwofour'>
-                 <div class='subtitle' id='right'>4.1.4_RIGHT HEMISPHERE</div>
-            In fact influence of media on perception is not just an abstract concept but has a very direct visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear logical sequential thinking. It centralize our  abilities for speech, hearing, writing and thus mediate our expression of comprehension and language. Where the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemispheres pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’ “comprehensive awareness” is the result.’ 
-            <p>Physiology of the eye may have predisposed linear and sequential manner of thinking. And the alphabet created a linear and visual environment which contributed to the dominance of the left hemisphere. ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality.’ However, ‘For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’. ‘The findings of the Russian neyrophysiologist A.R. Luria […] show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain. […] The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics. […] The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere. […] In general, it needs to be noted that left-hemisphere man has very little power to observe or control environments, or to see the patterns change.’ ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. […] Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective’.  ‘For use in electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation.’</p>
+              <div class="clickText">
+                 <div class='subtitle' id='right'>RIGHT HEMISPHERE</div>
+            In fact, influence of media on perception is not just an abstract concept but has a very direct and visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear, logical and sequential thinking. It centralizes our  ability for speech, hearing, writing and thus mediates our expression of comprehension and language. Whereas the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemisphere pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’, “comprehensive awareness” is the result.’ 
+            Physiology of the eye may have predisposed linear and sequential manners of thinking. The creation of the alphabet led to a linear and visual environment which contributed to the dominance of the left hemisphere. ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality.’ However, ‘For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’. ‘The findings of the Russian neyrophysiologist A.R. Luria […] show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain. […] The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics. […] The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere. […] In general, it needs to be noted that left-hemisphere human has very little power to observe or control environments, or to see the patterns change.’ ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. […] Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective’.  ‘For use in an electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation’.  
             </div>
-            </div>
+          </div>
 </div>
 
     <div class='influenceone' id='influenceonetwo'>
-         <div class='title2'id='book'>4.2.0_ON BOOK DESIGN</div>
+         <div class='title2'id='book'>ON BOOK DESIGN</div>
 
-            <div class="commonclass">
             <div class='influencetwo' id='influencetwofive'>
-                 <div class='subtitle' id='ondesign'>4.2.1_INFLUENCE ON PHYSICAL WORLD AND DESIGN</div>
+              <div class="clickText">
+                 <div class='subtitle' id='ondesign'>INFLUENCE ON PHYSICAL <br>WORLD AND DESIGN</div>
             ‘In the order of things, ground comes first. […] 
             The ground of any technology is both the situation 
             that that gives rise to it as well as the whole environment (medium) 
@@ -1126,99 +1525,99 @@ $(document).ready(function(){
 
             If our thinking process, perception and social behaviour is being changed by the media, it seems logical to conclude that these changes don’t just stop there. What if we are going to look at the consequences of this influence on the physical world and design. We draw a lot of parallels between orientation on the net and orientation in the physical space. We even operate the same words like ‘getting lost’ or ‘going’ on the website. Moreover, we use electronic technology to help ourselves to orientate in the physical material space as well. And a lot of us are afraid, the same way as Socrates was concerned about loosing ability to remember with the invention of writing, that we are now going to loose the ability to orientate within physical space without the help of our smartphone. 
             </div>
-            </div>
+          </div>
 
-            <div class="commonclass">
             <div class='influencetwo' id='influencetwosix'>
-                 <div class='subtitle' id='browsing'>4.2.2_BROWSING THROUGH<br>THE BOOK</div>
+              <div class="clickText">
+                 <div class='subtitle' id='browsing'>BROWSING THROUGH<br>THE BOOK</div>
             Reading a book used to imply following a linear narrative. However this doesn’t seem to be necessarily the case anymore. Since print stopped being a ‘universal media’, it obtained very particular qualities. Moreover, due to the changes in our perception the approach towards book-making in design has changed, as well as the value and meaning of the book. Looking at the student jury selection of 32 books for Best Dutch Design Book awards for 2016, a certain pattern appears. For instance, most of the books in the selection are image-based, and don’t contain a lot of textual material. The layout of many books had a certain correlation with the layout of a website: one of the jury members called his experience of looking at one of the books ‘Browsing through the book’. At the same time a lot of book designs were really making an emphasis on the material aspect of the book: the texture and transparency of the paper, quality of print, engravings and various binding methods, combination of different formats–everything that is not possible to do within digital design. Parallel Encyclopaedia, Ornithology, Land, Form/No Form Black Series and other books from the selection are not meant for reading in the traditional sense of this word. They are made for looking at, for holding them, touching them, owning them. These books are not only containers of primarily visual information, but they become an object. One of the designers who really understands new tendencies in book design and making a use of them is Irma Boom, who elaborates on the issue in one of her interviews: ‘I think the Internet has changed books as a phenomenon. Making a book has in fact become a status symbol. It’s a very slow and still medium. The types of books I make tend to have an object-like quality. […] A really good book has a permanent quality, I think. I hope.'
             </div>
-            </div>  
+          </div>
     </div>
 
 
     </div>
 </div>
 
-<div id='pagebreak'></div>
 
 
 <div class='fifth'>
     <div class='digital'>
-         <div class='title'id='DIGITAL'>5.0.0_DIGITAL AND <br>PHYSICAL SPACES</div>
+         <div class='title'id='DIGITAL'>DIGITAL AND <br>PHYSICAL SPACES</div>
             
-            <div class="commonclass">
+            
             <div class='digitalone' id='digitaloneone'>
-                 <div class='title2'id='info'>5.1.1_INFORMATION IS <br>NOT SLOW AND NOT STILL</div>
+              <div class="clickText">
+                 <div class='title2'id='info'>INFORMATION IS NOT SLOW <br>AND NOT STILL</div>
             In my opinion a similar sequence of changes is happening in the sphere of architecture and urban planning. Information is not set in stone, it is not still and it’s not slow either. It is a network, expanding beyond the frames of a 2D linear canvas.
             </div>
             </div>
 
-            <div class="commonclass">
             <div class='digitalone' id='digitalonetwo'>
-                 <div class='title2'id='orientation'>5.1.2_ORIENTATION IN <br>DIGITAL AND PHYSICAL SPACES</div>
+              <div class="clickText">
+                 <div class='title2'id='orientation'>ORIENTATION IN DIGITAL <br>AND PHYSICAL SPACES</div>
             As was mentioned before, I find that there is a strong connection between our orientation in physical space and on the web. We associate searching through the internet with being physically present at some particular location.
             </div>
             </div>
 
-            <div class="commonclass">
             <div class='digitalone' id='digitalonethree'>
-                 <div class='title2'id='conscious'>5.1.3_CONSCIOUSNESS <br>OF A DATA-BASED USER</div>
+              <div class="clickText">
+                 <div class='title2'id='conscious'>CONSCIOUSNESS <br>OF A DATA-BASED USER</div>
             ‘… the consciousness of the data-base user is in two places at once: at the terminal and in the centre of the system’.19 The event of December of 1968 when Apollo astronauts installed a camera on the moon and pointed it on Earth became important not only in technological sense. ‘We were on earth and the moon simultaneously’. 25 And the realisation of this possibility became a starting point for further evolvement of the shift in our brains. 
             </div>
             </div>
 
-            <div class="commonclass">
             <div class='digitalone' id='digitalonefour'>
-                <div class='title2'id='infl'>5.1.4_INFLUENCE OF ELECTRONIC TECHNOLOGY <br>ON PUBLIC SPACES</div>
+              <div class="clickText">
+                <div class='title2'id='infl'>INFLUENCE OF ELECTRONIC TECHNOLOGY <br>ON PUBLIC SPACES</div>
             The same way as our ‘intimate’ relationships become different, physical and digital spaces become much more in connection rather than in contrast with each other. Especially since we rely so much on the GPS navigation, and use digital data to orientate in the physical space.
             Of course, electronic technologies have their physical manifestations in form of data-storage facilities, internet cables laid underwater etc.  But I want to draw attention to how the use of these technologies affects public spaces, which are in the direct connection to social and public activities.
             </div>
             </div>
 
             <div class='digitalone' id='digitalonefive'> 
-                 <div class='title2'id='cathedral'>5.2.0_CATHEDRAL OF A NEW ERA</div>
+                 <div class='title2'id='cathedral'>CATHEDRAL OF A NEW ERA</div>
                     
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwoone'>
-                         <div class='subtitle' id='utrecht'>5.2.1_ARCHITECTURE OF UTRECHT CENTRAAL</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='utrecht'>ARCHITECTURE OF UTRECHT CENTRAAL</div>
                     For instance–Utrecht Centraal Station. Utrecht Centraal is the biggest and the busiest station in the Netherlands, ‘the heart of the Dutch railway network’ as it is proudly being called on its official website.18 Station serves as a major infrastructural point, a junction of all the major transport lines ’…but offers you also places to meet and relax. Utrecht Centraal: more than just a train station’.
                     <p>By 2025 the station is expected to host around 350,000 of travellers per day. Benthem Crouwel Architects has been involved in the development of the train station since 2003. And thirteen years later, the new public transport terminal that will house train, bus and tram platforms under one undulating roof, has opened. Over the next two decades, the number of travellers through Utrecht Central is being expected to increase even more–to about a hundred million per year. Since the previous building could not handle the increasing amounts of passengers, Utrecht Central Station has been rebuilt–three times its original size. During the 13 year design process developed by Jan Benthem and Mels Crouwel, the decision was made to create a flat roof in form of a slight curve ’… as a wave that radiates a dynamic movement and also functions as a natural way finder’. The official opening of the station with the visit from royal Dutch family happened in 2016. However, being in the station in 2017 sill doesn’t give an impression of a finished fully reconstructed building. The concept for the design of the station is published on the official website of the architectural studio. It involves many attractive and positively-orientated phrases like ‘Restaurants, shops, and a possible market gives this promenade the atmosphere of a real city street’, ‘the interior has a reserved allure and modest charm: it is the people, signage, vehicles and other typical additions that make the station alive and vibrant, and give colour and ambiance’ or even ‘this integrated approach to station and station environment reinforces the identity and vitality of the city’. And then it goes further all the way to naming the station ‘The Cathedral of the new era’. It later adds that ‘the station is part of the urban fabric, with logical walkways and a better connection between different city districts.’</p>
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwotwo'>
-                         <div class='subtitle' id='all'>5.2.2_ALL-AT-ONCENESS</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='all'>ALL-AT-ONCENESS</div>
                     And here it is–a massive never ending construction, trying to trick you into thinking it is light, open, neutral and transparent. Utrecht Central is one of the examples of new approach to architecture of public spaces: it needs to be all at once–more than just a train station. As any piece of information on the web it is interlinked with many others, Utrecht Centraal is literally pierced through not only with numerous railways, but with roads and tracks for trams, busses, cars, bicycles and filled with increasing amount of functionalities. Utrecht Central spacial organisation is almost the opposite of the Haarlem Station, which still keeps the traces of its very first design from 1839. At the Haarlem Station the linear sort of composition is prominent. Spaces have single function–even waiting rooms were separated according to the classes: first, second and third, not more than that. The all-at-onceness is foreign there.
                     <p>I do understand the intentions behind such a solution for Utrecht Central. During the 1990s the station was so and so. The changes were absolutely necessary and architects’ aim was to satisfy the needs of ever expanding audience of travellers. The topic of comfort is repeating in the interviews with the main architect Pieter van Rooj from Benthem Crouwel Architects. However my experience of going through Utrecht Central was not filled with comfort. In fact, exactly the opposite happened.</p>
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwothree'>
-                         <div class='subtitle' id='small'>5.2.3_SMALL SCREENS</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='small'>SMALL SCREENS</div>
                     The first time I ended up at the Utrecht Central Station, I got lost and had to ask for help to find a right way out. It has a few entrances and exits leading to different parts of the city. At this point the navigation within the physical space of the station doesn’t clearly show which way and due to station’s gigantic sizes, this information is crucial. Another major detail that attracted my attention, something that i noticed at other, renovated by the same architects stations, was a number of huge led screens placed in the main hall. My first expectation was to see the train schedule on them, however they were places with an absolutely different purpose–advertising. The small few screens with the schedule were placed in the way, not comparable with the visibility of the big one. In fact, to read something from the small screen, you have to make a tangible way through the crowd. I felt like I was not among the major part of the travellers who were predominantly checking the train schedule on their gadgets. I am talking about the big screen with the timetable as just a detail, one of many, but if to take a look at it closely, taking away such an element from the public space of the train station brings a big change in the social behaviour. It made me think of a portable book, which once was invented and then irrevocably changed the perception and thinking. The little pocket book, or in this case the smartphone completely replaced the function of the monumental timetable at the entrance of the station. 
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwofour'>
-                         <div class='subtitle' id='zoned'>5.2.4_ZONED-OUT</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='zoned'>ZONED-OUT</div>
                     So my first visit to Utrecht Central didn’t become a positive experience, however after a couple of months after I have noticed a significant change. No, going through the station didn’t become more pleasant, but I definitely felt a certain change and station’s influence on my behaviour. Since I didn’t have to think anymore where I should go, obviously I knew my way in and out, I was in a kind of ‘zoned out’ mode each time on my way through. I didn’t have any reason at all to communicate with anybody–my OV-card can be updated trough the machine, my schedule is on smartphone and I could buy my snack at the Albert Heijn with contactless and ‘humanless’ cashier. Reading about the Herbert Krugman brain-wave studies, I noticed some similarities with how I felt. Herbet Krugman’s study describes a ‘subject’ watching a TV. Within 30 seconds of looking at the TV screen the ‘subject’ went into the alpha state–‘relaxed, passive, unfocused’25, typical to the right hemisphere activity mode. Krugman concluded his experiments with: ‘… The unique power of the electronic media is to shape the content of people’s imagery, and in that particular way detrain their behaviour and their views.'
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwofive'>
-                         <div class='subtitle' id='alpha'>5.2.5_ALPHA STATE</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='alpha'>ALPHA STATE</div>
                     So my first visit to Utrecht Central didn’t become a positive experience, however after a couple of months after I have noticed a significant change. No, going through the station didn’t become more pleasant, but I definitely felt a certain change and station’s influence on my behaviour. Since I didn’t have to think anymore where I should go, obviously I knew my way in and out, I was in a kind of ‘zoned out’ mode each time on my way through. I didn’t have any reason at all to communicate with anybody–my OV-card can be updated trough the machine, my schedule is on smartphone and I could buy my snack at the Albert Heijn with contactless and ‘humanless’ cashier. Reading about the Herbert Krugman brain-wave studies, I noticed some similarities with how I felt. Herbet Krugman’s study describes a ‘subject’ watching a TV. Within 30 seconds of looking at the TV screen the ‘subject’ went into the alpha state–‘relaxed, passive, unfocused’25, typical to the right hemisphere activity mode. Krugman concluded his experiments with: ‘… The unique power of the electronic media is to shape the content of people’s imagery, and in that particular way detrain their behaviour and their views’. 
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwosix'>
-                         <div class='subtitle' id='archigram'>5.2.6_ARCHIGRAM AND CITIES<br>AS NETWORKS OF INCIDENCE</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='archigram'>ARCHIGRAM AND CITIES<br>AS NETWORKS OF INCIDENCE</div>
                     As well as shopping malls, Junk-spaces didn’t just happen. They appear as result of a failure, or better to say the absence, of collaboration between disciplines like graphic design and architecture.  
                     In my opinion, Archigram is an example of how graphics can play a significant role in development of the whole new branch of architecture and completely rearrange the preliminary view on the discipline. The idea of Megastructure (which could be a metaphor for the Internet ) brings us back to the 1960s when the first enclosed shopping mall as we know it was built. The neo-futurst architectural group Archigram came up with a variety of fictional plans for urban planning and architecture. Futuristic concepts of the whole self-sustainable city in a building, moving plug-in cities and more–these were the progressive ideas driven by changes in the society and changes in the social perception of space, possibilities of technology and a desire for freedom. Here’s what Peter Cook thought on how the perception of architecture is affected by technology at that time: ‘The electric car of 6ft. x 4ft. 4in. can become not only a service to the front door–even if 30 storeys up–it can become a unit of the house itself.  […] A home is not a house.  […] Neither is a room a room, or a wall a wall, if we don’t want it to be. The ‘cage’ dwelling is a recent series of schemes that plug and clip into the plug-in city, or anywhere for that matter;  […] It’s a series of ‘zones’ rather than parts. It suggests certain situation coordinates rather than lines where hard objects have to remain.  […] The building now can really become an animal, with inflatables and hydraulics and the cheap, localised electric motor. It can grow: not only larger. but now smaller, different, better. The city is not only a series of incidents but a network of incidence’. 17
 
@@ -1227,30 +1626,30 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwoseven'>
-                         <div class='subtitle' id='planned'>5.2.7_PLANNED OBSOLESCENCE<br><p class="subtitleindent">AND DISPOSABLE APPROACH</p></div>
+                      <div class="clickText">
+                         <div class='subtitle' id='planned'>PLANNED OBSOLESCENCE <br>AND DISPOSABLE APPROACH</div>
                     Of course, Archigram’s ‘dreams’ of architecture of the future are utopian and imply the change, perhaps, too big of a scale. However, there are some revolutionary ideas, from which our society could definitely learn. Obviously, that didn’t happen. ‘Almost without realising it, we have absorbed into our lives the first generation of expendables … foodbags, paper tissues, polythene wrappers, ballpens, EPs … so many things about which we don’t have to think. We through them away as soon as we acquire them. Also with us are the items that are bigger and last longer, but are nevertheless planned for obsolescence … the motor car … and its unit-built garage’. At approximately the same time in ‘The Waste Makers” Vance Packard is looking closer at the concept of planned obsolescence in design. Planning the expiration date for the product, and often even hasten it, in order to increase the sales and push more products to the customers, under the flag of improving the economy became a terrible disaster for the environment and developed destructive habits within society. ‘The pressures to expand production and consumption have forced Americans to create a hyperthyroid economy that can be sustained only by constant stimulation of the people and their leaders to be more prodigal with the nation’s resources’. 26 As Peter Cook said, this approach spread over not only product design, but of course architecture and became the new life-style.
                     </div>
                     </div>
                     
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwoeight'>
-                         <div class='subtitle' id='building'>5.2.8_BUILDING IN <br>CONSTANT FLUX</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='building'>BUILDING IN <br>CONSTANT FLUX</div>
 
                     </div>
                     </div>
                     
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwonine'>
-                         <div class='subtitle' id='worlds'>5.2.9_WORLDS ONTO THEMSELVES</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='worlds'>WORLDS ONTO THEMSELVES</div>
 
                     </div>
                     </div>
 
-                    <div class="commonclass">
                     <div class='digitaltwo' id='digitaltwoten'>
-                         <div class='subtitle' id='junk'>5.2.10_JUNK-SPACE</div>
+                      <div class="clickText">
+                         <div class='subtitle' id='junk'>JUNK-SPACE</div>
                             </div>
                         
                     </div>
@@ -1263,28 +1662,28 @@ $(document).ready(function(){
 
 
 
-<div class='sixth'>
+<div class='sixth commonclass'>
       <div class='gdas'>
-           <div class='title' id='GDAS'>6.0_GRAPHIC DESIGNER AS AN ARCHITECT</div>
+           <div class='title' id='GDAS'>GRAPHIC DESIGNER AS AN ARCHITECT</div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasoneone'>
-             <div class='title2'id='another'>6.1_ANOTHER SCALE OF ARCHITECTURE</div>
+            <div class="clickText">
+             <div class='title2'id='another'>ANOTHER SCALE OF ARCHITECTURE</div>
         In many ways Archigram itself and of course its projects became a reflection on the changes in the society, politics and technological development of that time. Analogically our age brings its own reflection on the issues and innovations of today and takes form, amongst the rest, in architecture and urban landscape. 
         <p>For instance, in the book from Junya Ishigami ‘Another scale of architecture’ from 2010, architect is coming up with a correlating to Archigram’s ideas approach in his research: ‘To embody the architecture that has never been architecture before–I wish to explore this possibility. Likely, this will mean fundamentally re-thinking our methods of constructing architecture’. (!!!) In contrast to Archigram, Junya Ishigami draws his inspiration from clouds, forest, horizon, sky and rain. This direction in architecture is not based on preliminary knowledge, but tries to draw the attention back to the essence: following the movement of the clouds, not paths of potential customers. </p>
         </div>
         </div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasonetwo'>
-             <div class='title2' id='cartography'>6.2_CARTHOGRAPHY</div>
+          <div class="clickText">
+             <div class='title2' id='cartography'>CARTHOGRAPHY</div>
         This brings me to the topic of ‘Architecture Without Architects’, which is raised in the book by Bernard Rudofsky and the exhibition held in November of 1964 at New York Museum of Modern Art . ‘Architecture Without Architects attempts to break our narrow concepts of the art of building by introducing the unfamiliar world of nonpedigreed architecture’. 27 The book is telling about the architecture before it became an expert’s discipline and how it was developing in various cultures. ‘There is a good deal of irony in the fact that to stave off physical and mental deterioration the urban dweller periodically escapes his splendidly appointed lair to seek bliss in what he thinks are primitive surroundings: a cabin, a tent, or, if he is less hidebound, a fishing village or hill town abroad’. Rudofsky is calling upon learning from primitive cultures and vernacular architecture, but he also admits the importance of urban and architectural signage and speculates on his concerns over the increasingly disorienting visual and psychological experience of urban environments. 
         </div>
         </div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasonethree'>
-             <div class='title2' id='signage'>6.3_SIGNAGE AND NAVIGATION</div>
+          <div class="clickText">
+             <div class='title2' id='signage'>SIGNAGE AND NAVIGATION</div>
         In the past architects dared to admit that graphic design has an important role within architecture. However the extent till which graphic designer was admitted to have an impact was always quite literal and limited: to the signage, navigation and typography in space. Graphic design for architects in that sense serves a function of an extra layer, almost a decoration of some sort. They admit its functionalism, but discussions happen mostly about its aesthetical value of typography. ‘Modern communication devices and easy to follow signposts save us from losing our way into labyrinths, but they also are to blame for our disenchantment with architectural space’. 
         Indeed street signs, window displays, navigation signs and such, are increasingly becoming a significant and inseparable part of the urban landscape. That was discussed at the Symposium ’Signs for Streets and Buildings’ on November 20th in 1953, which is mentioned in the ‘Disorientation’ by Felicity D. Scott. No doubt, navigation and lettering in the architectural space is an important functional and aesthetical element. And there is definitely should be a discussion on the topic especially now, when screens of various sizes are being incorporated in the interior or even a structure of the building. This way graphics, created by graphic designers become inseparable from architecture, and they both contribute to an experience and functionality. 
 
@@ -1294,24 +1693,24 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasonefour'>
-             <div class='title2'id='lack'>6.4_LACK OF COOPERATION</div>
+          <div class="clickText">
+             <div class='title2'id='lack'>LACK OF COOPERATION</div>
         There is a lack of cooperation between practices, like architecture and graphic design. And this quite often results into miscommunication and failure. Both of the practices could benefit from each other. When I was studying graphic design at the Saint-Petersburg University of Technology and Design, I, as well as any student at my department, didn’t have any practice with print making. The ‘Print’ department of the same university was located just a couple of blocks away from the building where we had our lectures on silkscreening. As a result, my eduction on print was based purely on some vague knowledge withdrawn from the Power Point presentation without any practical skills. I believe that collaboration of these two departments as a start would create a useful experience for both parties involved, but that would bring too much bureaucracy and would take to much of an effort for the teachers. Moreover, that may have never come across their minds at all. The departments didn’t have any connection at all. And the same thing is happening on a bigger scale with architecture and graphic design and many other disciplines.
         </div>
         </div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasonefive'>
-          <div class='title2' id='interlinked'>6.5_INTERLINKED PRACTICES</div>
+          <div class="clickText">
+          <div class='title2' id='interlinked'>INTERLINKED PRACTICES</div>
         Especially in the age of new media erasing the borders between digital and physical world, when all the disciplines mixes up and now, so much as never before, linked so close together and influencing each other, we can’t afford ourselves to continue thinking in a singular ‘logical’ left-brained way, structuring and categorising and keeping solid borders in-between the disciplines. The development of electronic technology pushed our possibilities further. In medicine, filmmaking, design, architecture … everywhere. And almost nothing in todays society can function without a help from IT specialists and programmers. But IT specialist is dealing with electronic media from a technological point of view, from a functional perspective. And graphic designer is mostly expected to take care of the aesthetical and user-friendly visual effect. I am persuaded that graphic design can offer much more in terms of collaboration with other practices. This thesis is starting with the topic of failing communication, and how societies through thousands of years are trying to come up with a better tool or skill to reach a better understanding. And if graphic design is specialising on visual communication, translating, transmitting, visualising, structuring and finally, and hopefully, reaching the audience with an information, shouldn’t it be considered as necessary as the programming? 
         In current moment it is not enough to be just a designer or just a programmer. The more skills and various knowledge in different fields you have, the more languages you are able to speak, the higher is your value as an employee.  And this is another proof of importance of establishing a constant link between disciplines and sustain their mutual benefit. There is no need to follow strictly framed path within your profession either. ‘One of the key workplace trends of the 21st century has been the collapse of the corporate ladder, whereby loyal employees climbed towards the higher echelons of management one promotion at a time. Cathy Benko, vice-chairman of Deloitte in San Francisco and co-author of The Corporate Lattice, says that the ladder model dates back to the industrial revolution, when successful businesses were built on economies of scale, standardisation and a strict hierarchy. “But we don’t live in an industrial age, we live in a digital age. And if you look at all the shifts taking place, one [of the biggest] is the composition of the workforce, which is far more diverse in every way,” she says’.  28
         </div>
         </div>
 
-        <div class="commonclass">
         <div class='gdasone'id='gdasonesix'>
-             <div class='title2' id='type'>6.6_TYPE/SCREEN DYNAMICS</div>
+          <div class="clickText">
+             <div class='title2' id='type'>TYPE/SCREEN DYNAMICS</div>
         The lack of communication between practices on the regular basic motivates designers to combine design and other practices on their own. For instance, a well-known graphic design orientated studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. Currently the work is being put in the context of museum, and being projected on the walls of already existing piece of architecture. But if similar approach could be used within a public space, it could create a totally different experience for the viewer. If this approach would be considered to be in use from the stage of map-making, this could change the architecture of the building entirely
         </div>
         </div>
@@ -1320,147 +1719,70 @@ $(document).ready(function(){
     </div>
 </div>
 
-<div id='pagebreak'></div>
 
 
 <div class='seventh commonclass'>
     <div class='conclusion'>
-        <div class='title'id='CONCLUSION'>7.0_CONCLUSION</div>
-    The lack of communication between practices on the regular basic motivates designers to combine design and other practices on their own. For instance, a well-known graphic design studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. 
+        <div class='title'id='CONCLUSION'>CONCLUSION</div>
 
-    Currently the work is being put in the context of museum, and being projected on the walls of already existing piece of architecture. But what if similar approach could be used within a public space? How could the ‘cathedral of a new era’ look like? It could create a totally different experience for the viewer. If this approach would be considered from the stage of concept and map-making of a public space like train station, this could change the architecture of the building entirely. What if motion tracking would be used to adjust the size of a schedule projected on the wall. If this wall would merge with the ceiling and form a curve, holding a projection, so that it is visible from every corner of the station. If the floor plan of the station is not going to be based on strict geometry, and architectural traditions but on the observations of anthropologists and sociologists and the knowledge of graphic designers on visual communication. If there will more space for encounters and less for noise, distraction and manipulation. There are so many technologies allowing all of the mentioned above, but unfortunately most of them are either being used for commercial purposes or they stay within the frames of an artwork.
+  <div class="conclusionone" id="conclusiononeone">
+    <div class="clickText">
+    <div class="title2" id="INTERL">INTERLINKED PRACTICES</div>
+  The lack of communication between various disciplines motivates designers to combine design and other practices on their own. For instance, a well-known graphic design studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, this installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. 
+  Currently the work is being put in the context of museum, and being projected on the walls of already existing piece of architecture. But what if similar approach could be used within a public space? How could the ‘cathedral of a new era’ look like? It could create a totally different experience for the viewer. If this approach was considered from the stage of concept and map-making of a public space like train station, this could change the architecture of the building entirely. What if motion tracking would be used to adjust the size of a schedule projected on the wall. If this wall would merge with the ceiling and form a curve, holding a projection, so that it is visible from every corner of the station. If the floor plan of the station was not based on strict geometry and architectural traditions, but on the observations of anthropologists and sociologists and the knowledge of graphic designers on visual communication. If there was more space for encounters and less for noise, distraction and manipulation. There are so many technologies allowing all of the mentioned above, but unfortunately most of them are either being used for commercial purposes or they stay within the frames of an artwork.
+</div>
+</div>
 
-    Human ability for inventing something new is very limited. Our imagination is tighten to the knowledge of what we have already seen before. Everything is always derived from something that already exist. A plain has to fly, so it takes a shape of a bird. And an alien in a fiction movie is always going to be reminding of a hybrid of a human and a lizard. The more we focus on one particular topic, the more we know about it, but our vision is blurred on all the other knowledge around our area of expertise. If our communication is constrained, and our knowledge and imagination are bounded, instead of closing up and trying to set borders, we should try to link all the possibilities that we already have. Perhaps if we succeed with that, we can create architecture which will have to do nothing with how we know it now. And maybe, this new approach will open up a next level of understanding between us. ‘One thing that distinguishes human beings from animals is that we are evaluative creatures.’ and that gives us power to take decisions and draw conclusions and build our own environment. 
+  <div class="conclusionone" id="conclusiononetwo">
+    <div class="clickText">
+  <div class="title2" id="OWNE">OUR OWN ENVIRONMENT</div>
+  Human ability for inventing something new is very limited. Our imagination is tightened to the knowledge of what we have already seen before. Everything is always derived from something that already exist. A plane has to fly, so it takes a shape of a bird. And an alien in a fiction movie is always going to be reminding of a hybrid of a human and a lizard. The more we focus on one particular topic, the more we know about it, but our vision is blurred on all the other knowledge around our area of expertise. If our communication is constrained, and our knowledge and imagination are bound, instead of closing up and trying to set borders, we should try to link all the possibilities that we already have. Perhaps if we succeed with that, we can create architecture which will have nothing to do with what we know now. Maybe, this new approach will open up a new level of understanding between us. ‘One thing that distinguishes human beings from animals is that we are evaluative creatures.’ and that gives us power to take decisions, draw conclusions and build our own environment. </div>
+</div>
 
-    Straight lines. Points and millimetres. Zoom in and zoom out on the small screen.
-    Slowly scrolling–step by step. Editing and putting layer by layer.
-    Step back, but then going forward again. 
-    Pause for a second. Switch a song.
-    One by one, but in the organised flow. Organised by me this time.
-    The structure is changing as you work on it, structuring information for somebody else.
-    In which context is it going to end up? 
-    Transparency of glass everywhere around it, people passing by on the way to work.
-    So much space inside this never ending corridor from metal and plastic.
-    And it must be possible to use it for something else.
-    Something else rather then a big spinning package of juice on the screen.
-    And yet we can’t move freely–have to follow the rules.
+  <div class="conclusionone" id="conclusiononethree">
+    <div class="clickText">
+  <div class="title2" id="STRAIGHT">STRAIGHT LINES</div>
+  Straight lines. Points and millimetres. Zoom in and zoom out on the small screen.
+  Slowly scrolling–step by step. Editing and putting layer by layer.
+  Step back, but then going forward again. 
+  Pause for a second. Switch a song.
+  One by one, but in the organised flow. Organised by me this time.
+  The structure is changing as you work on it, structuring information for somebody else.
+  In which context is it going to end up? 
+  Transparency of glass everywhere around it, people passing by on the way to work.
+  So much space inside this never ending corridor from metal and plastic.
+  And it must be possible to use it for something else.
+  Something else rather then a big spinning package of juice on the screen.
+  And yet we can’t move freely–have to follow the rules.
+  </div>
+</div>
+
 
     </div>
-
 </div>
 
 
 
-<!-- <div id='why'>why</div>
- -->
+<!-- </div>
 
-<!-- <div id='hello'>hello</div>
- -->
-
-
-
-<!-- footnotes-->
-<!-- <div class='ref' id='r1'>
-p.42 “In a Manner of Reading Design”. Edited by Katja Gretzinger. 
-Casco–Office for Art, Design and Theory
-Jan van Eyck Academie
-Sternberg Press
-2012
-</div>
-
-<div class='ref' id='r2'>
-p.8 <br>
-“The Medium is the Massage”<br>
-M. McLuhan, Q. Fiore <br>
-Casco–Office for Art, Design and Theory <br>
-Jerome Ages <br>
-1967 <br>
-Published Penguin Design Series 2008
-</div>
-
-<div class='ref' id='r3'>
-p.14–15 <br>
-“In a Manner of Reading Design” <br>
-Casco–Office for Art, Design and Theory <br>
-Jan van Eyck Academie <br>
-Sternberg Press <br>
-2012 <br>
-</div>
-
-<div class='ref' id='r4'>
-p.113 <br>
-“The Medium is the Massage”<br>
-M. McLuhan, Q. Fiore <br>
-Casco–Office for Art, Design and Theory <br>
-Jerome Ages <br>
-1967 <br>
-Published Penguin Design Series 2008
 </div> -->
-
-<div class='track'><img src='images/here.png'></div>
-
-
-
 </div>
-<!-- </div> -->
+
+<div class="blurry_thingy"></div>
+
+<div class="buttonNext">NEXT >></div>
+
+
+<div class="route">FOLLOW THE NON-LINEAR ROUTE</div>
+
 
 <div class="containerofcontainer">
         <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>
-   <div id="container2"></div>
+   <div class="insidemap"id="container2"></div>
 </div>
 
 
 
 
-
-
-
-
-<!-- <canvas id="myCanvas" width="1000px" height="1000px"></canvas>
-<script>
-    var canvas = document.querySelector("#myCanvas");
-    var context = canvas.getContext("2d");
-
-    var canvasPos = getPosition(canvas);
-    var mouseX = 0;
-    var mouseY = 0;
-     
-    canvas.addEventListener("mousemove", setMousePosition, false);
-     
-    function setMousePosition(e) {
-      mouseX = e.clientX - canvasPos.x;
-      mouseY = e.clientY - canvasPos.y;
-    }       
-
-    function update() {
-
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      
-      context.beginPath();
-      context.arc(mouseX, mouseY, 50, 0, 2 * Math.PI, true);
-      context.fillStyle = "#FF6A6A";
-      context.fill();
-
-      requestAnimationFrame(update);
-    }
-    update();
-
-  function getPosition(el) {
-  var xPosition = 0;
-  var yPosition = 0;
- 
-  while (el) {
-    xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-    yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
-    el = el.offsetParent;
-  }
-  return {
-    x: xPosition,
-    y: yPosition
-  };
-}       
-     
-</script>
- -->
 </body>
 </html>
