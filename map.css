@@ -22,12 +22,13 @@ body:hover {
   z-index:5000; 
   right: 5%;
   top:7%;
-  z-index: 50000
+  z-index: 50000;
 }
 
 .images { 
   position: relative; 
   display: none; 
+
 }
 
 img {
@@ -99,12 +100,15 @@ height:4000px;
 
 .header{  
    font-family: 'Arial';
-   font-weight: normal; 
+   font-weight: bold; 
    font-size: 10px;
    color: black;
    position: absolute;
    left:5px; 
    position: fixed;
+   margin-top:5px;
+   margin-left:10px;
+   display: none;
  }
 
  .footnote {
@@ -126,14 +130,15 @@ height:4000px;
 }
 
 .ref {
-/*   background-color: white;
    font-family: 'Arial';
-   font-weight: normal;*/
+   font-weight: normal;
    font-size: 13px;
-   color: black;
+   color: white;
+   text-indent: none;
 /*   position: absolute;
    display: block;*/
    font-style: italic;
+   line-height: 18px;
 /*   top: 200px;
    border: solid black 1px;
    width:250px;
@@ -229,6 +234,8 @@ height:4000px;
 .bigTitle {  
    font-size: 150px;
 }
+
+.test {background-color: red;}
 
 
 /*titles_2*/
@@ -339,9 +346,9 @@ height:4000px;
 #digitaltwonine   {top:1450px; left:840px;}
 #digitaltwoten    {top:1900px; left:840px;}
 
-#gdasoneone    {top:300px;}
-#gdasonetwo    {top:750px;}
-#gdasonethree  {top:1200px;}
+#gdasoneone    {top:300px; left:20px;}
+#gdasonetwo    {top:750px; left:20px;}
+#gdasonethree  {top:1200px;left:20px;}
 #gdasonefour   {top:300px; left:790px;}
 #gdasonefive   {top:750px; left:790px;}
 #gdasonesix    {top:1200px; left:790px;}
@@ -471,11 +478,15 @@ height:4000px;
 #hellomap:hover {cursor: pointer; color: black;  -webkit-text-stroke: none;}
 
 p {
+/*  text-indent: 30px;
+*/  margin: 0;
+}
+.indent {
   text-indent: 30px;
   margin: 0;
 }
 
-sup {font-size: 10px;}
+sup {font-size: 10px; line-height: 10px}
 
 
 .showText { overflow: scroll; color: black;}

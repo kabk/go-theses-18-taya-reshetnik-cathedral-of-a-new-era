@@ -483,20 +483,111 @@ $(document).ready(function(){
         $("#digitaltwonine").scrollTop(0);
     });
 
+    $("#gdasoneone").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#another").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasoneone").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasoneone").removeClass("bringFront");
+        $("#another").removeClass("hideTitle");
+        $("#gdasoneone").scrollTop(0);
+    });
+
+    $("#gdasonetwo").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#cartography").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasonetwo").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasonetwo").removeClass("bringFront");
+        $("#another").removeClass("hideTitle");
+        $("#cartography").scrollTop(0);
+    });
+
+    $("#gdasonethree").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#signage").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasonethree").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasonethree").removeClass("bringFront");
+        $("#signage").removeClass("hideTitle");
+        $("#gdasonethree").scrollTop(0);
+    });
+
+    $("#gdasonefour").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#lack").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasonefour").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasonefour").removeClass("bringFront");
+        $("#lack").removeClass("hideTitle");
+        $("#gdasonefour").scrollTop(0);
+    });
+
+    $("#gdasonefive").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#interlinked").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasonefive").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasonefive").removeClass("bringFront");
+        $("#interlinked").removeClass("hideTitle");
+        $("#gdasonefive").scrollTop(0);
+    });
+
+    $("#gdasonesix").click(function(){
+        $(this).addClass("showText");
+        $(".blurry_thingy").addClass("showBlur");
+        $(this).addClass("bringFront");
+        $("#type").addClass("hideTitle");
+    });
+
+    $(".blurry_thingy").click(function(){
+        $("#gdasonesix").removeClass("showText");
+        $(".blurry_thingy").removeClass("showBlur");
+        $("#gdasonesix").removeClass("bringFront");
+        $("#type").removeClass("hideTitle");
+        $("#gdasonesix").scrollTop(0);
+    });
+
+
+
 
     
 
 
-
-
-
-
-
-
-
-
-
 });
+
+
+
+// $(document).ready(function(){
+//     $("div.containerofcontainer").find(".title").addClass("bigTitle");
+//     console.log("hellohellohelloooo")
+ 
+//     });
 
 // $(document).ready(function(){
 //     $(".intro").click(function(){
@@ -526,6 +617,7 @@ $(document).ready(function() {
     $('.commonclass').each(function(){
               $(this).click(function(){
                 $('body').css('overflow','hidden');
+                $('.ref').css('color','black');
               // },function(){
               //    $("#container").css('overflow','scroll');
             });
@@ -534,6 +626,7 @@ $(document).ready(function() {
         $(document).ready(function(){
             $(".blurry_thingy").click(function(){
                   $("body").css("overflow", "scroll");
+                  $(".ref").css("color","white");
             });
         });
 
@@ -691,343 +784,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-// hide the title on click/ reveal back on mouseleave
-
-// $('.abstract').click(function(){
-//       $('#ABSTRACT').css({'display': 'none'}); 
-//         });
-
-//       $('.abstract').mouseleave(function(){
-//           $(this).scrollTop(0);
-//               $('#ABSTRACT').css({'display': 'block'});   
-//         });
-
-
-//       $('.intro').click(function(){
-//             $('#INTRO').css({'display': 'none'}); 
-//       });
-//       $('.intro').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#INTRO').css({'display': 'block'}); 
-//       });
-
-
-//       $('.conclusion').click(function(){
-//             $('#CONCLUSION').css({'display': 'none'}); 
-//       });
-//       $('.conclusion').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#CONCLUSION').css({'display': 'block'}); 
-//       });
-
-    
-
-//       $('#societyoneone').click(function(){
-//             $('#desire').css({'display': 'none'}); 
-//             // $('#r1').css({'display': 'block'}); 
-//       });
-//       $('#societyoneone').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#desire').css({'display': 'block'}); 
-//             // $('#r1').css({'display': 'none'});
-//       });
-
-
-
-//       $('#societyonetwo').click(function(){
-//             $('#forms').css({'display': 'none'}); 
-//       });
-//       $('#societyonetwo').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#forms').css({'display': 'block'}); 
-//       });
-
-
-//       $('#societyonethree').click(function(){
-//             $('#absolute').css({'display': 'none'}); 
-//       });
-//       $('#societyonethree').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#absolute').css({'display': 'block'});
-//       });
-
-
-//       $('#societyonefour').click(function(){
-//             $('#juvenoia').css({'display': 'none'});
-//       });
-//       $('#societyonefour').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#juvenoia').css({'display': 'block'});
-//       });
-
-
-//       $('#societyonefive').click(function(){
-//             $('#portable').css({'display': 'none'});
-//       });
-//       $('#societyonefive').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#portable').css({'display': 'block'});
-//       });
-
-
-//       $('#digitaloneone').click(function(){
-//             $('#info').css({'display': 'none'}); 
-//       });
-//       $('#digitaloneone').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#info').css({'display': 'block'}); 
-//       });
-
-
-//       $('#digitalonetwo').click(function(){
-//             $('#orientation').css({'display': 'none'}); 
-//       });
-//       $('#digitalonetwo').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#orientation').css({'display': 'block'}); 
-//       });
-
-
-//       $('#digitalonethree').click(function(){
-//             $('#conscious').css({'display': 'none'}); 
-//       });
-//       $('#digitalonethree').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#conscious').css({'display': 'block'}); 
-//       });
-
-
-//       $('#digitalonefour').click(function(){
-//             $('#infl').css({'display': 'none'}); 
-//       });
-//       $('#digitalonefour').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#infl').css({'display': 'block'}); 
-//       });
-
-
-
-//       $('#digitaltwoone').click(function(){
-//             $('#utrecht').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwoone').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#utrecht').css({'display': 'block'}); 
-//       });  
-
-
-//       $('#digitaltwotwo').click(function(){
-//             $('#all').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwotwo').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#all').css({'display': 'block'}); 
-//       }); 
-
-
-
-//       $('#digitaltwothree').click(function(){
-//             $('#small').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwothree').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#small').css({'display': 'block'}); 
-//       }); 
-
-
-//       $('#digitaltwofour').click(function(){
-//             $('#zoned').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwofour').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#zoned').css({'display': 'block'}); 
-//       });  
-
-
-//       $('#digitaltwofive').click(function(){
-//             $('#alpha').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwofive').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#alpha').css({'display': 'block'}); 
-//       });  
-
-
-//       $('#digitaltwosix').click(function(){
-//             $('#archigram').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwosix').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#archigram').css({'display': 'block'}); 
-//       });     
-
-
-
-//       $('#digitaltwoseven').click(function(){
-//             $('#planned').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwoseven').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#planned').css({'display': 'block'}); 
-//       });    
-
-
-//       $('#digitaltwoeight').click(function(){
-//             $('#building').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwoeight').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#building').css({'display': 'block'}); 
-//       });   
-
-
-//       $('#digitaltwonine').click(function(){
-//             $('#worlds').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwonine').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#worlds').css({'display': 'block'}); 
-//       });   
-
-
-//       $('#digitaltwoten').click(function(){
-//             $('#junk').css({'display': 'none'}); 
-//       });
-//       $('#digitaltwoten').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#junk').css({'display': 'block'}); 
-//       });   
-
-
-
-
-//       $('#influencetwoone').click(function(){
-//             $('#glimpse').css({'display': 'none'}); 
-//       });
-//       $('#influencetwoone').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#glimpse').css({'display': 'block'}); 
-//       });
-
-
-//       $('#influencetwotwo').click(function(){
-//             $('#newkind').css({'display': 'none'}); 
-//       });
-//       $('#influencetwotwo').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#newkind').css({'display': 'block'}); 
-//       });
-
-
-
-//       $('#influencetwothree').click(function(){
-//             $('#media').css({'display': 'none'}); 
-//       });
-//       $('#influencetwothree').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#media').css({'display': 'block'}); 
-//       });
-
-
-//       $('#influencetwofour').click(function(){
-//            $('#right').css({'display': 'none'}); 
-//       });
-//       $('#influencetwofour').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#right').css({'display': 'block'}); 
-//       });
-
-
-//       $('#influencetwofive').click(function(){
-//            $('#ondesign').css({'display': 'none'}); 
-//       });
-//       $('#influencetwofive').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#ondesign').css({'display': 'block'}); 
-//       });
-
-
-
-//       $('#influencetwosix').click(function(){
-//            $('#browsing').css({'display': 'none'}); 
-//       });
-//       $('#influencetwosix').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#browsing').css({'display': 'block'}); 
-//       });
-
-
-
-
-
-//       $('#gdasoneone').click(function(){
-//            $('#another').css({'display': 'none'}); 
-//       });
-//       $('#gdasoneone').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#another').css({'display': 'block'}); 
-//       });
-
-
-//       $('#gdasonetwo').click(function(){
-//            $('#cartography').css({'display': 'none'}); 
-//       });
-//       $('#gdasonetwo').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#cartography').css({'display': 'block'}); 
-//       });
-
-
-//       $('#gdasonethree').click(function(){
-//            $('#signage').css({'display': 'none'}); 
-//       });
-//       $('#gdasonethree').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#signage').css({'display': 'block'}); 
-//       });
-
-
-
-//       $('#gdasonefour').click(function(){
-//            $('#lack').css({'display': 'none'}); 
-//       });
-//       $('#gdasonefour').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#lack').css({'display': 'block'}); 
-//       });
-
-
-//       $('#gdasonefive').click(function(){
-//            $('#interlinked').css({'display': 'none'}); 
-//       });
-//       $('#gdasonefive').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#interlinked').css({'display': 'block'}); 
-//       });
-
-
-//       $('#gdasonesix').click(function(){
-//            $('#type').css({'display': 'none'}); 
-//       });
-//       $('#gdasonesix').mouseleave(function(){
-//           $(this).scrollTop(0);
-//             $('#type').css({'display': 'block'}); 
-//       });
-
-// });
-
-
-
-
-
-
-
-
-
 // $(window).scroll(function(){
 //   $(".dohuyandra").css("left",$(window).offset().left);
 //     $(".dohuyandra").css("top",$(window).offset().top);
@@ -1046,52 +802,6 @@ $(document).ready(function(){
 
 
 
-// OPEN/CLOSE IMAGES ON CLICK
-// $(document).ready(function(){
-
-//     $(".first").click(function(){
-//         $("#urban1, #urban2, #urban3").css("display", "block");  
-//     });
-
-//     $(".second").click(function(){
-//         $("#intro1, #intro2, #intro3").css("display", "block"); 
-//         console.log("proishodit2")  
-//     });
-
-//     $("#societyonefive").click(function(){
-//         $("#death1, #death2").css("display", "block");
-//     });
-
-//     $("#influencetwotwo").click(function(){
-//         $("#intimacy1").css("display", "block");   
-//     });
-    
-//     $("#influencetwofour").click(function(){
-//         $("#brain2, #brain4").css("display", "block");   
-//     });
-
-//     $("#digitaltwoone").click(function(){
-//         $("#utrecht1, #utrecht2, #utrecht3").css("display", "block");   
-//     });
-
-//     $("#gdasonethree").click(function(){
-//         $("#polygon1, #polygon3").css("display", "block");   
-//     });
-
-//     $(".seventh").click(function(){
-//         $("#typedynamics1, #typedynamics2").css("display", "block");   
-//     });
-
-//     $("#digitaltwonine").click(function(){
-//         $("#shop1, #shop2").css("display", "block");   
-//     });
-
-
-//     $(".blurry_thingy").click(function(){
-//         $("img").css("display", "none");   
-//     });
-
-// });
 
 
 
@@ -1171,8 +881,8 @@ $(document).ready(function(){
 
             $('div.containerofcontainer').find('.blurry_thingy').addClass('hideThingy');
 
-
-            // $('div.containerofcontainer').find('.title').addClass('bigTitle');
+            $('div.containerofcontainer').find('.commonclass').addClass('test');
+            console.log("cheto")
 
         }
     }
@@ -1303,9 +1013,6 @@ $(document).ready(function(){
 
 
 
-<!--   <div class='index'>index</div>
- -->
-
 <!-- <div id='sizeblock'></div>
  -->
 <div class='order'>
@@ -1435,8 +1142,8 @@ $(document).ready(function(){
                                          </div>
 
                                   <div class='influencetwoi' id='influencetwofouri'>
-                                              <p class='subtitlei' id='righti'>
-                                                4.1.4_RIGHT HEMISPHERE</p>
+                                              <div class='subtitlei' id='righti'>
+                                                4.1.4_RIGHT HEMISPHERE</div>
                                           </div>
                       </div>
 
@@ -1467,11 +1174,11 @@ $(document).ready(function(){
                       </div>
 
                       <div class='digitalonei' id='digitalonethreei'>
-                          <div class='title2i'id='consciousi'>5.1.3_CONSCIOUSNESS OF A DATA-BASED USER</div>
+                          <div class='title2i'id='consciousi'>5.1.3_INFLUENCE OF ELECTRONIC TECHNOLOGY ON PUBLIC SPACES</div>
                       </div>
-                      <div class='digitalonei' id='digitalonefouri'>
+                      <!-- <div class='digitalonei' id='digitalonefouri'>
                           <div class='title2i'id='infli'>5.1.4_INFLUENCE OF ELECTRONIC TECHNOLOGY ON PUBLIC SPACES</div>
-                      </div>
+                      </div> -->
 
                       <div class='digitalonei' id='digitalonefivei'> 
                                           <div class='title2i'id='cathedrali'>5.2.0_CATHEDRAL OF A NEW ERA</div>
@@ -1529,24 +1236,24 @@ $(document).ready(function(){
                   </div>
 
                   <div class='gdasonei'id='gdasonetwoi'>
-                    <div class='title2i'>6.2_CARTHOGRAPHY</div>
+                    <div class='title2i'>6.2_SIGNAGE AND NAVIGATION</div>
                   </div>
 
                   <div class='gdasonei'id='gdasonethreei'>
-                    <div class='title2i'>6.3_SIGNAGE AND NAVIGATION</div> 
+                    <div class='title2i'>6.3_CARTOGRAPHY</div> 
                   </div>
 
                   <div class='gdasonei'id='gdasonefouri'>
                     <div class='title2i'>6.4_LACK OF COOPERATION</div>
                   </div>
 
-                  <div class='gdasonei'id='gdasonefivei'>
+                  <!-- <div class='gdasonei'id='gdasonefivei'>
                     <div class='title2i'>6.5_INTERLINKED PRACTICES</div>
                   </div>
 
                   <div class='gdasonei'id='gdasonesixi'>
                     <div class='title2i'>6.6_TYPE/SCREEN DYNAMICS</div>
-                  </div>
+                  </div> -->
 
 
               </div>
@@ -1554,7 +1261,21 @@ $(document).ready(function(){
           <div class='index7'>
               <div class='conclusioni'>
                   <div class='titlei'id='CONCLUSIONi'>7.0_CONCLUSION</div>
+                  <div class='conclusiononei'id='conclusiononei'>
+                    <div class='title2i'>7.1_INTERLINKED PRACTICES</div>
+                  </div>
+
+                  <div class='conclusiononei'id='conclusiontwoi'>
+                    <div class='title2i'>7.2_OUR OWN ENVIRONMENT</div>
+                  </div>
+
+                  <div class='conclusiononei'id='conclusionthreei'>
+                    <div class='title2i'>7.3_STRAIGHT LINES</div>
+                  </div>
+
               </div>
+
+
           </div>
 
 </div>
@@ -1569,17 +1290,17 @@ $(document).ready(function(){
 <div class="track"><img src="images/here.png"></div>
 
 <div class='first commonclass'>
-  <p class="header">Abstract</p>
+  <p class="header">ABSTRACT</p>
     <div class='abstract clickText'>
          <div class='title'id='ABSTRACT'>ABSTRACT</div>
 <!--     <div class='text'>     
      -->    
     The subject of my research is the influence of electronic media on physical space. Societies have always been shaped more by the nature of the media by which men communicate rather then by the content of the communication. Moreover electronic media has a direct physical impact on the way our brain is functioning. The way we think and perceive information is being changed. And my thesis is focusing on how these changes are influencing architecture and urban landscape in particular.
-    <p>I would like to discern the role of graphic design in architecture and to point out the spheres where it is playing a key role. Graphic design is commonly being considered as a 2-dimensional practice, resulting in print or a digital product. However I see a strong connection in how its influence spreading further, on a larger scale of architecture and urban planning. For example, screens become a part of the architecture of the public space, and the content of the visuals influence the dynamics and social behaviour within these spaces. At the train stations and shopping malls the message coming from these screens is predominantly commercial and serve as a distraction and stimulator for consumerism. If graphic designers together with architects would create the content of these screens themselves and use it in the benefit of navigation and in favour of overall atmosphere, the station or a shopping mall could look entirely different–not only the content of the screen would change, but the use of it, and assumably the way the building is organised in the first place.</p>
-    <p>The architecture of Utrecht Central, as well as many other public spaces, has distinct features of mallification (a process of turning into a mall) and a so-called ‘junkspace’. These tendencies do not just happen, and among the consumer-orientated design with planned obsolescence, new media and graphic design are shaping these tendencies as well.</p>
-    <p>My central assumption within this thesis is that media is forming the perception and ways of thinking which leads to changes in how we approach urban planning and architecture. And since graphic design is responsible for communication and translation of information into a visual message, it stands behind that influence as well. I want to point out that the influence of graphic design goes out of the 2D canvas and has a wider, tangible affect.</p>
-    <p>Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research.When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces. Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life.</p>
-    <p>First of all, I am looking at the development of communication methods and how it influenced society in the past. I use examples of how invention of alphabet, writing and print influenced communication and social behaviour and compare it to the situation happening nowadays.
+    <p class="indent">I would like to discern the role of graphic design in architecture and to point out the spheres where it is playing a key role. Graphic design is commonly being considered as a 2-dimensional practice, resulting in print or a digital product. However I see a strong connection in how its influence spreading further, on a larger scale of architecture and urban planning. For example, screens become a part of the architecture of the public space, and the content of the visuals influence the dynamics and social behaviour within these spaces. At the train stations and shopping malls the message coming from these screens is predominantly commercial and serve as a distraction and stimulator for consumerism. If graphic designers together with architects would create the content of these screens themselves and use it in the benefit of navigation and in favour of overall atmosphere, the station or a shopping mall could look entirely different–not only the content of the screen would change, but the use of it, and assumably the way the building is organised in the first place.</p>
+    <p class="indent">The architecture of Utrecht Central, as well as many other public spaces, has distinct features of mallification (a process of turning into a mall) and a so-called ‘junkspace’. These tendencies do not just happen, and among the consumer-orientated design with planned obsolescence, new media and graphic design are shaping these tendencies as well.</p>
+    <p class="indent">My central assumption within this thesis is that media is forming the perception and ways of thinking which leads to changes in how we approach urban planning and architecture. And since graphic design is responsible for communication and translation of information into a visual message, it stands behind that influence as well. I want to point out that the influence of graphic design goes out of the 2D canvas and has a wider, tangible affect.</p>
+    <p class="indent">Observation and personal experience of travelling through Utrecht Central during my internship for the period of 3 months became the starting point of this research.When talking about my experience I found out that I am not the only one concerned with overwhelming mallification and standartisation of public spaces. Amongst all I figured that there has always been concern that new media is going to damage society in some way. However, protesting against the progress never worked out. As a result societies would inevitably change, and these changes could be seen in every aspect of social and personal life.</p>
+    <p class="indent">First of all, I am looking at the development of communication methods and how it influenced society in the past. I use examples of how invention of alphabet, writing and print influenced communication and social behaviour and compare it to the situation happening nowadays.
     Graphic designers play a big role in the sphere of communication and distribution of information, and translating it to the audience, architects as well. Graphic design has the power of shaping the way how the media is going to influence our mins and how eventually the world around us is going to look and function.</p><br>
 
     Media shapes perception.<br>
@@ -1633,7 +1354,13 @@ $(document).ready(function(){
     <div class='societyone' id='societyoneone'>
          <div class="clickText">
          <div class='title2' id='desire'>DESIRE FOR COMMUNICATION</div>
-     I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is, in a way, a desperate attempt to establish connections between each other. Communication is the demand for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is, the more it seems to demand from both sides. Yet, no matter how much of an effort you put into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: ‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate.’<sup>1</sup> <br><br><br>
+     I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is, in a way, a desperate attempt to establish connections between each other. Communication is the demand for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is, the more it seems to demand from both sides. Yet, no matter how much of an effort you put into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: ‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate’.
+     <sup>1</sup> <br><br><br>
+
+     <p class="ref"><sup>1</sup>
+        p.42 “In a Manner of Reading Design” edited by Katja Gretzinger. <br>
+        Casco–Office for Art, Design and Theory. Jan van Eyck Academie. <br>
+        Sternberg Press. 2012</p>
 
     </div>
     </div>
@@ -1641,21 +1368,49 @@ $(document).ready(function(){
     <div class='societyone' id='societyonetwo'>
       <div class="clickText">
          <div class='title2'id='forms'>FORMS OF COMMUNICATION</div>
-    However, the forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance, we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning. 
-    </div>
+    However, the forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance, we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning.</div>
     </div>
     
     <div class='societyone' id='societyonethree'>
       <div class="clickText">
          <div class='title2'id='absolute'>ABSOLUTE UNDERSTANDING</div>
-    Since there is no method for reaching an absolute understanding ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication.’<sup>2</sup> Therefore, I see a strong connection between the media and our perception of the world around us. ‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs.’<sup>3</sup> And all forms of communication are stimulating sense organs. Consequently communication has its direct influence on forming our perception.
+    Since there is no method for reaching an absolute understanding, ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication’.<sup>2</sup>Therefore, I see a strong connection between the media and our perception of the world around us. ‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs’.<sup>3</sup> And all forms of communication are stimulating sense organs.Consequently, communication has a direct influence on forming our perceptions.<br><br><br>
+
+     <p class="ref">
+        <sup>2</sup>
+        p. 113 “The Medium is the Massage” by M. McLuhan, Q. Fiore. 1967<br>
+        Published Penguin Design Series, 2008
+     </p>
+     <p class="ref">
+        <sup>3</sup>
+        p.42 “In a Manner of Reading Design” edited by Katja Gretzinger. <br>
+        Casco–Office for Art, Design and Theory. Jan van Eyck Academie. <br>
+        Sternberg Press, 2012
+     </p>
+
     </div>
     </div>
 
     <div class='societyone' id='societyonefour'>
       <div class="clickText">
          <div class='title2'id='juvenoia'>JUVENOIA AND ANXIETY</div>
-    From my point of view, the concept of ‘juvenoia' is a good example of how media changes our perceptions. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generations often have concerning the influence of social change on the youth of today.Younger generations adapt easily to new technology, and have grown up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying, to those who grew up during earlier stages in the development of technology. This difference in perception often results in a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor<sup>4</sup> in 2011. But the evidence and grounds for it could have been seen much earlier. For instance, when we go as far back as Socrates we can see that even he had his concerns about the invention of the alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves… .’<sup>5</sup>
+    From my point of view, the concept of ‘juvenoia' is a good example of how media changes our perceptions. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generations often have concerning the influence of social change on the youth of today. Younger generations adapt easily to new technology, and have grown up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying, to those who grew up during earlier stages in the development of technology. This difference in perception often results in a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor<sup>4</sup> in 2011. But the evidence and grounds for it could have been seen much earlier. For instance, when we go as far back as Socrates we can see that even he had his concerns about the invention of the alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves…’.<sup>5</sup>
+    <br><br><br>
+
+     <p class="ref">
+        <sup>4</sup>
+        “The Internet, Youth Safety and the Problem of 'Juvenoia'” by David Finkelhor.<br>
+        University of New Hampshire, Crimes against Children Research Center, January 2011
+
+     </p>
+     <p class="ref">
+        <sup>5</sup>
+        p.42 “In a Manner of Reading Design” edited by Katja Gretzinger. <br>
+        Casco–Office for Art, Design and Theory. Jan van Eyck Academie. <br>
+        Sternberg Press, 2012
+     </p> 
+
+
     </div>
     </div>
 
@@ -1681,56 +1436,122 @@ $(document).ready(function(){
               <div class="clickText">
                  <div class='subtitle' id='glimpse'>PROMISING GLIMPSE</div>
 
-            Obviously communicational technologies and methods continue developing further and the story repeats itself with the invention of electronic technology. ‘The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted.’ Despite all the concerns about these changes, we can not prevent technology from going further. Neither can we decline the promising glimpse of a new way of communicating, which perhaps can bring a more satisfying sense of connection between us.
+            Obviously, communicational technologies and methods continue developing further and the story repeats itself with the invention of electronic technology. ‘The medium, or process, of our time–electric technology–is reshaping and reconstructing patterns of social interdependence and every aspect of our personal life. It is forcing us to reconsider and re-evaluate practically every thought, every action, and every institution formerly taken for granted’.<sup>6</sup> Despite all the concerns about these changes, we cannot prevent technology from advancing. Neither, can we decline the promising glimpse of a new way of communicating, which brings with it the possibility of fulfilling a more satisfying sense of connection between us.<br><br><br>
+
+            <p class="ref">
+            <sup>6</sup>
+            p. 8 “The Medium is the Massage” by M. McLuhan, Q. Fiore. 1967<br>
+            Published Penguin Design Series, 2008
+
+            </p>
+
             </div>
-          </div>
+            </div>
         
             <div class='influencetwo' id='influencetwotwo'>
               <div class="clickText">
                  <div class='subtitle' id='newkind'>NEW KIND OF INTIMACY</div>
 
-            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author elaborates on the concerns of the older generation on how internet brings isolation and changes in understanding of intimate relationships between people. (Another case of juvenoia in the context of communication). However, she offers a fresh, new perspective on the topic. Gill Valentine claims that relationships do not necessarily become more distant, but simply turn into a different kind of relationships–intimacy on a different level, which underlines my idea on the change in perception. ‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from an industrial society to new modernity, traditional ideas and expectations about social relations are being reworked.’ Somehow, intimacy by default implies physical proximity. Anthropologist Edward T. Hall coined the term ‘proxemics’ to denote the different kinds of distance that occur between people and connected them to socially acceptable forms of communication: the furtherest distance to other person (1.5 to 1.1m) would stand for ‘social’, decreased to 45–152cm distance would mean ‘personal’ and the closest proximity of 0–45cm would mean ‘intimate’. ‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.’ Availability of digital forms of communication in a wider context of globalisation encourages the development of these kinds of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication.’ ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense, online exchanges and daily Internet use are adding a new dimension, rearticulating the practices of everyday life and lived spaces (Franklin 2001)’. ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies’.
+            In the article ‘Globalizing Intimacy: The Role of Information and Communication Technologies in Maintaining and Creating Relationships’ by Gill Valentine, the author elaborates on the concerns of the older generation on how internet brings isolation and changes in understanding of intimate relationships between people. (Another case of juvenoia in the context of communication). However, she offers a fresh, new perspective on the topic. Gill Valentine claims that relationships do not necessarily become more distant, but simply turn into a different kind of relationships–intimacy on a different level, which underlines my idea on the change in perception. ‘Both Giddens (1991) and Beck and Beck-Gernsheim (1995) claim that profound changes are occurring in the sphere of intimacy in the context of contemporary process of individualization, detraditionalization, and increased self-reflexivity. In the transformation from an industrial society to new modernity, traditional ideas and expectations about social relations are being reworked’.<sup>7</sup> Somehow, intimacy by default implies physical proximity. Anthropologist Edward T. Hall coined the term ‘proxemics’ to denote the different kinds of distance that occur between people and connected them to socially acceptable forms of communication: the furtherest distance to other person (1.5 to 1.1m) would stand for ‘social’, decreased to 45–152cm distance would mean ‘personal’ and the closest proximity of 0–45cm would mean ‘intimate’. ‘…  Yet distance does not necessarily bring intimacy to an end; growing numbers of people “live apart together”.’<sup>8</sup> Availability of digital forms of communication in a wider context of globalisation encourages the development of these kinds of relationships further. ‘Early public discourses about the Internet assumed that because it is a disembodied from of communication, it would be impersonal and facilitate deceit, so reducing trust and accountability in online social relations. […] However, numerous studies have demonstrated that these fears have been overstated (e.g., Hollaway and Valentine 2003). Indeed, some research suggests that online exchanges are characterised by higher levels of self-disclosure or hyperpersonal communication'.<sup>9</sup> ‘The Internet expands the opportunities for daily meaningful contact between family members locked in different time-space routines at work, school, traveling, and so on. In this sense, online exchanges and daily Internet use are adding a new dimension, rearticulating the practices of everyday life and lived spaces (Franklin 2001)’.<sup>10</sup> ‘The Internet is not just a tool for maintaining and sustaining existing familial relationships; it can also facilitate the creation of new intimacies’.<sup>11</sup> <br><br><br>
+
+            <p class="ref">
+            <sup>7</sup>
+            p.365 “Globalizing Intimacy: The Role of Information and Communication Technologies <br>in Maintaining and Creating Relationships” by
+            Gill Valentine<br>
+            “Women's Studies Quarterly”
+            Vol. 34, No. 1/2, The Global & the Intimate (Spring - Summer, 2006)
+            </p>
+            <p class="ref">
+            <sup>8</sup>
+            p.366 “Globalizing Intimacy: The Role of Information and Communication Technologies <br>in Maintaining and Creating Relationships” by
+            Gill Valentine<br>
+            “Women's Studies Quarterly”
+            Vol. 34, No. 1/2, The Global & the Intimate (Spring - Summer, 2006)
+            </p>
+            <p class="ref">
+            <sup>9</sup>
+            p.366 “Globalizing Intimacy: The Role of Information and Communication Technologies <br>in Maintaining and Creating Relationships” by
+            Gill Valentine<br>
+            “Women's Studies Quarterly”
+            Vol. 34, No. 1/2, The Global & the Intimate (Spring - Summer, 2006)
+            </p>
+            <p class="ref">
+            <sup>10</sup>
+            p.370 “Globalizing Intimacy: The Role of Information and Communication Technologies <br>in Maintaining and Creating Relationships” by
+            Gill Valentine<br>
+            “Women's Studies Quarterly”
+            Vol. 34, No. 1/2, The Global & the Intimate (Spring - Summer, 2006)
+            </p>
+            <p class="ref">
+            <sup>11</sup>
+            p.378 “Globalizing Intimacy: The Role of Information and Communication Technologies <br>in Maintaining and Creating Relationships” by
+            Gill Valentine<br>
+            “Women's Studies Quarterly”
+            Vol. 34, No. 1/2, The Global & the Intimate (Spring - Summer, 2006)
+            </p>
+
             </div>
-          </div>
+            </div>
 
             <div class='influencetwo' id='influencetwothree'>
               <div class="clickText">
                  <div class='subtitle' id='media'>MEDIA SHAPES THE PROCESS OF THOUGHT</div>
             In ‘Is Google making us stupid?’ the well-known article by Nicholas Carr. The author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more ,quantity-wise, but it becomes a completely different kind of reading, and different way of perceiving information. ‘Media are not just passive channels of information. They shape the process of thought’, and ‘our writing equipment takes part in the forming of our thoughts’.
-
-
             </div>
           </div>
             
             <div class='influencetwo' id='influencetwofour'>
               <div class="clickText">
                  <div class='subtitle' id='right'>RIGHT HEMISPHERE</div>
-            In fact, influence of media on perception is not just an abstract concept but has a very direct and visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear, logical and sequential thinking. It centralizes our  ability for speech, hearing, writing and thus mediates our expression of comprehension and language. Whereas the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemisphere pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’, “comprehensive awareness” is the result.’ 
-            Physiology of the eye may have predisposed linear and sequential manners of thinking. The creation of the alphabet led to a linear and visual environment which contributed to the dominance of the left hemisphere. ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality.’ However, ‘For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’. ‘The findings of the Russian neyrophysiologist A.R. Luria […] show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain. […] The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics. […] The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere. […] In general, it needs to be noted that left-hemisphere human has very little power to observe or control environments, or to see the patterns change.’ ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. […] Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective’.  ‘For use in an electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation’.  
+            In fact, influence of media on perception is not just an abstract concept but has a very direct and visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear, logical and sequential thinking. It centralizes our  ability for speech, hearing, writing and thus mediates our expression of comprehension and language. Whereas the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemisphere pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’, “comprehensive awareness” is the result.’<sup>12</sup> 
+            <p class="indent">Physiology of the eye may have predisposed linear and sequential manners of thinking. The creation of the alphabet led to a linear and visual environment which contributed to the dominance of the left hemisphere. ‘All Western scientific models of communication are–like the Shanon-Weaver model–linear, sequential, and logical as a reflection of the late medieval emphasis on the Greek notion of the efficient causality.’ However, ‘For use in the electric age, a right-brain model of communication is necessary to demonstrate the “all-at-onceness” character of information moving at the speed of light’.<sup>13</sup> ‘The findings of the Russian neyrophysiologist A.R. Luria […] show that the expression “linear thinking” is not merely a figure of speech, but a mode of activity which is peculiar to the anterior regions of the left hemisphere of the brain. […] The alphabet separated and isolated visual space from many other kinds of sensory space involved in senses of smell, touch, kinesthesia, and acoustics. […] The present electronic age, in its inescapable confrontation with simultaneity, presents the first serious threat to the 2500-year dominance of the left hemisphere. […] In general, it needs to be noted that left-hemisphere human has very little power to observe or control environments, or to see the patterns change.’<sup>14</sup> ‘All of man’s artifacts, of language, of laws, of ideas and hypotheses, of tools, of clothing and computers, all of these are extensions of the human body. […] Communication media of the future will accentuate the extensions of our nervous systems, which can be disembodied and made totally collective’.<sup>5</sup> ‘For use in an electronic age, a right-hemisphere model of communication is necessary, both because our culture has nearly completed the process of shifting its cognitive modes from the left to the right hemisphere, and because the electronic media themselves are right-hemisphere in their patterns and operation’. <br><br><br>
+
+            <p class="ref">
+            <sup>12</sup>
+            p.48 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+            Oxford University Press. New York, Oxford. 1989
+            </p>
+            <p class="ref">
+            <sup>13</sup>
+            p.3 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+            Oxford University Press. New York, Oxford. 1989
+            </p>
+            <p class="ref">
+            <sup>14</sup>
+            p.62 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+            Oxford University Press. New York, Oxford. 1989
+            </p>
+            <p class="ref">
+            <sup>15</sup>
+            "Disorientation: Bernard Rudofsky in the Empire of Signs" by Felicity D. Scott
+            </p>
+
             </div>
-          </div>
+            </div>
 </div>
 
     <div class='influenceone' id='influenceonetwo'>
-         <div class='title2'id='book'>ON BOOK DESIGN</div>
+         <div class='title2'id='book'>ON PHYSICAL WORLD AND DESIGN</div>
 
             <div class='influencetwo' id='influencetwofive'>
               <div class="clickText">
-                 <div class='subtitle' id='ondesign'>INFLUENCE ON PHYSICAL <br>WORLD AND DESIGN</div>
-            ‘In the order of things, ground comes first. […] 
-            The ground of any technology is both the situation 
-            that that gives rise to it as well as the whole environment (medium) 
-            of services and disservices that the technology brings with it. […] 
-            The medium is the message’. 20
-
-            If our thinking process, perception and social behaviour is being changed by the media, it seems logical to conclude that these changes don’t just stop there. What if we are going to look at the consequences of this influence on the physical world and design. We draw a lot of parallels between orientation on the net and orientation in the physical space. We even operate the same words like ‘getting lost’ or ‘going’ on the website. Moreover, we use electronic technology to help ourselves to orientate in the physical material space as well. And a lot of us are afraid, the same way as Socrates was concerned about loosing ability to remember with the invention of writing, that we are now going to loose the ability to orientate within physical space without the help of our smartphone. 
+                 <div class='subtitle' id='ondesign'>ON PHYSICAL WORLD <br>AND ORIENTATION</div>
+            If our thinking processes are being changed by the media, it seems logical to state that these changes have an impact on how we function and organise the world around us. It seems that communicating through the internet is quite close to the right-hemisphere future model of communication that McLuhan is talking about. The all-at-once nature of the information is definitely present. So how does right-hemisphere thinking influence our physical world and design in particular? 
+            We draw a lot of parallels between orientation on the internet and orientation in the physical space. We even operate the same words like ‘getting lost’ or ‘going’ on the website. Moreover, we use electronic technology to help ourselves to orientate in the physical material space as well. Many of us are afraid, the same way as Socrates was concerned about losing the ability to remember with the invention of writing, that we are now going to lose the ability to orientate within physical space without the help of our smartphone. 
             </div>
-          </div>
+            </div>
 
             <div class='influencetwo' id='influencetwosix'>
               <div class="clickText">
                  <div class='subtitle' id='browsing'>BROWSING THROUGH<br>THE BOOK</div>
-            Reading a book used to imply following a linear narrative. However this doesn’t seem to be necessarily the case anymore. Since print stopped being a ‘universal media’, it obtained very particular qualities. Moreover, due to the changes in our perception the approach towards book-making in design has changed, as well as the value and meaning of the book. Looking at the student jury selection of 32 books for Best Dutch Design Book awards for 2016, a certain pattern appears. For instance, most of the books in the selection are image-based, and don’t contain a lot of textual material. The layout of many books had a certain correlation with the layout of a website: one of the jury members called his experience of looking at one of the books ‘Browsing through the book’. At the same time a lot of book designs were really making an emphasis on the material aspect of the book: the texture and transparency of the paper, quality of print, engravings and various binding methods, combination of different formats–everything that is not possible to do within digital design. Parallel Encyclopaedia, Ornithology, Land, Form/No Form Black Series and other books from the selection are not meant for reading in the traditional sense of this word. They are made for looking at, for holding them, touching them, owning them. These books are not only containers of primarily visual information, but they become an object. One of the designers who really understands new tendencies in book design and making a use of them is Irma Boom, who elaborates on the issue in one of her interviews: ‘I think the Internet has changed books as a phenomenon. Making a book has in fact become a status symbol. It’s a very slow and still medium. The types of books I make tend to have an object-like quality. […] A really good book has a permanent quality, I think. I hope.'
+            Reading a book used to imply following a linear narrative. However this doesn’t necessarily seem to be the case anymore. Since print stopped being a ‘universal media’, it obtained very particular qualities. Moreover, due to the changes in our perception the approach towards book-making in design has changed, as well as the value and meaning of the book. Looking at the student jury selection of 32 books for Best Dutch Design Book awards of 2016, a certain pattern appears. Most of the books in the selection are image-based, and don’t contain a lot of textual material. The layout of many books had a certain correlation with the layout of a website: one of the jury members called his experience of looking at one of the books ‘browsing through the book’. At the same time, a lot of book designs were really making an emphasis on the physical, material aspects of the book: the texture and transparency of the paper, quality of print, engravings and various binding methods, combination of different formats–everything that is not possible to do within digital design. Parallel Encyclopaedia, Ornithology, Land, Form/No Form Black Series and other books from the selection are not meant for reading in the traditional sense of this word. They are made for looking at, for holding them, touching them, owning them. These books are not only containers of primarily visual information, but they become a coveted object. One of the designers who really understands new trends in book design and how to use these is Irma Boom, who elaborates on the issue in one of her interviews: ‘I think the Internet has changed books as a phenomenon. Making a book has in fact become a status symbol. It’s a very slow and still medium. The types of books I make tend to have an object-like quality. […] A really good book has a permanent quality, I think. I hope’.<sup>16</sup><br><br><br>
+
+            <p class="ref">
+            <sup>16</sup>
+            https://youtu.be/wEyqGi_Sd74<br>
+            Irma Boom interview for Dutch Profiles
+            </p>
+
             </div>
           </div>
     </div>
@@ -1749,14 +1570,24 @@ $(document).ready(function(){
             <div class='digitalone' id='digitaloneone'>
               <div class="clickText">
                  <div class='title2'id='info'>INFORMATION IS NOT SLOW <br>AND NOT STILL</div>
-            In my opinion a similar sequence of changes is happening in the sphere of architecture and urban planning. Information is not set in stone, it is not still and it’s not slow either. It is a network, expanding beyond the frames of a 2D linear canvas.
+            In my opinion, a similar sequence of changes is happening in the sphere of architecture and urban planning. Information is not set in stone, it is not still and it’s not slow either. It is a network, expanding beyond the frames of a 2D linear canvas.
+
             </div>
             </div>
 
             <div class='digitalone' id='digitalonetwo'>
               <div class="clickText">
                  <div class='title2'id='orientation'>ORIENTATION IN DIGITAL <br>AND PHYSICAL SPACES</div>
-            As was mentioned before, I find that there is a strong connection between our orientation in physical space and on the web. We associate searching through the internet with being physically present at some particular location. ‘… the consciousness of the data-base user is in two places at once: at the terminal and in the centre of the system.’ The event of December of 1968 when Apollo astronauts installed a camera on the moon and pointed it on Earth became important not only in technological sense. ‘We were on earth and the moon simultaneously.’ And the realisation of this possibility became a starting point for further evolvement of the shift in our brains. 
+            As was mentioned before, I find that there is a strong connection between our orientation in physical space and on the web. We associate searching through the internet with being physically present at some particular location. ‘… the consciousness of the data-base user is in two places at once: at the terminal and in the centre of the system'.<sup>17</sup> The event of December of 1968 when Apollo astronauts installed a camera on the moon and pointed it on Earth became important not only in technological sense. ‘We were on earth and the moon simultaneously'.<sup>18</sup> And the realisation of this possibility became a starting point for further evolvement of the shift in our brains.<br><br><br>
+            <p class="ref">
+            <sup>17</sup>
+            p.3 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+            Oxford University Press. New York, Oxford. 1989
+            </p>
+            <p class="ref">
+            <sup>18</sup>
+            p.92 "A guide to Archigram 1961-74" Academy Group, Archigram Archives, 1994
+            </p>
 
             </div>
             </div>
@@ -1765,7 +1596,8 @@ $(document).ready(function(){
               <div class="clickText">
                  <div class='title2'id='conscious'>INFLUENCE OF ELECTRONIC MEDIA ON PUBLIC SPACES</div>
             The same way as our ‘intimate’ relationships become different, physical and digital spaces become much more connected rather than contrasting with each other; especially since we rely so much on the GPS navigation, and use digital data to orientate in the physical space. Of course, electronic technologies have their physical manifestations in form of data-storage facilities, internet cables laid underwater etc.  But I want to draw attention to how the use of these technologies affects the architecture of public spaces, which are in the direct connection to social and public activities.
-            Anthropologist Setha M. Low, who spent 25 years on investigating and studying public squares, is claiming that plaza is the reflection of human aspirations. Public spaces like plazas, train stations and such, are places that form a core of the city. They cannot be avoided. In planned urban environment all kinds of artefacts of social world are being placed and interpreted. They dictate social behaviour. And that is why it is important to be aware of what is affecting our way of constructing these environments and how, so we can use it to our advantage. 
+            <p class="indent">Anthropologist Setha M. Low, who spent 25 years on investigating and studying public squares, is claiming that plaza is the reflection of human aspirations. Public spaces like plazas, train stations and such, are places that form a core of the city. They cannot be avoided. In planned urban environment all kinds of artefacts of social world are being placed and interpreted. They dictate social behaviour. And that is why it is important to be aware of what is affecting our way of constructing these environments and how, so we can use it to our advantage.</p>
+
  
             </div>
             </div>
@@ -1784,7 +1616,13 @@ $(document).ready(function(){
                     <div class='digitaltwo' id='digitaltwoone'>
                       <div class="clickText">
                          <div class='subtitle' id='utrecht'>ARCHITECTURE OF UTRECHT CENTRAAL</div>
-                    Utrecht Centraal is the biggest and the busiest station in the Netherlands, ‘the heart of the Dutch railway network’ as it is proudly called on its official website. The station serves as a major infrastructural point, a junction of all the major transport links ‘…but offers you also places to meet and relax. Utrecht Centraal: more than just a train station’. By 2025 the station is expected to host around 350,000 of travellers per day. Benthem Crouwel Architects has been involved in the development of the train station since 2003. Thirteen years later, the new public transport terminal that will house train, bus and tram platforms under one undulating roof, has opened. Over the next two decades, the number of travellers through Utrecht Central is expected to increase even more–to about one hundred million a year. Since the previous building could not handle the increasing amounts of passengers, Utrecht Central Station has been rebuilt several times; it is now three times its original size. During the 13-year design process developed by Jan Benthem and Mels Crouwel, the decision was made to create a flat roof in form of a slight curve ‘… as a wave that radiates a dynamic movement and also functions as a natural way finder’. The official opening of the station with a visit from the Dutch royal family happened in 2016. However, from personal experience, standing in the station in today in 2017/18 we are still not given the impression of a finished and fully reconstructed building. The concept for the design of the station is published on the official website of the architectural studio. It involves many attractive and positively-orientated phrases like ‘Restaurants, shops, and a possible market give this promenade the atmosphere of a real city street’, ‘the interior has a reserved allure and modest charm: it is the people, signage, vehicles and other typical additions that make the station alive and vibrant, and give colour and ambiance’ or even ‘this integrated approach to station and station environment reinforces the identity and vitality of the city’. It then goes further, climaxing with ‘The Cathedral of the new era’.
+                    Utrecht Centraal is the biggest and the busiest station in the Netherlands, ‘the heart of the Dutch railway network’ as it is proudly called on its official website.<sup>19</sup> The station serves as a major infrastructural point, a junction of all the major transport links ‘…but offers you also places to meet and relax. Utrecht Centraal: more than just a train station’. By 2025 the station is expected to host around 350,000 of travellers per day. Benthem Crouwel Architects has been involved in the development of the train station since 2003. Thirteen years later, the new public transport terminal that will house train, bus and tram platforms under one undulating roof, has opened. Over the next two decades, the number of travellers through Utrecht Central is expected to increase even more–to about one hundred million a year. Since the previous building could not handle the increasing amounts of passengers, Utrecht Central Station has been rebuilt several times; it is now three times its original size. During the 13-year design process developed by Jan Benthem and Mels Crouwel, the decision was made to create a flat roof in form of a slight curve ‘… as a wave that radiates a dynamic movement and also functions as a natural way finder’. The official opening of the station with a visit from the Dutch royal family happened in 2016. However, from personal experience, standing in the station in today in 2017/18 we are still not given the impression of a finished and fully reconstructed building. The concept for the design of the station is published on the official website of the architectural studio. It involves many attractive and positively-orientated phrases like ‘Restaurants, shops, and a possible market give this promenade the atmosphere of a real city street’, ‘the interior has a reserved allure and modest charm: it is the people, signage, vehicles and other typical additions that make the station alive and vibrant, and give colour and ambiance’ or even ‘this integrated approach to station and station environment reinforces the identity and vitality of the city’. It then goes further, climaxing with ‘The Cathedral of the new era’. <br><br><br>
+
+                    <p class="ref">
+                    <sup>19</sup>
+                    http://www.mijnstation.nl/en/utrecht-centraal
+                    </p>
+
                     </div>
                     </div>
 
@@ -1792,7 +1630,7 @@ $(document).ready(function(){
                       <div class="clickText">
                          <div class='subtitle' id='all'>ALL-AT-ONCENESS</div>
                     And here it is–a massive, never-ending construction, trying to trick you into thinking it is light, open, neutral and transparent. Utrecht Central is one of the examples of the new approach to architecture of public spaces: it needs to be all at once–more than just a train station. As any piece of information on the web it is interlinked with many others, Utrecht Centraal is pierced not only with numerous railways, but with roads and tracks for trams, busses, cars, bicycles and filled with increasing amount of facilities. Utrecht Central spacial organisation is almost the opposite of the Haarlem Station, which still keeps the traces of its very first design from 1839. At the Haarlem Station the linear composition is prominent. Spaces have a single function–even waiting rooms were separated according to the classes: first, second and third. The all-at-onceness is foreign there. 
-                    I do understand the intentions behind such a solution for Utrecht Central. During the 1990s the station was closed off, busy and inconvenient. The changes were absolutely necessary and the architects’ aim was to satisfy the needs of an ever expanding target audience of travellers. The topic of comfort repeats in the interviews with the main architect Pieter van Rooj from Benthem Crouwel Architects. However, my experience of going through Utrecht Central was not filled with comfort. In fact, the sensations that I experienced were exactly the opposite.  
+                    <p class="indent">I do understand the intentions behind such a solution for Utrecht Central. During the 1990s the station was closed off, busy and inconvenient. The changes were absolutely necessary and the architects’ aim was to satisfy the needs of an ever expanding target audience of travellers. The topic of comfort repeats in the interviews with the main architect Pieter van Rooj from Benthem Crouwel Architects. However, my experience of going through Utrecht Central was not filled with comfort. In fact, the sensations that I experienced were exactly the opposite. </p> 
                     </div>
                     </div>
 
@@ -1807,6 +1645,7 @@ $(document).ready(function(){
                       <div class="clickText">
                          <div class='subtitle' id='zoned'>ZONED-OUT</div>
                     So my first visit to Utrecht Central was not a positive experience, however, after a couple of months I have noticed a significant change. No, going through the station didn’t become more pleasant, but I definitely felt a certain change. The station was influencing my behaviour. Since I didn’t have to think anymore where I should go, obviously I knew my way in and out, I was in a kind of ‘zoned out’ mode each time on my way through. I didn’t have any reason at all to communicate with anybody–my OV-card can be updated at the machine, my schedule is on my smartphone and I could buy my snack at the Albert Heijn with contactless and ‘humanless’ cashiers. 
+
                     </div>
                     </div>
 
@@ -1814,7 +1653,20 @@ $(document).ready(function(){
                       <div class="clickText">
                          <div class='subtitle' id='alpha'>ALPHA STATE</div>
                     Herbet Krugman’s  brain-waves study describes a ‘subject’ watching a TV: within 30 seconds of looking at the TV screen the ‘subject’ went into the alpha state–‘relaxed, passive, unfocused’, typical to the right hemisphere activity mode. Krugman concluded his experiments: ‘… The unique power of the electronic media is to shape the content of people’s imagery, and in that particular way detrain their behaviour and their views.’ 
-                    In my opinion Utrecht Central Station is an example of how electronic media influenced the approach to organising physical space. Its architecture demonstrates that our assumption of what is comfortable and functional differs dramatically from the preliminary set of mind on the topic. But it also shows how the this knowledge is being mistreated and turned into manipulation into consumerism by aggressive advertising and ‘mallification'. 
+                    <p class="indent">In my opinion Utrecht Central Station is an example of how electronic media influenced the approach to organising physical space. Its architecture demonstrates that our assumption of what is comfortable and functional differs dramatically from the preliminary set of mind on the topic. But it also shows how the this knowledge is being mistreated and turned into manipulation into consumerism by aggressive advertising and ‘mallification'.</p> <br><br><br>
+
+                    <p class="ref">
+                    <sup>20</sup>
+                     p.4 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+                     Oxford University Press. New York, Oxford. 1989
+                    </p>
+                    <p class="ref">
+                    <sup>21</sup>
+                     p.4 "The Global Village. Transformations in the World Life and Media <br>in the 21st Century" by Marshall McLuhan and Bruce R. Powers.<br>
+                     Oxford University Press. New York, Oxford. 1989
+                    </p>
+
+
                     </div>
                     </div>
 
@@ -1824,18 +1676,51 @@ $(document).ready(function(){
                     ‘Mallification’ is quite a new term, that I came across during my research. The term has been added on a wikipedia page only in 2016 and is formed by: mall + -ification. It means ‘transformation into a shopping mall’. 
                     The overall feeling at Utrecht Central is chaotic. It seems like not only the people are moving through it, but the building is changing simultaneously. Day after day construction workers are putting scaffolding around it, making it a building in constant flux. One of the exits from the station is morphing into the shopping mall called Hood Catharijne. The first time at the station, I went all the way through the shopping mall, desperately searching for any navigation signs to help me out, but I could only see the signs pointing to another store. From my point of view, ‘mallification’ is another sign of media influencing our thinking.
 
-                    In 1922 in Kansas City, the first shopping mall was built and lives of consumers revolutionised from that moment. However, shopping malls didn't just happen. ‘They are not the result of wise planners deciding that suburban people, having no social life and stimulation, needed a place to go (Bombeck, 1985). The mall was originally conceived of as a community center where people would converge for shopping, cultural activity, and social interaction (Gruen & Smith, 1960)’. The first enclosed shopping mall appeared in Minneapolis in 1956. ‘Designed to get the shopper out of the harsh weather, it introduced the world to shopping complexes as worlds unto themselves–free from bad weather, life, crime, dirt and troubles.’ Malls to some extent, are social and community centres of their communities. ‘Indeed, shopping malls are the centre pieces for rejuvenation of urban centres […] Some malls are so large that they are communities. Chicago's Water Tower place has hotels, restaurants, offices, stores, restaurants, and residential units. The West Edmonton Mall in Canada, The largest mall in the world, has over 800 stores, ice skating, 24 movie screens.’
-                    The invention of the shopping mall affected further approaches to architecture and urban planning in general. Rem Koolhas describes how modernisation affected architecture: ‘If space-junk is the human debris that litters the universe, Junk-Space is the residue mankind leaves on the planet. The built … product of modernisation is not modern architecture but Junkspace. Junkspace is what remains after modernisation has run its course, or, more precisely, what coagulates while modernisation is in progress, its fallout. […] It was a mistake to invent modern architecture for the twentieth century. Architecture disappeared in the twentieth century; […] Junkspace seems an aberration, but it is the essence, the main thing … the product of an encounter between escalator and air-conditioning […] ’. The author draws a very distinguishable parallel pointing out the influence of new media on post-modern architecture: ‘… Because it cannot be grasped, Junkspace cannot be remembered. It is a flamboyant yet unmemorable, like a screen saver; its refusal to freeze ensures instant amnesia. […] A quasi-panoptical universe in which all the contents rearrange themselves in split seconds around the dizzy eye of the beholder.’ Further he adds: ‘We have built more than did all previous generations put together, but somehow we do not register on the same scales’–this sounds a lot like what Carr said about reading–we read more than previous generation quantity-wise, but we process information on a completely different level. ‘It fuses high and low, public and private, … .’
-                    Visual communication and graphic design deal with all kinds of communication media from writing and print to digital graphics. And as a creative industry it involves not only a sequential linear way of structuring and organising information, but also a ‘right-sided’ associative and metaphorical approach, which is, we concluded earlier, necessary for building a new model of communication. Because of this, in architecture, which forms social behaviour, there has to be a certain connection to graphic design.
+                    <p class="indent">In 1922 in Kansas City, the first shopping mall was built and lives of consumers revolutionised from that moment. However, shopping malls didn't just happen. ‘They are not the result of wise planners deciding that suburban people, having no social life and stimulation, needed a place to go (Bombeck, 1985). The mall was originally conceived of as a community center where people would converge for shopping, cultural activity, and social interaction (Gruen & Smith, 1960)’. The first enclosed shopping mall appeared in Minneapolis in 1956. ‘Designed to get the shopper out of the harsh weather, it introduced the world to shopping complexes as worlds unto themselves–free from bad weather, life, crime, dirt and troubles.’ Malls to some extent, are social and community centres of their communities. ‘Indeed, shopping malls are the centre pieces for rejuvenation of urban centres […] Some malls are so large that they are communities. Chicago's Water Tower place has hotels, restaurants, offices, stores, restaurants, and residential units. The West Edmonton Mall in Canada, The largest mall in the world, has over 800 stores, ice skating, 24 movie screens'.</p>
+                    <p class="indent">The invention of the shopping mall affected further approaches to architecture and urban planning in general. Rem Koolhas describes how modernisation affected architecture: ‘If space-junk is the human debris that litters the universe, Junk-Space is the residue mankind leaves on the planet. The built … product of modernisation is not modern architecture but Junkspace. Junkspace is what remains after modernisation has run its course, or, more precisely, what coagulates while modernisation is in progress, its fallout. […] It was a mistake to invent modern architecture for the twentieth century. Architecture disappeared in the twentieth century; […] Junkspace seems an aberration, but it is the essence, the main thing … the product of an encounter between escalator and air-conditioning […]’.<sup>22</sup> The author draws a very distinguishable parallel pointing out the influence of new media on post-modern architecture: ‘… Because it cannot be grasped, Junkspace cannot be remembered. It is a flamboyant yet unmemorable, like a screen saver; its refusal to freeze ensures instant amnesia. […] A quasi-panoptical universe in which all the contents rearrange themselves in split seconds around the dizzy eye of the beholder'.<sup>23</sup> Further he adds: ‘We have built more than did all previous generations put together, but somehow we do not register on the same scales’<sup>24</sup>–this sounds a lot like what Carr said about reading–we read more than previous generation quantity-wise, but we process information on a completely different level. ‘It fuses high and low, public and private, … '.<sup>25</sup> </p>
+                    <p class="indent">Visual communication and graphic design deal with all kinds of communication media from writing and print to digital graphics. And as a creative industry it involves not only a sequential linear way of structuring and organising information, but also a ‘right-sided’ associative and metaphorical approach, which is, we concluded earlier, necessary for building a new model of communication. Because of this, in architecture, which forms social behaviour, there has to be a certain connection to graphic design.</p> <br><br><br>
+
+                    <p class="ref">
+                    <sup>22</sup>
+                     p.175 "Junkspace" by Rem Koolhaas.<br>
+                     October, Vol. 100, Obsolescence. (Spring, 2002) 
+                    </p>
+                    <p class="ref">
+                    <sup>23</sup>
+                     p.177 "Junkspace" by Rem Koolhaas.<br>
+                     October, Vol. 100, Obsolescence. (Spring, 2002) 
+                    </p>
+                    <p class="ref">
+                    <sup>24</sup>
+                     p.177 "Junkspace" by Rem Koolhaas.<br>
+                     October, Vol. 100, Obsolescence. (Spring, 2002) 
+                    </p>
+                    <p class="ref">
+                    <sup>25</sup>
+                     p.176 "Junkspace" by Rem Koolhaas.<br>
+                     October, Vol. 100, Obsolescence. (Spring, 2002) 
+                    </p>
+                    
+
+
                     </div>
                     </div>
 
                     <div class='digitaltwo' id='digitaltwoseven'>
                       <div class="clickText">
-                         <div class='subtitle' id='planned'>ARCHIGRAM AND CITIES AS NETWORKS OF INCIDENCE</div>
-                    On the theoretical level, graphics play a big role in the achievements of Archigram. Archigram is a neo-futurist architectural group from the 1960’s who came up with a variety of fictional plans for urban planning and architecture. Futuristic concepts of the whole self-sustainable city in a building, moving plug-in cities and more–these were the progressive ideas driven by changes in society and changes in the social perception of space, possibilities of technology and a desire for freedom. In my opinion, Archigram is an example of how graphics can play a significant role in the development of architecture and completely rearrange the preliminary view on the discipline on the theoretical level. Here’s what Peter Cook thought on how the perception of architecture is affected by technology at that time: ‘The electric car of 6ft. x 4ft. 4in. can become not only a service to the front door–even if 30 storeys up–it can become a unit of the house itself.  […] A home is not a house.  […] Neither is a room a room, or a wall a wall, if we don’t want it to be. The ‘cage’ dwelling is a recent series of schemes that plug and clip into the plug-in city, or anywhere for that matter;  […] It’s a series of ‘zones’ rather than parts. It suggests certain situation coordinates rather than lines where hard objects have to remain.  […] The building now can really become an animal, with inflatables and hydraulics and the cheap, localised electric motor. It can grow: not only larger. but now smaller, different, better. The city is not only a series of incidents but a network of incidence.’  
-                    Another architect who pursued revolutionary ideas in architecture is Cedric Price, and it is not a coincidence, that he is also known for graphical and visual representations of his ideas rather then actual architecture. His ‘Fun Palace’ would ‘…challenge the very definition of architecture, for it was not even a conventional ‘building’ at all, but rather a kind of scaffold or framework, enclosing a socially interactive machine - a virtual architecture merging art and technology. In a sense, it was the realisation of the long unfulfilled promise of Le Corbusier’s claims of technologically informed
-                    architecture and the ‘machine for living’. It was not a museum, nor a school, theatre, or funfair, and yet it could be all of these things simultaneously or at different times. The Fun Palace was an environment continually interacting and responding to people’.
+                         <div class='subtitle' id='planned'>ARCHIGRAM AND CITIES AS NETWORKS <br>OF INCIDENCE</div>
+                    On the theoretical level, graphics play a big role in the achievements of Archigram. Archigram is a neo-futurist architectural group from the 1960’s who came up with a variety of fictional plans for urban planning and architecture. Futuristic concepts of the whole self-sustainable city in a building, moving plug-in cities and more–these were the progressive ideas driven by changes in society and changes in the social perception of space, possibilities of technology and a desire for freedom. In my opinion, Archigram is an example of how graphics can play a significant role in the development of architecture and completely rearrange the preliminary view on the discipline on the theoretical level. Here’s what Peter Cook thought on how the perception of architecture is affected by technology at that time: ‘The electric car of 6ft. x 4ft. 4in. can become not only a service to the front door–even if 30 storeys up–it can become a unit of the house itself.  […] A home is not a house.  […] Neither is a room a room, or a wall a wall, if we don’t want it to be. The ‘cage’ dwelling is a recent series of schemes that plug and clip into the plug-in city, or anywhere for that matter;  […] It’s a series of ‘zones’ rather than parts. It suggests certain situation coordinates rather than lines where hard objects have to remain.  […] The building now can really become an animal, with inflatables and hydraulics and the cheap, localised electric motor. It can grow: not only larger. but now smaller, different, better. The city is not only a series of incidents but a network of incidence'.<sup>26</sup>  
+                    <p class="indent">Another architect who pursued revolutionary ideas in architecture is Cedric Price, and it is not a coincidence, that he is also known for graphical and visual representations of his ideas rather then actual architecture. His ‘Fun Palace’ would ‘…challenge the very definition of architecture, for it was not even a conventional ‘building’ at all, but rather a kind of scaffold or framework, enclosing a socially interactive machine - a virtual architecture merging art and technology. In a sense, it was the realisation of the long unfulfilled promise of Le Corbusier’s claims of technologically informed
+                    architecture and the ‘machine for living’. It was not a museum, nor a school, theatre, or funfair, and yet it could be all of these things simultaneously or at different times. The Fun Palace was an environment continually interacting and responding to people’.</p> <br><br><br>
+
+                    
+                    <p class="ref">
+                    <sup>26</sup>
+                     pp.31-33 "A guide to Archigram 1961-74"<br>
+                     Academy Group, Archigram Archives, 1994
+                    </p>
+
+
                     </div>
                     </div>
                     
@@ -1872,39 +1757,55 @@ $(document).ready(function(){
 
 <div class='sixth commonclass'>
       <div class='gdas'>
-           <div class='title' id='GDAS'>GRAPHIC DESIGNER AS AN ARCHITECT</div>
+           <div class='title' id='GDAS'>GRAPHIC DESIGNER <br>AS AN ARCHITECT</div>
 
         <div class='gdasone'id='gdasoneone'>
             <div class="clickText">
-             <div class='title2'id='another'>ANOTHER SCALE OF ARCHITECTURE</div>
-        In many ways Archigram itself and of course its projects became a reflection on the changes in the society, politics and technological development of that time. Analogically our age brings its own reflection on the issues and innovations of today and takes form, amongst the rest, in architecture and urban landscape. 
-        <p>For instance, in the book from Junya Ishigami ‘Another scale of architecture’ from 2010, architect is coming up with a correlating to Archigram’s ideas approach in his research: ‘To embody the architecture that has never been architecture before–I wish to explore this possibility. Likely, this will mean fundamentally re-thinking our methods of constructing architecture’. (!!!) In contrast to Archigram, Junya Ishigami draws his inspiration from clouds, forest, horizon, sky and rain. This direction in architecture is not based on preliminary knowledge, but tries to draw the attention back to the essence: following the movement of the clouds, not paths of potential customers. </p>
+             <div class='title2'id='another'>ANOTHER SCALE <br>OF ARCHITECTURE</div>
+
+             ‘The business of the artist has been to report on the nature of the ground by exploring the forms of sensibility made available by each new ground, or mode of culture, long before the average man suspects that anything has changed'.<sup>27</sup>
+            <p class="indent">‘Architecture Without Architects attempts to break our narrow concepts of the art of building by introducing the unfamiliar world of non pedigreed architecture'.<sup>28</sup> ‘Architecture Without Architects’, is the book by Bernard Rudofsky (and the exhibition held in November of 1964 at New York Museum of Modern Art). It tells us about architecture before it became an expert’s discipline and how it was developed in various cultures. ‘There is a good deal of irony in the fact that to stave off physical and mental deterioration the urban dweller periodically escapes his splendidly appointed lair to seek bliss in what he thinks are primitive surroundings: a cabin, a tent, or, if he is less hidebound, a fishing village or hill town abroad’. Rudofsky is calling upon learning from primitive cultures and vernacular architecture, but he also admits the importance of urban and architectural signage and speculates on his concerns over the increasingly disorienting visual and psychological experience of urban environments. In the past, architects dared to admit that graphic design has an important role within architecture. However the extent to which graphic design was admitted to have an impact was always quite literal and limited: to the signage, navigation and typography in space. Graphic design for architects in that sense serves a function of an extra layer, almost a decoration. They admit its functionalism, but discussions happen mostly about its aesthetic value. ‘Modern communication devices and easy to follow signposts save us from losing our way into labyrinths, but they also are to blame for our disenchantment with architectural space'. </p> <br><br><br>
+
+            <p class="ref">
+                    <sup>27</sup>
+                     preface of "Architecture Without Architects" by Bernard Rudofsky
+                    </p>
+
+            <p class="ref">
+                    <sup>28</sup>
+                     preface of "Architecture Without Architects" by Bernard Rudofsky
+                    </p>
         </div>
         </div>
 
         <div class='gdasone'id='gdasonetwo'>
           <div class="clickText">
-             <div class='title2' id='cartography'>CARTHOGRAPHY</div>
-        This brings me to the topic of ‘Architecture Without Architects’, which is raised in the book by Bernard Rudofsky and the exhibition held in November of 1964 at New York Museum of Modern Art . ‘Architecture Without Architects attempts to break our narrow concepts of the art of building by introducing the unfamiliar world of nonpedigreed architecture’. 27 The book is telling about the architecture before it became an expert’s discipline and how it was developing in various cultures. ‘There is a good deal of irony in the fact that to stave off physical and mental deterioration the urban dweller periodically escapes his splendidly appointed lair to seek bliss in what he thinks are primitive surroundings: a cabin, a tent, or, if he is less hidebound, a fishing village or hill town abroad’. Rudofsky is calling upon learning from primitive cultures and vernacular architecture, but he also admits the importance of urban and architectural signage and speculates on his concerns over the increasingly disorienting visual and psychological experience of urban environments. 
+             <div class='title2' id='cartography'>SIGNAGE AND NAVIGATION</div>
+        Indeed, street signs, window displays, navigation signs and such, are increasingly becoming a significant and inseparable part of the urban landscape. That was discussed at the Symposium ’Signs for Streets and Buildings’ on November 20th in 1953, which is mentioned in the ‘Disorientation’ by Felicity D. Scott. No doubt, navigation and lettering in the architectural space is an important functional and aesthetical element. There definitely should be a discussion on the topic, especially now, when screens of various sizes are being incorporated into the interior or even the structure of buildings. This way, graphics, created by graphic designers become inseparable from architecture, and they both contribute to an experience and functionality. 
+
         </div>
         </div>
 
         <div class='gdasone'id='gdasonethree'>
           <div class="clickText">
-             <div class='title2' id='signage'>SIGNAGE AND NAVIGATION</div>
-        In the past architects dared to admit that graphic design has an important role within architecture. However the extent till which graphic designer was admitted to have an impact was always quite literal and limited: to the signage, navigation and typography in space. Graphic design for architects in that sense serves a function of an extra layer, almost a decoration of some sort. They admit its functionalism, but discussions happen mostly about its aesthetical value of typography. ‘Modern communication devices and easy to follow signposts save us from losing our way into labyrinths, but they also are to blame for our disenchantment with architectural space’. 
-        Indeed street signs, window displays, navigation signs and such, are increasingly becoming a significant and inseparable part of the urban landscape. That was discussed at the Symposium ’Signs for Streets and Buildings’ on November 20th in 1953, which is mentioned in the ‘Disorientation’ by Felicity D. Scott. No doubt, navigation and lettering in the architectural space is an important functional and aesthetical element. And there is definitely should be a discussion on the topic especially now, when screens of various sizes are being incorporated in the interior or even a structure of the building. This way graphics, created by graphic designers become inseparable from architecture, and they both contribute to an experience and functionality. 
-
-        <p>Some other elements in architectural practice, where graphic design literally plays a key role, is of course a visual representation of space on a 2D surface like descriptive geometry and cartography. A map is a used in order to communicate the idea of an architect and ‘can be seen within cartography as the art or the action of conceiving an artefact before it is made’. It serves as an instruction for building making and therefore has a direct impact on the success of the execution and the result. Even though the descriptive geometry language, as well as the cartography  are deemed to be objective, the translation of space into a 2D surface cannot be done without some inconsistencies and cannot be done with a certain level of subjectivity. This subjectivity in reading and interpreting the map leads to distortion of the initial plan, and here is where graphic design translation has a direct impact on the physical reality. The same can be noticed with 3D modelling. It seems like it may give a more clear translation of the ‘plan’ into materialisation. But using the tool of 3D modelling itself implies a certain influence on the architecture. All the mesh roofs and polygon formed windows reveal themselves in the end in the physical space. </p>
-
-        <p>However, the real scale of graphic design influence, in my point of view, lays not in the content of the commercial on the screen or a choice of typeface for the navigation sign. As I see it, the real impact is in the way how graphic design forms and shapes our ability of perceiving the information. That is what directs the structure of the building in the first place, architecture in its core.</p> 
+             <div class='title2' id='signage'>CARTOGRAPHY</div>
+        Another sphere in architectural practice, where graphic design literally plays a key role, is of course, the visual representation of space on a 2D surface like descriptive geometry and cartography. A map is a used in order to communicate the idea of an architect and ‘can be seen within cartography as the art or the action of conceiving an artefact before it is made.’ It serves as an instruction for building making and therefore has a direct impact on the success of the execution and the result. Even though the descriptive geometry language, as well as the cartography is deemed to be objective, the translation of space into a 2D surface cannot be done without some inconsistencies and cannot be done with a certain level of subjectivity. This subjectivity in reading and interpreting the map leads to distortion of the initial plan, and here is where graphic design translation has a direct impact on the physical reality. The same can be noticed with 3D modelling. It seems like it may give a more clear translation of the ‘plan’ into materialisation. But using the tool of 3D modelling itself implies a certain influence on the architecture. All the mesh roofs and polygon formed windows reveal themselves in the end in the physical space. 
+        <p class="indent">However, from my point of view, the graphic design influence at its greatest, lies not in navigation design or map-making. As I see it, the most important impact lies in how graphic design, through operating various media, has the ability to form and shape our perception. That is what directs the concept of an architectural piece in the first place, architecture at its core.</p>
         </div>
         </div>
 
         <div class='gdasone'id='gdasonefour'>
           <div class="clickText">
              <div class='title2'id='lack'>LACK OF COOPERATION</div>
-        There is a lack of cooperation between practices, like architecture and graphic design. And this quite often results into miscommunication and failure. Both of the practices could benefit from each other. When I was studying graphic design at the Saint-Petersburg University of Technology and Design, I, as well as any student at my department, didn’t have any practice with print making. The ‘Print’ department of the same university was located just a couple of blocks away from the building where we had our lectures on silkscreening. As a result, my eduction on print was based purely on some vague knowledge withdrawn from the Power Point presentation without any practical skills. I believe that collaboration of these two departments as a start would create a useful experience for both parties involved, but that would bring too much bureaucracy and would take to much of an effort for the teachers. Moreover, that may have never come across their minds at all. The departments didn’t have any connection at all. And the same thing is happening on a bigger scale with architecture and graphic design and many other disciplines.
+        There is a lack of cooperation between practices, like architecture and graphic design. Borders between digital and physical worlds disappear, all the disciplines are mixed up, interlinking and influencing each other. We can’t afford to continue thinking in a ‘logical’ left-brained way, structuring, categorising and expecting a successful outcome. Keeping solid borders in-between the disciplines doesn't benefit anyone. The development of technology has pushed our possibilities further in every aspect of our lives. Meanwhile a graphic designer is mostly expected to take care of the aesthetics and user-friendly visual effect. I am persuaded that graphic design can offer much more in collaboration with other practices. This thesis is starting with the topic of failing communication, and how humans through the history have tried to come up with a better tool or extension to reach a better mutual understanding. I firmly believe that graphic design in collaboration with other disciplines has a power to bring us closer to it. 
+        <p class="indent">‘A public space where people are not self-enclosed in the heightened way that happens when our minds are elsewhere than our bodies, may feel rich with possibility for spontaneous encounters. Even if we do not converse with others, our mutual reticence is experienced as reticence if our attention is not otherwise bound up, but is rather free to alight upon one another and linger or not, because we ourselves are free to pay out our attention to deliberate measures. To be the object of someone’s reticence is quite different from not being seen by them; we may have a vivid experience of having encountered another person, even if in silence. Such encounters are always ambiguous, and their need for interpretation gives rise to train of imaginings, often erotic. This is what makes cities exciting'.<sup>29</sup></p><br><br><br>
+
+        <p class="ref">
+                    <sup>29</sup>
+                     p.9 "The World Beyond Our Head. How To Flourish In The Age of Distraction" by Matthew Crawford. <br>
+                     Penguin Books 2016
+                    </p>
+
         </div>
         </div>
 

@@ -117,21 +117,36 @@ p {
   cursor: pointer;
 }*/
 
-.ref {
-/*   background-color: none;
-*/   font-family: 'Arial';
+/*.ref {
+font-family: 'Arial';
    font-weight: normal;
    font-size: 13px;
    color: black;
    position: absolute;
    display: block;
    font-style: italic;
-/*   border: solid black 1px;
-*/   width: 250px;
+width: 250px;
    left:800px;
-/*   opacity: 0;
-*/   z-index: 1000;
-}
+z-index: 1000;
+}*/
+
+.ref {
+   font-family: 'Arial';
+   font-weight: normal;
+   font-size: 13px;
+   color: black;
+   text-indent: none;
+/*   position: absolute;
+   display: block;*/
+   font-style: italic;
+   line-height: 18px;
+/*   top: 200px;
+   border: solid black 1px;
+   width:250px;
+   z-index: 100000;*/
+
+ }
+
 
 #r1 {top: 2610px;}
 #r2 {top: 3200px;}
@@ -358,7 +373,7 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
   page-break-after: always;}*/
 
 
-
+.buttonNext, .route, .header {display:none;}
 
 
 
@@ -369,7 +384,7 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 /*index*/
 
 /*main containers*/
-.index {display: block;}
+.index {display: block; /*top:10px;*/}
 
 .headeri{  
    font-family: 'Arial';
@@ -430,11 +445,11 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 /*   margin: 10px;
 */   font-family: 'Arial';
    font-weight: normal; 
-   font-size: 25px;
+   font-size: 16px;
    color: black;
    display: block;
    z-index: 3000;
-   padding: 8.5px;
+   padding: 2px;
 
 }
 .title2i {
@@ -446,7 +461,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
    color: black;
    display: block;
    z-index: 3000;
-   padding: 5px;
+   padding: 2px;
 }
 .subtitlei {  
    position: relative;
@@ -461,7 +476,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 
 
 /*boxes*/
-.societyonei, .influenceonei, .influencetwoi, .digitalonei, .digitaltwoi, .gdasonei {
+.societyonei, .influenceonei, .influencetwoi, .digitalonei, .digitaltwoi, .gdasonei, .conclusiononei {
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -474,7 +489,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
   color: black;
   display:block;
   text-align: left;
-  box-shadow: 5px 10px 18px #000000;
+  box-shadow: 5px 10px 10px #000000;
 }
 
 #societyoneonei, 
@@ -518,8 +533,12 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 #gdasonefivei,
 #gdasonesixi { position: relative; width: 700px;} 
 
+#conclusiononei,
+#conclusiontwoi,    
+#conclusionthreei { position: relative; width: 700px;} 
 
-/*#sizeblock2 {
+/*
+#sizeblock2 {
   position: absolute;
   background-color: white;
   display: block;
@@ -528,5 +547,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 }*/
 
 #container2 {display:none;}
+
+
 
 
