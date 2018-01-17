@@ -34,7 +34,12 @@ img {
     position: absolute;
     border: 1px black solid;
     width: 160px;
-    z-index: 50000;
+/*    z-index: 50000;
+*/
+    /*page-break-after: always;
+
+  page-break-inside: avoid;
+  -webkit-region-break-inside: avoid;*/
 
     /*right:10px;
     top: 40px;*/
@@ -50,27 +55,60 @@ img {
 .thesistitle {display: none;}
 
 
-#photo1 {right:30px; top:3700px; width: 600px; height:auto;}
-#photo2 {right:30px; top:3650px; width: 600px; height:auto;}
-#photo3 {right:30px; top:4100px; width: 600px; height:auto;}
+#photo1 {right:10px; top:4000px; width: 250px; height:auto;}
+#photo2 {right:10px; top:4200px; width: 250px; height:auto;}
+#photo3 {right:10px; top:4400px; width: 250px; height:auto;}
 
-#photo4 {right:30px; top:6600px; width: 350px; height:auto;}
-#photo5 {right:30px; top:7100px; width: 350px; height:auto;}
+#photo27 {right:10px; top:5600px; width: 300px; height:auto; z-index: 5000;}
 
-#photo6 {right:30px; top:8000px; width: 400px; height:auto;}
+#photo28 {right:10px; top:6500px; width: 200px; height:auto; z-index: 5000;}
+#photo29 {right:10px; top:6700px; width: 200px; height:auto; z-index: 5000;}
 
-#photo7 {right:30px; top:8700px; width: 400px; height:auto;}
-#photo8 {right:30px; top:11000px; width: 300px; height:auto;}
-#photo9 {right:30px; top:11500px; width: 300px; height:auto;}
-#photo10 {right:30px; top:11500px; width: 300px; height:auto;}
+#photo30 {right:10px; top:8000px; width: 250px; height:auto; z-index: 5000;}
+#photo31 {right:10px; top:7400px; width: 250px; height:auto;}
 
-#photo11 {right:30px; top:17500px; width: 400px; height:auto;}
-#photo12 {right:30px; top:18000px; width: 400px; height:auto;}
-#photo13 {right:30px; top:18500px; width: 400px; height:auto;}
-#photo14 {right:30px; top:19000px; width: 400px; height:auto;}
 
-#photo22 {left:25px; top:2800px; width: 400px; height:auto;}
-#photo23 {left:400px; top:3200px; width: 400px; height:auto;}
+
+#photo4 {right:10px; top:8600px; width: 350px; height:auto;}
+#photo5 {right:10px; top:9100px; width: 350px; height:auto;}
+
+#photo6 {right:5px; top:13800px; width: 300px; height:auto; z-index: 5000;}
+
+
+
+
+
+
+#photo32 {right:10px; top:15000px; width: 200px; height:auto; z-index: 5000;}
+
+#photo8 {right:5px; top:18400px; width: 250px; height:auto; z-index: 5000;}
+#photo10 {right:10px; top:18750px; width: 250px; height:auto; z-index: 5000; background-color: white;}
+
+#photo11 {right:10px; top:23900px; width: 200px; height:auto;}
+#photo12 {right:10px; top:24050px; width: 200px; height:auto;}
+#photo13 {right:10px; top:24200px; width: 200px; height:auto;}
+#photo14 {right:10px; top:24350px; width: 200px; height:auto;}
+
+#photo20 {right:10px; top:30300px; width: 250px; height:auto; z-index: 5000;}
+#photo21 {right:10px; top:30500px; width: 250px; height:auto; z-index: 5000;}
+
+
+#photo15 {right:10px; top:36000px; width: 250px; height:auto; }
+#photo16 {right:10px; top:36190px; width: 250px; height:auto; }
+#photo17 {right:10px; top:36400px; width: 250px; height:auto; }
+
+#photo18 {right:10px; top:39700px; width: 300px; height:auto; }
+#photo19 {right:10px; top:39900px; width: 300px; height:auto; }
+
+#photo24 {right:10px; top:43150px; width: 250px; height:auto; z-index: 5000;}
+#photo25 {right:10px; top:43350px; width: 250px; height:auto; z-index: 5000;}
+#photo26 {right:10px; top:43500px; width: 250px; height:auto; z-index: 5000;}
+
+
+#photo22 {right:10px; top:3000px; width: 300px; height:auto;}
+#photo23 {right:10px; top:3250px; width: 300px; height:auto;}
+
+
 /*#photo24 {left:25px; top:3200px; width: 400px; height:auto;}
 */
 
@@ -228,13 +266,13 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 */
 }
 
-.abstract   { width: 600px;}
+.abstract   { width: 500px;}
 .intro      { width: 550px;}
-.society    { width: 550px;}
-.influence  { width: 550px;}
-.digital    { width: 550px;}
-.gdas       { width: 550px;}
-.conclusion { width: 700px;}
+.society    { width: 500px;}
+.influence  { width: 400px;}
+.digital    { width: 400px;}
+.gdas       { width: 500px;}
+.conclusion { width: 450px;}
 
 
 
@@ -287,7 +325,7 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 
 
 /*boxes*/
-.societyone, .influenceone, .influencetwo, .digitalone, .digitaltwo, .gdasone {
+.societyone, .influenceone, .influencetwo, .digitalone, .digitaltwo, .gdasone, .conclusionone {
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -319,12 +357,14 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 #societyonetwo, 
 #societyonethree, 
 #societyonefour,
-#societyonefive { position: relative; margin:10px; padding: 30px; width: 600px;
+#societyonefive { position: relative; margin:10px; padding: 30px; width: 500px;
                   page-break-inside: avoid;
                   -webkit-region-break-inside: avoid; /*width: 680px;*/}    
 
+
+
 #influenceoneone,
-#influenceonetwo { position: relative; margin:10px; padding: 30px; width: 600px; 
+#influenceonetwo { position: relative; margin:10px; padding: 30px; width: 500px; 
                   page-break-inside: avoid;
                   -webkit-region-break-inside: avoid;/*width: 680px;*/}    
 
@@ -334,7 +374,7 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 #influencetwothree,
 #influencetwofour,
 #influencetwofive,
-#influencetwosix { position: relative; margin:10px; padding: 30px; width: 650px; 
+#influencetwosix { position: relative; margin:10px; padding: 30px; width: 500px; 
                     page-break-inside: avoid;
                   -webkit-region-break-inside: avoid;/*width: 720px;*/}  
 
@@ -344,19 +384,18 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
 #digitalonetwo,    
 #digitalonethree,  
 #digitalonefour,  
-#digitalonefive { position: relative; margin:10px; padding: 30px; width: 600px; 
+#digitalonefive { position: relative; margin:10px; padding: 30px; width: 500px; 
                     page-break-inside: avoid;
                   -webkit-region-break-inside: avoid;/*width: 680px;*/}
 
 /*#digitalonefour {page-break-inside: avoid; page-break-after: always; -webkit-region-break-inside: avoid;}  
 */
-
-#digitaltwoone,    
-#digitaltwotwo,    
+    
+    
 #digitaltwothree,  
 #digitaltwofour,   
-#digitaltwofive,   
-#digitaltwosix,    
+   
+    
 #digitaltwoseven,  
 #digitaltwoeight,  
 #digitaltwonine,   
@@ -364,16 +403,31 @@ div.first, div.second, div.third, div.fourth, div.fifth, div.sixth, div.seventh 
                   page-break-inside: avoid;
                   -webkit-region-break-inside: avoid;/*width: 720px;*/}   
 
+                  #digitaltwoone, #digitaltwotwo, #digitaltwofive, #digitaltwosix  { position: relative; margin:10px; padding: 30px; width: 500px; 
+                  page-break-inside: avoid;
+                  -webkit-region-break-inside: avoid;/*width: 720px;*/}
+
 /*#digitaltwoone {background-color: blue;}
 */
 #gdasoneone,
 #gdasonetwo,    
-#gdasonethree,  
+  
 #gdasonefour,  
-#gdasonefive,
-#gdasonesix { position: relative; margin:10px; padding: 30px; width: 600px; 
+#gdasonefive
+ { position: relative; margin:10px; padding: 30px; width: 600px; 
                 page-break-inside: avoid;
                   -webkit-region-break-inside: avoid;/*width: 720px;*/} 
+
+                  #gdasonethree, #gdasonesix { position: relative; margin:10px; padding: 30px; width: 500px; 
+                page-break-inside: avoid;
+                  -webkit-region-break-inside: avoid;/*width: 720px;*/} 
+
+#conclusiononeone, 
+#conclusiononetwo, 
+#conclusiononethree { position: relative; margin:10px; padding: 30px; width: 500px;
+                    page-break-after: always;
+                    page-break-inside: avoid;
+                    -webkit-region-break-inside: avoid; }   
 
 #hellomap {
   display: none;
@@ -552,13 +606,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
 #conclusiontwoi,    
 #conclusionthreei { position: relative; width: 700px;} 
 
-/*
-#sizeblock2 {
+
+/*#sizeblock {
   position: absolute;
   background-color: white;
   display: block;
-  width: 1200px;
-  height: 100px;
+  width: 650px;
+  height: 50000px;
 }*/
 
 #container2 {display:none;}
