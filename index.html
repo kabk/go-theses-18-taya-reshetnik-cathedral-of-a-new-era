@@ -509,8 +509,8 @@ $(document).ready(function(){
         $("#gdasonetwo").removeClass("showText");
         $(".blurry_thingy").removeClass("showBlur");
         $("#gdasonetwo").removeClass("bringFront");
-        $("#another").removeClass("hideTitle");
-        $("#cartography").scrollTop(0);
+        $("#cartography").removeClass("hideTitle");
+        $("#gdasonetwo").scrollTop(0);
     });
 
     $("#gdasonethree").click(function(){
@@ -717,7 +717,7 @@ function copyDiv() {
         var firstDivContent = document.getElementById('container');
         var secondDivContent = document.getElementById('container2');
         secondDivContent.innerHTML = firstDivContent.innerHTML;
-        $(secondDivContent).append('<div class="littlething"></div>');
+        $(secondDivContent).append('<div class="littlething"><img src="images/here.png"></div>');
         
 
         $(".littlething").css("transition","0s all");
@@ -938,11 +938,11 @@ $(document).ready(function(){
     });
 
         $("#societyoneone").on("click", function() {
-            window.scroll(900,200);
+            window.scroll(900,250);
         });
 
         $("#societyonetwo").on("click", function() {
-            window.scroll(900,650);
+            window.scroll(900,700);
         });
 
         $("#societyonethree").on("click", function() {
@@ -950,11 +950,11 @@ $(document).ready(function(){
         });
 
         $("#societyonefour").on("click", function() {
-            window.scroll(1800,200);
+            window.scroll(1800,250);
         });
 
         $("#societyonefive").on("click", function() {
-            window.scroll(1800,600);
+            window.scroll(1800,700);
         });
 
             $("#influencetwoone").on("click", function() {
@@ -970,15 +970,15 @@ $(document).ready(function(){
             });
 
             $("#influencetwofour").on("click", function() {
-                window.scroll(2800, 1750);
+                window.scroll(2800, 1650);
             });
 
             $("#influencetwofive").on("click", function() {
-                window.scroll(3650, 300);
+                window.scroll(3650, 650);
             });
 
             $("#influencetwosix").on("click", function() {
-                window.scroll(3650, 750);
+                window.scroll(3650, 1050);
             });
 
                   $("#digitaloneone").on("click", function() {
@@ -993,6 +993,50 @@ $(document).ready(function(){
                   $("#digitalonefour").on("click", function() {
                     window.scroll(5100, 600);
                   });
+
+                    $("#digitaltwoone").on("click", function() {
+                      window.scroll(4700, 1200);
+                    });
+                    $("#digitaltwotwo").on("click", function() {
+                      window.scroll(4700, 1700);
+                    });
+                    $("#digitaltwothree").on("click", function() {
+                      window.scroll(4700, 2150);
+                    });
+                    $("#digitaltwofour").on("click", function() {
+                      window.scroll(4700, 2550);
+                    });
+                    $("#digitaltwofive").on("click", function() {
+                      window.scroll(4700, 3000);
+                    });
+                    $("#digitaltwosix").on("click", function() {
+                      window.scroll(5100, 1200);
+                    });
+                    $("#digitaltwoseven").on("click", function() {
+                      window.scroll(5100, 1650);
+                    });
+                    $("#digitaltwoeight").on("click", function() {
+                      window.scroll(5100, 2100);
+                    });
+
+              $("#gdasoneone").on("click", function() {
+                window.scroll(900, 2000);
+              });
+              $("#gdasonetwo").on("click", function() {
+                window.scroll(900, 2400);
+              });
+              $("#gdasonethree").on("click", function() {
+                window.scroll(900, 2900);
+              });
+              $("#gdasonefour").on("click", function() {
+                window.scroll(1650, 2000);
+              });
+              $("#gdasonefive").on("click", function() {
+                window.scroll(1650, 2400);
+              });
+              $("#gdasonesix").on("click", function() {
+                window.scroll(1650, 2900);
+              });
 
     $("#conclusiononeone").on("click", function() {
         window.scroll(0,1300);
@@ -1321,7 +1365,7 @@ $(document).ready(function(){
   <div class="blur"> -->
 <div id="container">
 
-<div class="track"><img src="images/here.png"></div>
+<div class="track"></div>
 
 <div class='first commonclass clickable'>
   <p class="header">ABSTRACT</p>
@@ -1913,8 +1957,8 @@ $(document).ready(function(){
 
 <div class="blurry_thingy"></div>
 
-<div class="buttonNext">NEXT >></div>
-
+<!-- <div class="buttonNext">NEXT >></div>
+ -->
 
 <!-- <div class="route">FOLLOW THE NON-LINEAR ROUTE</div>
  -->

@@ -72,6 +72,7 @@ height:4000px;
   left:0px;
   top:0px;
 }
+
 .showBlur {z-index: 100; overflow: hidden}
 .bringFront {z-index:1000; overflow: hidden}
 .hideThingy {display: none;}
@@ -205,8 +206,8 @@ height:4000px;
 }
 
 
-.abstract   { height: 470px;}
-.intro      { height: 470px;}
+.abstract   { height: 420px;}
+.intro      { height: 420px;}
 .society    { height: 1570px;}
 .influence  { height: 2370px;}
 .digital    { height: 3500px;}
@@ -471,8 +472,8 @@ height:4000px;
 /*  opacity: 0;*/
   /*display: none;*/
   z-index: 100000;
-  background-color: red;
-  border-radius: 50%;
+/*  background-color: red;
+  border-radius: 50%;*/
  /* mix-blend-mode:difference;*/
 }
 
@@ -495,11 +496,15 @@ height:4000px;
 #hellomap {
   display: block;
   color: yellow;
+  background-color: yellow;
   font-family: Arial;
   font-size: 20px;
   font-weight: normal;
   background-color: yellow;
   -webkit-text-stroke: 1px black;
+/*  z-index: 20000;
+*/
+
 }
 
 #hellomap:hover {cursor: pointer; color: black;  -webkit-text-stroke: none;}
@@ -515,7 +520,8 @@ height:4000px;
   border:solid 1px black;*/
   -webkit-text-stroke: 1px black;
   z-index:50000;
-  
+  left:25px;
+
 }
 
 /*#ttone {top:0px;}
