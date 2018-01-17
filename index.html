@@ -583,11 +583,7 @@ $(document).ready(function(){
 
 
 
-// $(document).ready(function(){
-//     $("div.containerofcontainer").find(".title").addClass("bigTitle");
-//     console.log("hellohellohelloooo")
- 
-//     });
+
 
 // $(document).ready(function(){
 //     $(".intro").click(function(){
@@ -614,7 +610,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function() {   
-    $('.commonclass').each(function(){
+    $('.clickable').each(function(){
               $(this).click(function(){
                 $('body').css('overflow','hidden');
                 $('.ref').css('color','black');
@@ -721,6 +717,20 @@ function copyDiv() {
         var firstDivContent = document.getElementById('container');
         var secondDivContent = document.getElementById('container2');
         secondDivContent.innerHTML = firstDivContent.innerHTML;
+        $(secondDivContent).append('<div class="littlething"></div>');
+        
+
+        $(".littlething").css("transition","0s all");
+        $(".littlething").css('left',$('.track').offset().left);
+        $(".littlething").css('top',$('.track').offset().top);
+        $("#container2").find(".title").addClass("bigTitle");
+        $("#container2").find(".title2").addClass("bigTitletwo");
+        $("#container2").find(".subtitle").addClass("bigTitlesub");
+        // $("#container2").find(".title").css("font-size","200px");
+        // $(".bigTitle").css("font-size","120px");
+
+
+
     }
     setInterval(function(){ 
 copyDiv();
@@ -862,6 +872,16 @@ $(document).ready(function(){
             y: event.pageY
         };
     }
+
+    
+      // $('.commonclass').hover(function(){
+
+      //   $("#container2").find(this).find(".title").css("font-size","30px");
+      // });
+
+
+    
+    
     function getMousePosition() {
         var pos = mousePos;
         if (!pos) {
@@ -881,8 +901,8 @@ $(document).ready(function(){
 
             $('div.containerofcontainer').find('.blurry_thingy').addClass('hideThingy');
 
-            $('div.containerofcontainer').find('.commonclass').addClass('test');
-            console.log("cheto")
+            // $('div.containerofcontainer').find('.commonclass').addClass('test');
+            // console.log("cheto")
 
         }
     }
@@ -897,6 +917,17 @@ $(document).ready(function(){
 
 // windowscroll on click
 $(document).ready(function(){
+      //   $('.commonclass').each(function(){
+      //   $(this).hover(function(){
+      //     console.log("privet");
+      //     $(this).addClass('hoveredbox');
+      //     // $(".containerofcontainer").find(this).css("background-color","pink");
+      //     // $(this).find(".title").css("color","blue");
+      //   },function(){
+      //     $(this).removeClass('hoveredbox');
+      //   });
+      // });
+
 
   $(".first").on("click", function() {
         window.scroll(0,0);
@@ -975,7 +1006,11 @@ $(document).ready(function(){
 
 });
 
-
+// $(document).ready(function(){
+//     $("#container2").find(".title").addClass("bigTitle");
+//     // console.log("hellohellohelloooo")
+ 
+//     });
 
 
 
@@ -1011,10 +1046,9 @@ $(document).ready(function(){
 
 <body class="body">
 
-
-
 <!-- <div id='sizeblock'></div>
  -->
+
 <div class='order'>
     <div class='images' id='intro1'><img id='photo1'src='images/intro/intro_1.jpg'></div>
     <div class='images' id='intro2'><img id='photo2'src='images/intro/intro_2.jpg'></div>
@@ -1050,7 +1084,7 @@ $(document).ready(function(){
 
     <div class='images' id='urban1'><img id='photo22'src='images/urban_spaces/urban_1.png'></div>
     <div class='images' id='urban2'><img id='photo23'src='images/urban_spaces/urban_2.png'></div>
-    <div class='images' id='urban3'><img id='photo24'src='images/urban_spaces/urban_3.png'></div>
+    <!-- <div class='images' id='urban3'><img id='photo24'src='images/urban_spaces/urban_3.png'></div> -->
 
     <div class='images' id='another1'><img src='images/another/another_1.jpg'></div>
     <div class='images' id='another2'><img src='images/another/another_4.jpg'></div>
@@ -1148,10 +1182,10 @@ $(document).ready(function(){
                       </div>
 
                       <div class='influenceonei' id='influenceonetwoi'>
-                              <div class='title2i'id='booki'>4.2.0_ON BOOK DESIGN</div>
+                              <div class='title2i'id='booki'>4.2.0_ON PHYSICAL WORLD AND DESIGN</div>
 
                           <div class='influencetwoi' id='influencetwofivei'>
-                                          <div class='subtitlei' id='ondesigni'>4.2.1_INFLUENCE ON PHYSICAL WORLD AND DESIGN</div>
+                                          <div class='subtitlei' id='ondesigni'>4.2.1_ON PHYSICAL WORLD AND ORIENTATION</div>
                           </div>
 
                           <div class='influencetwoi' id='influencetwosixi'>
@@ -1206,24 +1240,24 @@ $(document).ready(function(){
                                   </div>
 
                                   <div class='digitaltwoi' id='digitaltwosixi'>
-                                      <div class='subtitlei' id='archigrami'>5.2.6_ARCHIGRAM AND CITIES AS NETWORKS OF INCIDENCE</div>
+                                      <div class='subtitlei' id='archigrami'>5.2.6_MALLIFICATION</div>
                                   </div>
 
                                   <div class='digitaltwoi' id='digitaltwoseveni'>
-                                      <div class='subtitlei' id='plannedi'>5.2.7_PLANNED OBSOLESCENCE AND DISPOSABLE APPROACH</div>
+                                      <div class='subtitlei' id='plannedi'>5.2.7_ARCHIGRAM AND CITIES AS NETWORKS OF INCIDENCE</div>
                                   </div>
 
                                   <div class='digitaltwoi' id='digitaltwoeighti'>
-                                      <div class='subtitlei' id='buildingi'>5.2.8_BUILDING IN CONSTANT FLUX</div>
+                                      <div class='subtitlei' id='buildingi'>5.2.8_PLANNED OBSOLESCENCE AND DISPOSABLE APPROACH</div>
                                   </div>
 
-                                  <div class='digitaltwoi' id='digitaltwoninei'>
+                                  <!-- <div class='digitaltwoi' id='digitaltwoninei'>
                                       <div class='subtitlei' id='worldsi'>5.2.9_WORLDS ONTO THEMSELVES</div>
                                   </div>
 
                                   <div class='digitaltwoi' id='digitaltwoteni'>
                                       <div class='subtitlei' id='junki'>5.2.10_JUNK-SPACE</div>
-                                  </div>
+                                  </div> -->
                               </div>     
               </div>
           </div>
@@ -1289,7 +1323,7 @@ $(document).ready(function(){
 
 <div class="track"><img src="images/here.png"></div>
 
-<div class='first commonclass'>
+<div class='first commonclass clickable'>
   <p class="header">ABSTRACT</p>
     <div class='abstract clickText'>
          <div class='title'id='ABSTRACT'>ABSTRACT</div>
@@ -1310,32 +1344,32 @@ $(document).ready(function(){
  -->    </div>
 </div>
 
-<div class='second commonclass'>
+<div class='second commonclass clickable'>
     <div class='intro clickText'>
          <div class='title'id='INTRO'>INTRO</div>
 
     ‘First we shape cities, then–cities shape us’.<br>
-    <p align="right">–Jan Gehl</p><br><br>
+    <p align="right">–Jan Gehl</p><br>
 
     ‘If design is merely an inducement to consume, then we must reject design; if architecture is merely the codifying of the bourgeois model of ownership and society, then we must reject architecture; if architecture and town planning is merely the formalisation of present unjust social divisions, then we must reject town planning and its cities […] until all design activities are aimed towards meeting primary needs. Until then, design must disappear. We can live without architecture […].’<br>
-    <p align="right">–Adolfo Natalini (Superstudio), 1971</p><br><br>
+    <p align="right">–Adolfo Natalini (Superstudio), 1971</p><br>
 
     ‘The future of architecture lies in the brain’.<br>
-    <p align="right">–Pascal Schöning, Architrav Group</p><br><br>
+    <p align="right">–Pascal Schöning, Architrav Group</p><br>
      
     Straight lines. Sharp corners. You go up and you go down. <br>
     Slowly scrolling–step by step. <br>
     Step back, but then going forward again. <br>
     Pause for a second. Switch a song. <br>
-    Going further. You and the crowd. You and all the others separately. <br>
-    One by one, but in the organised flow. Organised by someone else. <br>
-    The structure is shifting as you go through it, picking up pieces of information. <br>
+    Going further. You and the crowd. <br>You and all the others separately. <br>
+    One by one, but in the organised flow. <br>Organised by someone else. <br>
+    The structure is shifting as you go through it, <br>picking up pieces of information. <br>
     Skimming through your surroundings. <br>
     Swipe the card–I can enter. <br>
     Swipe another card–I can get a snack. <br>
     Swipe again to check the time. <br>
     Transparency of glass everywhere. <br>
-    So much space inside this never ending corridor from metal and plastic. <br>
+    So much space inside this never ending corridor <br>from metal and plastic. <br>
     And yet I can’t move freely–have to follow the route. <br>
     I give up and follow. Pause for a second. <br>
     Swipe–switch a song. <br>
@@ -1351,7 +1385,7 @@ $(document).ready(function(){
 
         <div class='title'id='SOCIETY'>SOCIETY IS SHAPED BY <br>METHODS OF COMMUNICATION</div>
     
-    <div class='societyone' id='societyoneone'>
+    <div class='societyone clickable' id='societyoneone'>
          <div class="clickText">
          <div class='title2' id='desire'>DESIRE FOR COMMUNICATION</div>
      I believe that the desire for communication is one of the major driving forces in this world. The desire to understand and to be understood. To find a common ground. To not feel alone locked away with your own thoughts. If you think about it, almost everything in our society is, in a way, a desperate attempt to establish connections between each other. Communication is the demand for action and skills from both sides. It takes an effort, at least a common language. The deeper the connection is, the more it seems to demand from both sides. Yet, no matter how much of an effort you put into sustaining this fragile link, there’s no way to reach someone else’s mind entirely. Niklas Luhmann, philosopher and sociologist from 20th century, defined society as a enclosed system of communication: ‘Humans cannot communicate; not even their brains can communicate; not even their conscious minds can communicate. Only communication can communicate’.
@@ -1365,13 +1399,13 @@ $(document).ready(function(){
     </div>
     </div>
 
-    <div class='societyone' id='societyonetwo'>
+    <div class='societyone clickable' id='societyonetwo'>
       <div class="clickText">
          <div class='title2'id='forms'>FORMS OF COMMUNICATION</div>
     However, the forms of communication that we have in our capacity are quite limited. They can be categorised into three basic types: verbal, written and non-verbal. At first, verbal communication seems like the most reliable. Nonetheless, even when speaking the same language, the established connection is not completely satisfying. To make it more prominent we have to put it in the context of gestures and mimics, and preferably some background knowledge about the person we are talking to. Perhaps, that is why, when making a new acquaintance, we ask each other about ourselves–we are trying to construct an image to make it easier for ourselves to ‘read’ people. And of course, written text can be read with various intonations, which could completely distort the intended meaning.</div>
     </div>
     
-    <div class='societyone' id='societyonethree'>
+    <div class='societyone clickable' id='societyonethree'>
       <div class="clickText">
          <div class='title2'id='absolute'>ABSOLUTE UNDERSTANDING</div>
     Since there is no method for reaching an absolute understanding, ‘societies have always been shaped more by the nature of the media by which men communicate then by the content of the communication’.<sup>2</sup>Therefore, I see a strong connection between the media and our perception of the world around us. ‘Perception is the process of attaining awareness or understanding of the environment by organising and interpreting sensory information. All perception involves signals in the nervous system, which in turn result from physical stimulation of sense organs’.<sup>3</sup> And all forms of communication are stimulating sense organs.Consequently, communication has a direct influence on forming our perceptions.<br><br><br>
@@ -1391,7 +1425,7 @@ $(document).ready(function(){
     </div>
     </div>
 
-    <div class='societyone' id='societyonefour'>
+    <div class='societyone clickable' id='societyonefour'>
       <div class="clickText">
          <div class='title2'id='juvenoia'>JUVENOIA AND ANXIETY</div>
     From my point of view, the concept of ‘juvenoia' is a good example of how media changes our perceptions. ‘Juvenoia’ is a term for defining the phenomena of exaggerated anxiety that older generations often have concerning the influence of social change on the youth of today. Younger generations adapt easily to new technology, and have grown up with a different perception of the world. What seems normal to them, appears confusing or even sometimes terrifying, to those who grew up during earlier stages in the development of technology. This difference in perception often results in a conflict and miscommunication. The concept of ‘juvenoia’ was coined out by sociologist David Finkelhor<sup>4</sup> in 2011. But the evidence and grounds for it could have been seen much earlier. For instance, when we go as far back as Socrates we can see that even he had his concerns about the invention of the alphabet and writing: ‘Discovery of the alphabet will create forgetfulness in the learner’s souls, because they will not use their memories; they will trust the external written characters and not remember of themselves…’.<sup>5</sup>
@@ -1414,7 +1448,7 @@ $(document).ready(function(){
     </div>
     </div>
 
-    <div class='societyone' id='societyonefive'>
+    <div class='societyone clickable' id='societyonefive'>
       <div class="clickText">
          <div class='title2'id='portable'>PORTABLE BOOK</div>
     These same tendencies were seen during the invention of the printing press. Print made it possible to create a portable book, movable, reproducible pieces of information, available for reading alone–a totally different kind of an intimate experience. It also brought the notion of commodity and individualism into the sphere of information. The fear and anxieties expressed towards print media were also expressed in numerous late-medieval engravings with the theme ‘The Dance of Death’. It is clear that every invention of new communicational media or technology brings up a conflict revealing the changes in perception.
@@ -1427,12 +1461,12 @@ $(document).ready(function(){
 
 <div class='fourth commonclass'>
     <div class='influence'>
-          <div class='title'id='INFLUENCE'>INFLUENCE OF ELECTRONIC MEDIA</div>
+          <div class='title'id='INFLUENCE'>INFLUENCE OF <br>ELECTRONIC MEDIA</div>
 
     <div class='influenceone' id='influenceoneone'>
           <div class='title2'id='perception'>ON PERCEPTION</div>
             
-            <div class='influencetwo' id='influencetwoone'>
+            <div class='influencetwo clickable' id='influencetwoone'>
               <div class="clickText">
                  <div class='subtitle' id='glimpse'>PROMISING GLIMPSE</div>
 
@@ -1448,7 +1482,7 @@ $(document).ready(function(){
             </div>
             </div>
         
-            <div class='influencetwo' id='influencetwotwo'>
+            <div class='influencetwo clickable' id='influencetwotwo'>
               <div class="clickText">
                  <div class='subtitle' id='newkind'>NEW KIND OF INTIMACY</div>
 
@@ -1493,14 +1527,14 @@ $(document).ready(function(){
             </div>
             </div>
 
-            <div class='influencetwo' id='influencetwothree'>
+            <div class='influencetwo clickable' id='influencetwothree'>
               <div class="clickText">
                  <div class='subtitle' id='media'>MEDIA SHAPES THE PROCESS OF THOUGHT</div>
             In ‘Is Google making us stupid?’ the well-known article by Nicholas Carr. The author is analysing the effect of new media on his ability for deep-reading: “My mind isn’t going—so far as I can tell—but it’s changing. I’m not thinking the way I used to think. I can feel it most strongly when I’m reading”. Thought his research, Carr discovered that he wasn’t the only one feeling this way, and discovered numerous researches on the topic. His conclusion resulted in a statement: reading is not natural for human brain, it is a habit, and a medium influencing the way we think and perceive information. The author is making an assumption that since Internet became a ‘universal media’ we read much more ,quantity-wise, but it becomes a completely different kind of reading, and different way of perceiving information. ‘Media are not just passive channels of information. They shape the process of thought’, and ‘our writing equipment takes part in the forming of our thoughts’.
             </div>
           </div>
             
-            <div class='influencetwo' id='influencetwofour'>
+            <div class='influencetwo clickable' id='influencetwofour'>
               <div class="clickText">
                  <div class='subtitle' id='right'>RIGHT HEMISPHERE</div>
             In fact, influence of media on perception is not just an abstract concept but has a very direct and visible physical impact on our brain. In neurology lateralization of brain function means the tendency for some neural functions or cognitive processes to be more dominant in one hemisphere than the other. The behaviour of the left hemisphere is quantitative (diachronic), responsible for linear, logical and sequential thinking. It centralizes our  ability for speech, hearing, writing and thus mediates our expression of comprehension and language. Whereas the right side, qualitative (synchronic) is bound to spacial-tactile sensors, musical and acoustic reception. On the contrary it analyses in terms of metaphors, catches the essence of the object through shape and association rather than classification. Left and right hemisphere pursue two different analytic processes, two ways of processing information. ‘When these hemispheric functions are in true balance, which is rare’, “comprehensive awareness” is the result.’<sup>12</sup> 
@@ -1533,7 +1567,7 @@ $(document).ready(function(){
     <div class='influenceone' id='influenceonetwo'>
          <div class='title2'id='book'>ON PHYSICAL WORLD AND DESIGN</div>
 
-            <div class='influencetwo' id='influencetwofive'>
+            <div class='influencetwo clickable' id='influencetwofive'>
               <div class="clickText">
                  <div class='subtitle' id='ondesign'>ON PHYSICAL WORLD <br>AND ORIENTATION</div>
             If our thinking processes are being changed by the media, it seems logical to state that these changes have an impact on how we function and organise the world around us. It seems that communicating through the internet is quite close to the right-hemisphere future model of communication that McLuhan is talking about. The all-at-once nature of the information is definitely present. So how does right-hemisphere thinking influence our physical world and design in particular? 
@@ -1541,7 +1575,7 @@ $(document).ready(function(){
             </div>
             </div>
 
-            <div class='influencetwo' id='influencetwosix'>
+            <div class='influencetwo clickable' id='influencetwosix'>
               <div class="clickText">
                  <div class='subtitle' id='browsing'>BROWSING THROUGH<br>THE BOOK</div>
             Reading a book used to imply following a linear narrative. However this doesn’t necessarily seem to be the case anymore. Since print stopped being a ‘universal media’, it obtained very particular qualities. Moreover, due to the changes in our perception the approach towards book-making in design has changed, as well as the value and meaning of the book. Looking at the student jury selection of 32 books for Best Dutch Design Book awards of 2016, a certain pattern appears. Most of the books in the selection are image-based, and don’t contain a lot of textual material. The layout of many books had a certain correlation with the layout of a website: one of the jury members called his experience of looking at one of the books ‘browsing through the book’. At the same time, a lot of book designs were really making an emphasis on the physical, material aspects of the book: the texture and transparency of the paper, quality of print, engravings and various binding methods, combination of different formats–everything that is not possible to do within digital design. Parallel Encyclopaedia, Ornithology, Land, Form/No Form Black Series and other books from the selection are not meant for reading in the traditional sense of this word. They are made for looking at, for holding them, touching them, owning them. These books are not only containers of primarily visual information, but they become a coveted object. One of the designers who really understands new trends in book design and how to use these is Irma Boom, who elaborates on the issue in one of her interviews: ‘I think the Internet has changed books as a phenomenon. Making a book has in fact become a status symbol. It’s a very slow and still medium. The types of books I make tend to have an object-like quality. […] A really good book has a permanent quality, I think. I hope’.<sup>16</sup><br><br><br>
@@ -1567,7 +1601,7 @@ $(document).ready(function(){
          <div class='title'id='DIGITAL'>DIGITAL AND <br>PHYSICAL SPACES</div>
             
             
-            <div class='digitalone' id='digitaloneone'>
+            <div class='digitalone clickable' id='digitaloneone'>
               <div class="clickText">
                  <div class='title2'id='info'>INFORMATION IS NOT SLOW <br>AND NOT STILL</div>
             In my opinion, a similar sequence of changes is happening in the sphere of architecture and urban planning. Information is not set in stone, it is not still and it’s not slow either. It is a network, expanding beyond the frames of a 2D linear canvas.
@@ -1575,7 +1609,7 @@ $(document).ready(function(){
             </div>
             </div>
 
-            <div class='digitalone' id='digitalonetwo'>
+            <div class='digitalone clickable' id='digitalonetwo'>
               <div class="clickText">
                  <div class='title2'id='orientation'>ORIENTATION IN DIGITAL <br>AND PHYSICAL SPACES</div>
             As was mentioned before, I find that there is a strong connection between our orientation in physical space and on the web. We associate searching through the internet with being physically present at some particular location. ‘… the consciousness of the data-base user is in two places at once: at the terminal and in the centre of the system'.<sup>17</sup> The event of December of 1968 when Apollo astronauts installed a camera on the moon and pointed it on Earth became important not only in technological sense. ‘We were on earth and the moon simultaneously'.<sup>18</sup> And the realisation of this possibility became a starting point for further evolvement of the shift in our brains.<br><br><br>
@@ -1592,7 +1626,7 @@ $(document).ready(function(){
             </div>
             </div>
 
-            <div class='digitalone' id='digitalonethree'>
+            <div class='digitalone clickable' id='digitalonethree'>
               <div class="clickText">
                  <div class='title2'id='conscious'>INFLUENCE OF ELECTRONIC MEDIA ON PUBLIC SPACES</div>
             The same way as our ‘intimate’ relationships become different, physical and digital spaces become much more connected rather than contrasting with each other; especially since we rely so much on the GPS navigation, and use digital data to orientate in the physical space. Of course, electronic technologies have their physical manifestations in form of data-storage facilities, internet cables laid underwater etc.  But I want to draw attention to how the use of these technologies affects the architecture of public spaces, which are in the direct connection to social and public activities.
@@ -1613,7 +1647,7 @@ $(document).ready(function(){
             <div class='digitalone' id='digitalonefive'> 
                  <div class='title2'id='cathedral'>CATHEDRAL OF A NEW ERA</div>
                     
-                    <div class='digitaltwo' id='digitaltwoone'>
+                    <div class='digitaltwo clickable' id='digitaltwoone'>
                       <div class="clickText">
                          <div class='subtitle' id='utrecht'>ARCHITECTURE OF UTRECHT CENTRAAL</div>
                     Utrecht Centraal is the biggest and the busiest station in the Netherlands, ‘the heart of the Dutch railway network’ as it is proudly called on its official website.<sup>19</sup> The station serves as a major infrastructural point, a junction of all the major transport links ‘…but offers you also places to meet and relax. Utrecht Centraal: more than just a train station’. By 2025 the station is expected to host around 350,000 of travellers per day. Benthem Crouwel Architects has been involved in the development of the train station since 2003. Thirteen years later, the new public transport terminal that will house train, bus and tram platforms under one undulating roof, has opened. Over the next two decades, the number of travellers through Utrecht Central is expected to increase even more–to about one hundred million a year. Since the previous building could not handle the increasing amounts of passengers, Utrecht Central Station has been rebuilt several times; it is now three times its original size. During the 13-year design process developed by Jan Benthem and Mels Crouwel, the decision was made to create a flat roof in form of a slight curve ‘… as a wave that radiates a dynamic movement and also functions as a natural way finder’. The official opening of the station with a visit from the Dutch royal family happened in 2016. However, from personal experience, standing in the station in today in 2017/18 we are still not given the impression of a finished and fully reconstructed building. The concept for the design of the station is published on the official website of the architectural studio. It involves many attractive and positively-orientated phrases like ‘Restaurants, shops, and a possible market give this promenade the atmosphere of a real city street’, ‘the interior has a reserved allure and modest charm: it is the people, signage, vehicles and other typical additions that make the station alive and vibrant, and give colour and ambiance’ or even ‘this integrated approach to station and station environment reinforces the identity and vitality of the city’. It then goes further, climaxing with ‘The Cathedral of the new era’. <br><br><br>
@@ -1626,7 +1660,7 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwotwo'>
+                    <div class='digitaltwo clickable' id='digitaltwotwo'>
                       <div class="clickText">
                          <div class='subtitle' id='all'>ALL-AT-ONCENESS</div>
                     And here it is–a massive, never-ending construction, trying to trick you into thinking it is light, open, neutral and transparent. Utrecht Central is one of the examples of the new approach to architecture of public spaces: it needs to be all at once–more than just a train station. As any piece of information on the web it is interlinked with many others, Utrecht Centraal is pierced not only with numerous railways, but with roads and tracks for trams, busses, cars, bicycles and filled with increasing amount of facilities. Utrecht Central spacial organisation is almost the opposite of the Haarlem Station, which still keeps the traces of its very first design from 1839. At the Haarlem Station the linear composition is prominent. Spaces have a single function–even waiting rooms were separated according to the classes: first, second and third. The all-at-onceness is foreign there. 
@@ -1634,14 +1668,14 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwothree'>
+                    <div class='digitaltwo clickable' id='digitaltwothree'>
                       <div class="clickText">
                          <div class='subtitle' id='small'>SMALL SCREENS</div>
                       The first time I ended up at the Utrecht Central Station, I got lost and had to ask for help to find the correct exit. The station has several entrances and exits leading to different parts of the city. As someone unused to traversing this “cathedral” I found that the navigation within the physical space of the station doesn’t clearly show in which direction you should go; this information is crucial. Another major detail that attracted my attention, something that I had noticed at other, similarly renovated (by the same architects) stations, was a number of huge LED screens placed in the main hall. My first expectation was to see the train timetable on them, however their sole function was advertising. Just like you can’t travel through your Instagram or Facebook feed without an ad, neither can you travel through the unavoidable public spaces conduct the business of life without being visually bombarded with advertisements.  A few small screens indicating the train timetable were placed to the side, you could not compare the visibility difference. In fact, to read something from the small screen, you would have to make a tangible way through the crowd. I felt like I was not among the majority of the travellers who were predominantly checking the train schedule on their gadgets. I am talking about the big screen with the timetable as just a detail, one of many, but if to take a look at it closely, taking away such an element from the public space of the train station brings a big change in the social behaviour. It made me think of a portable book, which once was invented and then irrevocably changed the perception and thinking. The little pocket book, or in this case the smartphone completely replaced the function of the monumental timetable at the entrance of the station. if you don’t own a smartphone you won’t find your way.
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwofour'>
+                    <div class='digitaltwo clickable' id='digitaltwofour'>
                       <div class="clickText">
                          <div class='subtitle' id='zoned'>ZONED-OUT</div>
                     So my first visit to Utrecht Central was not a positive experience, however, after a couple of months I have noticed a significant change. No, going through the station didn’t become more pleasant, but I definitely felt a certain change. The station was influencing my behaviour. Since I didn’t have to think anymore where I should go, obviously I knew my way in and out, I was in a kind of ‘zoned out’ mode each time on my way through. I didn’t have any reason at all to communicate with anybody–my OV-card can be updated at the machine, my schedule is on my smartphone and I could buy my snack at the Albert Heijn with contactless and ‘humanless’ cashiers. 
@@ -1649,7 +1683,7 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwofive'>
+                    <div class='digitaltwo clickable' id='digitaltwofive'>
                       <div class="clickText">
                          <div class='subtitle' id='alpha'>ALPHA STATE</div>
                     Herbet Krugman’s  brain-waves study describes a ‘subject’ watching a TV: within 30 seconds of looking at the TV screen the ‘subject’ went into the alpha state–‘relaxed, passive, unfocused’, typical to the right hemisphere activity mode. Krugman concluded his experiments: ‘… The unique power of the electronic media is to shape the content of people’s imagery, and in that particular way detrain their behaviour and their views.’ 
@@ -1670,7 +1704,7 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwosix'>
+                    <div class='digitaltwo clickable' id='digitaltwosix'>
                       <div class="clickText">
                          <div class='subtitle' id='archigram'>MALLIFICATION</div>
                     ‘Mallification’ is quite a new term, that I came across during my research. The term has been added on a wikipedia page only in 2016 and is formed by: mall + -ification. It means ‘transformation into a shopping mall’. 
@@ -1706,7 +1740,7 @@ $(document).ready(function(){
                     </div>
                     </div>
 
-                    <div class='digitaltwo' id='digitaltwoseven'>
+                    <div class='digitaltwo clickable' id='digitaltwoseven'>
                       <div class="clickText">
                          <div class='subtitle' id='planned'>ARCHIGRAM AND CITIES AS NETWORKS <br>OF INCIDENCE</div>
                     On the theoretical level, graphics play a big role in the achievements of Archigram. Archigram is a neo-futurist architectural group from the 1960’s who came up with a variety of fictional plans for urban planning and architecture. Futuristic concepts of the whole self-sustainable city in a building, moving plug-in cities and more–these were the progressive ideas driven by changes in society and changes in the social perception of space, possibilities of technology and a desire for freedom. In my opinion, Archigram is an example of how graphics can play a significant role in the development of architecture and completely rearrange the preliminary view on the discipline on the theoretical level. Here’s what Peter Cook thought on how the perception of architecture is affected by technology at that time: ‘The electric car of 6ft. x 4ft. 4in. can become not only a service to the front door–even if 30 storeys up–it can become a unit of the house itself.  […] A home is not a house.  […] Neither is a room a room, or a wall a wall, if we don’t want it to be. The ‘cage’ dwelling is a recent series of schemes that plug and clip into the plug-in city, or anywhere for that matter;  […] It’s a series of ‘zones’ rather than parts. It suggests certain situation coordinates rather than lines where hard objects have to remain.  […] The building now can really become an animal, with inflatables and hydraulics and the cheap, localised electric motor. It can grow: not only larger. but now smaller, different, better. The city is not only a series of incidents but a network of incidence'.<sup>26</sup>  
@@ -1724,7 +1758,7 @@ $(document).ready(function(){
                     </div>
                     </div>
                     
-                    <div class='digitaltwo' id='digitaltwoeight'>
+                    <div class='digitaltwo clickable' id='digitaltwoeight'>
                       <div class="clickText">
                          <div class='subtitle' id='building'>PLANNED OBSOLESCENCE <br>AND DISPOSABLE APPROACH</div>
                          Even though fictional projects of Archigram bring me personally to a certain conclusion: architects have to get involved in collaboration with other disciplines, especially graphic design. Of course, in practice, Archigram’s ‘dreams’ of architecture of the future are utopian and imply a change, on perhaps, too big of a scale. However, there are some revolutionary ideas, from which our society could definitely learn. Unfortunately, we can observe that not much of this has happened in reality. ‘Almost without realising it, we have absorbed into our lives the first generation of expendables … foodbags, paper tissues, polythene wrappers, ballpens, EPs … so many things about which we don’t have to think. We throw them away as soon as we acquire them. Also with us are the items that are bigger and last longer, but are nevertheless planned for obsolescence … the motor car … and its unit-built garage.’ In ‘The Waste Makers” Vance Packard is looking closer at the concept of planned obsolescence in design. Planning the expiration date for the product, and often even hasten it, in order to increase the sales and push more products to the customers, under the flag of improving the economy became a terrible disaster for the environment and developed destructive habits within society. ‘The pressures to expand production and consumption have forced Americans to create a hyperthyroid economy that can be sustained only by constant stimulation of the people and their leaders to be more prodigal with the nation’s resources’. 26 As Peter Cook said, this approach spread over not only product design, but architecture as well and became the new life-style.
@@ -1759,9 +1793,9 @@ $(document).ready(function(){
       <div class='gdas'>
            <div class='title' id='GDAS'>GRAPHIC DESIGNER <br>AS AN ARCHITECT</div>
 
-        <div class='gdasone'id='gdasoneone'>
+        <div class='gdasone clickable'id='gdasoneone'>
             <div class="clickText">
-             <div class='title2'id='another'>ANOTHER SCALE <br>OF ARCHITECTURE</div>
+             <div class='title2'id='another'>ANOTHER SCALE  OF ARCHITECTURE</div>
 
              ‘The business of the artist has been to report on the nature of the ground by exploring the forms of sensibility made available by each new ground, or mode of culture, long before the average man suspects that anything has changed'.<sup>27</sup>
             <p class="indent">‘Architecture Without Architects attempts to break our narrow concepts of the art of building by introducing the unfamiliar world of non pedigreed architecture'.<sup>28</sup> ‘Architecture Without Architects’, is the book by Bernard Rudofsky (and the exhibition held in November of 1964 at New York Museum of Modern Art). It tells us about architecture before it became an expert’s discipline and how it was developed in various cultures. ‘There is a good deal of irony in the fact that to stave off physical and mental deterioration the urban dweller periodically escapes his splendidly appointed lair to seek bliss in what he thinks are primitive surroundings: a cabin, a tent, or, if he is less hidebound, a fishing village or hill town abroad’. Rudofsky is calling upon learning from primitive cultures and vernacular architecture, but he also admits the importance of urban and architectural signage and speculates on his concerns over the increasingly disorienting visual and psychological experience of urban environments. In the past, architects dared to admit that graphic design has an important role within architecture. However the extent to which graphic design was admitted to have an impact was always quite literal and limited: to the signage, navigation and typography in space. Graphic design for architects in that sense serves a function of an extra layer, almost a decoration. They admit its functionalism, but discussions happen mostly about its aesthetic value. ‘Modern communication devices and easy to follow signposts save us from losing our way into labyrinths, but they also are to blame for our disenchantment with architectural space'. </p> <br><br><br>
@@ -1778,7 +1812,7 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class='gdasone'id='gdasonetwo'>
+        <div class='gdasone clickable'id='gdasonetwo'>
           <div class="clickText">
              <div class='title2' id='cartography'>SIGNAGE AND NAVIGATION</div>
         Indeed, street signs, window displays, navigation signs and such, are increasingly becoming a significant and inseparable part of the urban landscape. That was discussed at the Symposium ’Signs for Streets and Buildings’ on November 20th in 1953, which is mentioned in the ‘Disorientation’ by Felicity D. Scott. No doubt, navigation and lettering in the architectural space is an important functional and aesthetical element. There definitely should be a discussion on the topic, especially now, when screens of various sizes are being incorporated into the interior or even the structure of buildings. This way, graphics, created by graphic designers become inseparable from architecture, and they both contribute to an experience and functionality. 
@@ -1786,7 +1820,7 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class='gdasone'id='gdasonethree'>
+        <div class='gdasone clickable'id='gdasonethree'>
           <div class="clickText">
              <div class='title2' id='signage'>CARTOGRAPHY</div>
         Another sphere in architectural practice, where graphic design literally plays a key role, is of course, the visual representation of space on a 2D surface like descriptive geometry and cartography. A map is a used in order to communicate the idea of an architect and ‘can be seen within cartography as the art or the action of conceiving an artefact before it is made.’ It serves as an instruction for building making and therefore has a direct impact on the success of the execution and the result. Even though the descriptive geometry language, as well as the cartography is deemed to be objective, the translation of space into a 2D surface cannot be done without some inconsistencies and cannot be done with a certain level of subjectivity. This subjectivity in reading and interpreting the map leads to distortion of the initial plan, and here is where graphic design translation has a direct impact on the physical reality. The same can be noticed with 3D modelling. It seems like it may give a more clear translation of the ‘plan’ into materialisation. But using the tool of 3D modelling itself implies a certain influence on the architecture. All the mesh roofs and polygon formed windows reveal themselves in the end in the physical space. 
@@ -1794,7 +1828,7 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class='gdasone'id='gdasonefour'>
+        <div class='gdasone clickable'id='gdasonefour'>
           <div class="clickText">
              <div class='title2'id='lack'>LACK OF COOPERATION</div>
         There is a lack of cooperation between practices, like architecture and graphic design. Borders between digital and physical worlds disappear, all the disciplines are mixed up, interlinking and influencing each other. We can’t afford to continue thinking in a ‘logical’ left-brained way, structuring, categorising and expecting a successful outcome. Keeping solid borders in-between the disciplines doesn't benefit anyone. The development of technology has pushed our possibilities further in every aspect of our lives. Meanwhile a graphic designer is mostly expected to take care of the aesthetics and user-friendly visual effect. I am persuaded that graphic design can offer much more in collaboration with other practices. This thesis is starting with the topic of failing communication, and how humans through the history have tried to come up with a better tool or extension to reach a better mutual understanding. I firmly believe that graphic design in collaboration with other disciplines has a power to bring us closer to it. 
@@ -1809,7 +1843,7 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class='gdasone'id='gdasonefive'>
+        <div class='gdasone clickable'id='gdasonefive'>
           <div class="clickText">
           <div class='title2' id='interlinked'>INTERLINKED PRACTICES</div>
         Especially in the age of new media erasing the borders between digital and physical world, when all the disciplines mixes up and now, so much as never before, linked so close together and influencing each other, we can’t afford ourselves to continue thinking in a singular ‘logical’ left-brained way, structuring and categorising and keeping solid borders in-between the disciplines. The development of electronic technology pushed our possibilities further. In medicine, filmmaking, design, architecture … everywhere. And almost nothing in todays society can function without a help from IT specialists and programmers. But IT specialist is dealing with electronic media from a technological point of view, from a functional perspective. And graphic designer is mostly expected to take care of the aesthetical and user-friendly visual effect. I am persuaded that graphic design can offer much more in terms of collaboration with other practices. This thesis is starting with the topic of failing communication, and how societies through thousands of years are trying to come up with a better tool or skill to reach a better understanding. And if graphic design is specialising on visual communication, translating, transmitting, visualising, structuring and finally, and hopefully, reaching the audience with an information, shouldn’t it be considered as necessary as the programming? 
@@ -1817,7 +1851,7 @@ $(document).ready(function(){
         </div>
         </div>
 
-        <div class='gdasone'id='gdasonesix'>
+        <div class='gdasone clickable'id='gdasonesix'>
           <div class="clickText">
              <div class='title2' id='type'>TYPE/SCREEN DYNAMICS</div>
         The lack of communication between practices on the regular basic motivates designers to combine design and other practices on their own. For instance, a well-known graphic design orientated studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. Currently the work is being put in the context of museum, and being projected on the walls of already existing piece of architecture. But if similar approach could be used within a public space, it could create a totally different experience for the viewer. If this approach would be considered to be in use from the stage of map-making, this could change the architecture of the building entirely
@@ -1834,7 +1868,7 @@ $(document).ready(function(){
     <div class='conclusion'>
         <div class='title'id='CONCLUSION'>CONCLUSION</div>
 
-  <div class="conclusionone" id="conclusiononeone">
+  <div class="conclusionone clickable" id="conclusiononeone">
     <div class="clickText">
     <div class="title2" id="INTERL">INTERLINKED PRACTICES</div>
   The lack of communication between various disciplines motivates designers to combine design and other practices on their own. For instance, a well-known graphic design studio LUSTlab combine graphic design and computer science. In one of their projects ‘Type/Dynamics’ they created an interactive installation with a typographical projection on the walls of the Stedelijk museum. Apart from commenting on the work of Jurriaan Schrofer, this installation is aiming to change the perception of space with visuals. The installation was locating panorama images from Google Streetview and transforming them into interactive grid, filled in with typographical information. ‘As a visitor you are 'transported’ to that location and surrounded by all the news associated with that specific location. Instead of a photographic representation, the place is represented purely typographically with a host of new items currently being talked about at that location. Nothing in the gallery space stands still; all information continuously moves’. 
@@ -1842,13 +1876,13 @@ $(document).ready(function(){
 </div>
 </div>
 
-  <div class="conclusionone" id="conclusiononetwo">
+  <div class="conclusionone clickable" id="conclusiononetwo">
     <div class="clickText">
   <div class="title2" id="OWNE">OUR OWN ENVIRONMENT</div>
   Human ability for inventing something new is very limited. Our imagination is tightened to the knowledge of what we have already seen before. Everything is always derived from something that already exist. A plane has to fly, so it takes a shape of a bird. And an alien in a fiction movie is always going to be reminding of a hybrid of a human and a lizard. The more we focus on one particular topic, the more we know about it, but our vision is blurred on all the other knowledge around our area of expertise. If our communication is constrained, and our knowledge and imagination are bound, instead of closing up and trying to set borders, we should try to link all the possibilities that we already have. Perhaps if we succeed with that, we can create architecture which will have nothing to do with what we know now. Maybe, this new approach will open up a new level of understanding between us. ‘One thing that distinguishes human beings from animals is that we are evaluative creatures.’ and that gives us power to take decisions, draw conclusions and build our own environment. </div>
 </div>
 
-  <div class="conclusionone" id="conclusiononethree">
+  <div class="conclusionone clickable" id="conclusiononethree">
     <div class="clickText">
   <div class="title2" id="STRAIGHT">STRAIGHT LINES</div>
   Straight lines. Points and millimetres. Zoom in and zoom out on the small screen.
@@ -1882,16 +1916,17 @@ $(document).ready(function(){
 <div class="buttonNext">NEXT >></div>
 
 
-<div class="route">FOLLOW THE NON-LINEAR ROUTE</div>
-
+<!-- <div class="route">FOLLOW THE NON-LINEAR ROUTE</div>
+ -->
 
 <div class="containerofcontainer">
-        <center><div id='hellomap'>THESIS MAP: CATHEDRAL OF A NEW ERA</div></center>
-   <div class="insidemap"id="container2"></div>
+        <center><div id='hellomap'>THESIS MAP: YOU ARE HERE</div></center>
+   <div class="insidemap" id="container2"></div>
 </div>
 
 
-
-
+<div class='thesistitle' id="ttone">CATHEDRAL OF A NEW ERA: GRAPHIC DESIGNER AS AN ARCHITECT</div>
+<!-- <div class='thesistitle' id="tttwo">GRAPHIC DESIGNER AS AN ARCHITECT</div>
+ -->
 </body>
 </html>

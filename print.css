@@ -33,13 +33,24 @@ img {
     display: block;
     position: absolute;
     border: 1px black solid;
-    width: 400px;
+    width: 160px;
+    z-index: 50000;
+
     /*right:10px;
     top: 40px;*/
     /*z-index:-30000;*/
 }
 
-#photo1 {right:30px; top:3200px; width: 600px; height:auto;}
+/*.order {
+  page-break-after: always;
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
+}*/
+
+.thesistitle {display: none;}
+
+
+#photo1 {right:30px; top:3700px; width: 600px; height:auto;}
 #photo2 {right:30px; top:3650px; width: 600px; height:auto;}
 #photo3 {right:30px; top:4100px; width: 600px; height:auto;}
 
@@ -58,6 +69,10 @@ img {
 #photo13 {right:30px; top:18500px; width: 400px; height:auto;}
 #photo14 {right:30px; top:19000px; width: 400px; height:auto;}
 
+#photo22 {left:25px; top:2800px; width: 400px; height:auto;}
+#photo23 {left:400px; top:3200px; width: 400px; height:auto;}
+/*#photo24 {left:25px; top:3200px; width: 400px; height:auto;}
+*/
 
 
 
@@ -75,7 +90,7 @@ img {
   display: block;
 }*/
 
-p {
+.indent {
   text-indent: 30px;
   margin: 0;
 }
@@ -140,12 +155,12 @@ z-index: 1000;
    display: block;*/
    font-style: italic;
    line-height: 18px;
+   z-index: 50000;
 /*   top: 200px;
    border: solid black 1px;
    width:250px;
    z-index: 100000;*/
-
- }
+}
 
 
 #r1 {top: 2610px;}
@@ -449,7 +464,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
    color: black;
    display: block;
    z-index: 3000;
-   padding: 2px;
+   padding: 4px;
 
 }
 .title2i {
