@@ -100,9 +100,9 @@ img {
 #photo18 {right:10px; top:39700px; width: 300px; height:auto; }
 #photo19 {right:10px; top:39900px; width: 300px; height:auto; }
 
-#photo24 {right:10px; top:43150px; width: 250px; height:auto; z-index: 5000;}
-#photo25 {right:10px; top:43350px; width: 250px; height:auto; z-index: 5000;}
-#photo26 {right:10px; top:43500px; width: 250px; height:auto; z-index: 5000;}
+#photo24 {right:10px; top:40780px; width: 250px; height:auto;/* z-index: 5000;*/}
+#photo25 {right:10px; top:40950px; width: 250px; height:auto; z-index: 5000;}
+#photo26 {right:10px; top:41100px; width: 250px; height:auto; z-index: 5000;}
 
 
 #photo22 {right:10px; top:3000px; width: 300px; height:auto;}
