@@ -466,12 +466,13 @@ height:4000px;
 .littlething {
 /*  transition:0s;*/
 /*  background-color: blue;
-*/  width:100px;
+*/  
+  width:100px;
   height: 100px;
   position: absolute;
 /*  opacity: 0;*/
   /*display: none;*/
-  z-index: 100000;
+  z-index: 10000;
 /*  background-color: red;
   border-radius: 50%;*/
  /* mix-blend-mode:difference;*/
@@ -502,8 +503,8 @@ height:4000px;
   font-weight: normal;
   background-color: yellow;
   -webkit-text-stroke: 1px black;
-/*  z-index: 20000;
-*/
+  z-index: 100000;
+
 
 }
 
